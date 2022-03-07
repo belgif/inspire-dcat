@@ -846,4 +846,4 @@ Tableau 11 : classe vcard:Address instanciée une instance de vcard :Organizatio
 
 Liste : thésaurus.
 
-[^1](#sdfootnote1anc) Les niveaux applicables sont obligatoire (M), recommandé (R), optionnel (O) et interdit (W). Ce dernier cas de figure n&#39;est applicable que pour les attributs des classes dcat :Catalog et dcat :Dataset qui s&#39;instancient dans la même classe, pour éviter des instanciations en cascade.
+[^1]: Les niveaux applicables sont obligatoire (M), recommandé (R), optionnel (O) et interdit (W). Ce dernier cas de figure n&#39;est applicable que pour les attributs des classes dcat :Catalog et dcat :Dataset qui s&#39;instancient dans la même classe, pour éviter des instanciations en cascade.
