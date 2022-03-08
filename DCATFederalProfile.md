@@ -703,10 +703,12 @@ Instanciation de locn :Address dans une instance de toute classe :
 ### I. dct :periodOfTime
 
 Instanciation de dct :PeriodOfTime dans une instance de toute classe :
-| URI            | Nom           | Description                            | Exigence | Cardinalité | Domaine   | Source                                                                    |
-| -------------- | ------------- | -------------------------------------- | -------- | ----------- | --------- | ------------------------------------------------------------------------- |
-| dcat:startDate | Date de début | Date de début de la période temporelle | M        | 1           | unilingue | ./gmd:EX\_TemporalExtent/gmd :extent/gml32:TimePeriod/gml32:beginPosition |
-| dcat:endDate   | Date de fin   | Date de fin de la période temporelle   | M        | 1           | unilingue | ./gmd:EX\_TemporalExtent/gmd :extent/gml32:TimePeriod/gml32:endPosition   |
+| URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
+| --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ----------- | ------ |
+| locn:geometry   | géométrie                               | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
+| dcat:bbox       | Rectangle de délimitation géographique | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
+| Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
+| dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
 
 **Tableau 13 : classe dct:PeriodOfTime instanciée une instance de toute classe**
 
