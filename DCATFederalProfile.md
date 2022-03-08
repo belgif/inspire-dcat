@@ -882,7 +882,7 @@ géographique | Coordonnées de la géométrie de la ressource | M        | 1   
 **Tableau 15 : classe dct :Location instanciée dans une instance de toute classe**
 
 <a id="l-skos--conceptscheme"></a>
-### L. skos :ConceptScheme
+## L. skos :ConceptScheme
 
 Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 | URI            | Nom                          | Description                  | Exigence | Cardinalité | Domaine     | Source                                                                                                                                                                                                       |
@@ -894,7 +894,7 @@ Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 **Tableau 16 : classe skos:ConceptScheme instanciée dans une instance de dcat :Catalog**
 
 <a id="m-vcard--organization"></a>
-### M. vcard :Organization
+## M. vcard :Organization
 
 | URI                     | Nom             | Description                                               | Exigence | Cardinalité | Domaine       | Source                                                                                  |
 | ----------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | ------------- | --------------------------------------------------------------------------------------- |
