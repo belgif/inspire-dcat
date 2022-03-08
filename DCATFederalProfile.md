@@ -86,12 +86,12 @@ Le présent document institue le profil [DCAT AP 2 fédéral](#DCATAP2fédéral)
 
 En effet, [DCAT AP 2 fédéral](#DCATAP2fédéral) a pour objectif premier d&#39;intégrer la richesse sémantique les éléments de métadonnées issus des [TG 2.0](#TG2) ainsi que d&#39;exploiter les opportunités sémantiques offertes par les [TG relatives aux services de téléchargement](#TGrelativesauxservicesdetéléchargement).
 
-Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de certains attributs, en ajoute d&#39;autres étrangers à [DCAT AP 2](#DCATAP2) de sorte de mettre en correspondance ces attributs à des éléments de métadonnées issus des [TG 2.0]. De la même manière, [DCAT AP 2 fédéral](#DCATAP2fédéral) norme le contenu de ses attributs de manière à y intégrer, s&#39;il échet, le contenu des éléments de métadonnées issus des [TG 2.0](#TG2).
+Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de certains attributs, en ajoute d&#39;autres étrangers à [DCAT AP 2](#DCATAP2) de sorte de mettre en correspondance ces attributs à des éléments de métadonnées issus des [TG 2.0](#TG2). De la même manière, [DCAT AP 2 fédéral](#DCATAP2fédéral) norme le contenu de ses attributs de manière à y intégrer, s&#39;il échet, le contenu des éléments de métadonnées issus des [TG 2.0](#TG2).
 
 <a id="i-presentation-generale-des-classes"></a>
 ## I. Présentation générale des classes
 
-[DCAT AP 2 fédéral](#DCATAP2fédéral) inclut toutes les classes et tous les attributs requis par [DCAT AP 2]. De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2] et à [STAT DCAT AP 1] ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral](#DCATAP2fédéral) :
+[DCAT AP 2 fédéral](#DCATAP2fédéral) inclut toutes les classes et tous les attributs requis par [DCAT AP 2]. De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2](#GEODCATAP2) et à [STAT DCAT AP 1](#STATDCATAP1) ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral](#DCATAP2fédéral) :
 
 - **dcat:Catalog** qui représente et décrit des catalogues ;
 - **dcat:Dataset** qui représente et décrit des jeux de données ;
@@ -112,7 +112,7 @@ Le diagramme suivant présentes les classes ainsi que les attributs propres à [
 
 ![](RackMultipart20220307-4-4ihfv6_html_cc6918eab17a5cc1.png)
 
-Le point II, ainsi que les tableaux en annexes qui lui sont associés, précise les attributs propres à chaque classe. Il précise en outre les règles applicables au contenu des attributs de chaque classe, ainsi que notamment, l&#39;élément de la fiche [ISO 19139] à utiliser en cas de conversion. Dans tous les tableaux de l&#39;annexe I, figurent, pour chaque attribut, les éléments suivants :
+Le point II, ainsi que les tableaux en annexes qui lui sont associés, précise les attributs propres à chaque classe. Il précise en outre les règles applicables au contenu des attributs de chaque classe, ainsi que notamment, l&#39;élément de la fiche [ISO 19139](#ISO19139) à utiliser en cas de conversion. Dans tous les tableaux de l&#39;annexe I, figurent, pour chaque attribut, les éléments suivants :
 
 1. URI : cet élément correspond à l&#39;identifiant unique de l&#39;attribut considéré ;
 2. Nom : cet élément correspond au nom français de l&#39;attribut considéré ;
@@ -120,7 +120,7 @@ Le point II, ainsi que les tableaux en annexes qui lui sont associés, précise 
 4. Exigence : cet élément correspond à l&#39;un des quatre niveaux d&#39;exigence[^1] propre à l&#39;attribut considéré ;
 5. Cardinalité : cet élément correspond aux nombres minimal et maximal d&#39;attributs de ce type autorisés ;
 6. Domaine : cet élément correspond aux valeurs acceptables que peut comprendre l&#39;attribut considéré. Si les valeurs acceptables appartiennent à un ou plusieurs ensembles limités (i.e. un thésaurus), alors le ou les ensembles optionnels, recommandés et obligatoires sont repris à l&#39;annexe II  ;
-7. Source : cet élément correspond au XPATH de l&#39;élément **impérativement utilisé** comme valeur de l&#39;attribut considérési la classe à laquelle il appartient est mise en correspondance avec une classe [ISO 19115] et si son domaine correspond à une valeur unilingue, à une valeur multilingue ou à un URL. Si son domaine correspond à une autre classe du présent profil, la source correspond à la classe [ISO 19115] mise en correspondance avec la classe du présent profil.
+7. Source : cet élément correspond au XPATH de l&#39;élément **impérativement utilisé** comme valeur de l&#39;attribut considérési la classe à laquelle il appartient est mise en correspondance avec une classe [ISO 19115](#ISO19115) et si son domaine correspond à une valeur unilingue, à une valeur multilingue ou à un URL. Si son domaine correspond à une autre classe du présent profil, la source correspond à la classe [ISO 19115](#ISO19115) mise en correspondance avec la classe du présent profil.
 
 Les attributs de domaine « multilingue » doivent être remplis en allemand, en français, en néerlandais et en anglais. Dans la mesure du possible, les attributs de domaine « URL multilingue » doivent être remplis en allemand, en français, en néerlandais et en anglais.
 
@@ -146,17 +146,17 @@ Les spécifications applicables à la classe, indépendamment de l&#39;endroit o
 <a id="instanciation-à-partir-d-éléments-inspire-1"></a>
 #### Instanciation à partir d&#39;éléments [INSPIRE]
 
-Seul le contenu de fiches [ISO 19139] décrivant un [CSW] peut être converti en instances de la classe dcat :Catalog. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Catalog soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 1.
+Seul le contenu de fiches [ISO 19139](#ISO19139) décrivant un [CSW](#CSW) peut être converti en instances de la classe dcat :Catalog. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Catalog soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 1.
 
-Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139] associé.
+Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139](#ISO19139) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139](#ISO19139) associé.
 
-De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments [ISO 19139]. En l&#39;espèce, les règles suivantes sont d&#39;application :
+De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments [ISO 19139](#ISO19139). En l&#39;espèce, les règles suivantes sont d&#39;application :
 
 1. Le contenu de l&#39;attribut foaf:homepage doit renvoyer vers une version human readable du catalogue ;
 2. Le contenu de l&#39;attribut dcat :themeTaxonomy doit être généré _a posteriori¸_ dès que tous les attributs de toutes les classes sont pourvus, de manière à recenser tous les thésaurus effectivement utilisés dans le catalogue considéré ;
 3. Le contenu de l&#39;attribut dct :identifier reste à déterminer. Il pourrait correspondre à l&#39;URL de sérialisation XML du catalogue considéré ;
-4. Le contenu de l&#39;attribut dcat :dataset est généré à partir de toutes les fiches décrivant des jeux de données, séries ou cartes statiques accessibles via le [CSW] ;
-5. Le contenu de l&#39;attribut dcat :service est généré à partir de toutes les fiches décrivant des services ou des applications accessibles via le [CSW].
+4. Le contenu de l&#39;attribut dcat :dataset est généré à partir de toutes les fiches décrivant des jeux de données, séries ou cartes statiques accessibles via le [CSW](#CSW) ;
+5. Le contenu de l&#39;attribut dcat :service est généré à partir de toutes les fiches décrivant des services ou des applications accessibles via le [CSW](#CSW).
 
 <a id="instanciation-sans--l-ment--inspire-1"></a>
 #### Instanciation sans élément [INSPIRE]
