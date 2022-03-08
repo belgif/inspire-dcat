@@ -82,16 +82,16 @@
 
 ## Introduction
 
-Le présent document institue le profil [DCAT AP 2 fédéral], élaboré par les administrations fédérales impliquées dans l&#39;implémentation de la directive INSPIRE. Ce profil est conforme à la norme [DCAT AP 2]. D&#39;une part, il spécifie et restreint ladite norme en précisant les règles régissant l&#39;instanciation de ses classes. D&#39;autre part, il met en place des règles applicavles au contenu des classes et de leurs attributs respectifs.
+Le présent document institue le profil [DCAT AP 2 fédéral](#DCATAP2fédéral), élaboré par les administrations fédérales impliquées dans l&#39;implémentation de la directive INSPIRE. Ce profil est conforme à la norme [DCAT AP 2](#DCATAP2). D&#39;une part, il spécifie et restreint ladite norme en précisant les règles régissant l&#39;instanciation de ses classes. D&#39;autre part, il met en place des règles applicavles au contenu des classes et de leurs attributs respectifs.
 
-En effet, [DCAT AP 2 fédéral] a pour objectif premier d&#39;intégrer la richesse sémantique les éléments de métadonnées issus des [TG 2.0] ainsi que d&#39;exploiter les opportunités sémantiques offertes par les [TG relatives aux services de téléchargement].
+En effet, [DCAT AP 2 fédéral](#DCATAP2fédéral) a pour objectif premier d&#39;intégrer la richesse sémantique les éléments de métadonnées issus des [TG 2.0](#TG2) ainsi que d&#39;exploiter les opportunités sémantiques offertes par les [TG relatives aux services de téléchargement](#TGrelativesauxservicesdetéléchargement).
 
-Dès lors, [DCAT AP 2 fédéral] restreint la cardinalité de certains attributs, en ajoute d&#39;autres étrangers à [DCAT AP 2] de sorte de mettre en correspondance ces attributs à des éléments de métadonnées issus des [TG 2.0]. De la même manière, [DCAT AP 2 fédéral] norme le contenu de ses attributs de manière à y intégrer, s&#39;il échet, le contenu des éléments de métadonnées issus des [TG 2.0].
+Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de certains attributs, en ajoute d&#39;autres étrangers à [DCAT AP 2](#DCATAP2) de sorte de mettre en correspondance ces attributs à des éléments de métadonnées issus des [TG 2.0]. De la même manière, [DCAT AP 2 fédéral](#DCATAP2fédéral) norme le contenu de ses attributs de manière à y intégrer, s&#39;il échet, le contenu des éléments de métadonnées issus des [TG 2.0](#TG2).
 
 <a id="i-presentation-generale-des-classes"></a>
 ## I. Présentation générale des classes
 
-[DCAT AP 2 fédéral] inclut toutes les classes et tous les attributs requis par [DCAT AP 2]. De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2] et à [STAT DCAT AP 1] ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral] :
+[DCAT AP 2 fédéral](#DCATAP2fédéral) inclut toutes les classes et tous les attributs requis par [DCAT AP 2]. De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2] et à [STAT DCAT AP 1] ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral](#DCATAP2fédéral) :
 
 - **dcat:Catalog** qui représente et décrit des catalogues ;
 - **dcat:Dataset** qui représente et décrit des jeux de données ;
@@ -108,7 +108,7 @@ Dès lors, [DCAT AP 2 fédéral] restreint la cardinalité de certains attributs
 - vcard :Organization qui représente des organisations ;
 - vcard :Address qui représente et décrit des adresses postale.
 
-Le diagramme suivant présentes les classes ainsi que les attributs propres à [DCAT AP 2 fédéral].
+Le diagramme suivant présentes les classes ainsi que les attributs propres à [DCAT AP 2 fédéral](#DCATAP2fédéral).
 
 ![](RackMultipart20220307-4-4ihfv6_html_cc6918eab17a5cc1.png)
 
@@ -239,7 +239,7 @@ Seul le contenu des fiches [ISO 19139] décrivant un service de visualisation, u
 
 Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139] associé.
 
-En outre, les spécifications de [DCAT AP 2 fédéral]  prévoient d&#39;instancier, pour chaque jeu de données accessibles au moyen des services décrits, la classe dcat :Dataset dans la classe dcat :Catalog. En effet, il est nécessaire d&#39;instancier explicitement dans tout catalogue [DCAT AP] les jeux de données au moyen de la classe dcat :Dataset accessibles via les services considérés.
+En outre, les spécifications de [DCAT AP 2 fédéral](#DCATAP2fédéral) prévoient d&#39;instancier, pour chaque jeu de données accessibles au moyen des services décrits, la classe dcat :Dataset dans la classe dcat :Catalog. En effet, il est nécessaire d&#39;instancier explicitement dans tout catalogue [DCAT AP] les jeux de données au moyen de la classe dcat :Dataset accessibles via les services considérés.
 
 <a id="instanciation-sans--l-ment--inspire-3"></a>
 #### Instanciation sans élément [INSPIRE]
@@ -505,34 +505,49 @@ Si l&#39;instance de la classe vcard : Address n&#39;est mise en correspondance 
 <a id="normes-r-f-renc-es"></a>
 ## Normes référencées
 
+<a id="ISO19115"></a>
 [ISO 19115] : norme ISO relative aux métadonnées de jeux de données et de services à caractère géographique utilisée pour implémenter la [directive INSPIRE] ([https://www.iso.org/standard/26020.html](https://www.iso.org/standard/26020.html))
 
+<a id="ISO19139"></a>
 [ISO 19139] : norme ISO relative à l&#39;implémentation XML de la norme [[ISO 19115]] utilisée pour implémenter la [directive INSPIRE] ([https://www.iso.org/fr/standard/32557.htm](https://www.iso.org/fr/standard/32557.htm))
 
+<a id="TG2"></a>
 [TG 2.0] : norme d&#39;implémentation des métadonnées INSPIRE basée sur les normes [[ISO 19115]] et [[ISO 19139]] ([https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139](https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139))
 
+<a id="profildemétadonnéesfédéral"></a>
 [profil de métadonnées fédéral] : norme fédérale non-officielle conforme aux TG 2.0
 
+<a id="CSW"></a>
 [CSW] : norme OGC relative à la publication de métadonnées ([https://portal.ogc.org/files/?artifact\_id=20555](https://portal.ogc.org/files/?artifact_id=20555))
 
+<a id="TGrelativesauxservicesdedécouverte"></a>
 [TG relatives aux services de découverte] : norme d&#39;implémentation des services de découverte INSPIRE
 
+<a id="DCAT"></a>
 [DCAT] : norme W3C pour standardiser les catalogues de jeux de données sur le web ([https://www.w3.org/TR/vocab-dcat-1/](https://www.w3.org/TR/vocab-dcat-1/))
 
+<a id="DCAT2"></a>
 [DCAT 2] : norme W3C pour standardiser les catalogues de jeux de données sur le web ([https://www.w3.org/TR/vocab-dcat-1/](https://www.w3.org/TR/vocab-dcat-1/))
 
+<a id="DCATAP1"></a>
 [DCAT AP 1] : norme ISA implémentant le standard [DCAT] et lui étant conforme pour décrire les jeux de données publics distribués dans l&#39;Union ([https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/11](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/11))
 
+<a id="DCATAP2"></a>
 [DCAT AP 2] : norme ISA implémentant le standard [DCAT 2] et lui étant conforme pour décrire les jeux de données publics distribués dans l&#39;Union ([https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/200](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/200))
 
+<a id="GeoDCATAP2"></a>
 [Geo DCAT AP 2] : norme ISA implémentant le standard [DCAT AP 2] et lui étant conforme pour décrire les jeux de données publics géographiques distribués dans l&#39;Union ([https://semiceu.github.io/GeoDCAT-AP/drafts/latest/#properties-for-distribution](https://semiceu.github.io/GeoDCAT-AP/drafts/latest/#properties-for-distribution))
 
+<a id="StatDCATAP1"></a>
 [Stat DCAT AP 1] : norme ISA implémentant le standard [DCAT AP 1] et lui étant conforme pour décrire les jeux de données publics statistiques distribués dans l&#39;Union ([https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/statdcat-application-profile-data-portals-europe/release/100](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/statdcat-application-profile-data-portals-europe/release/100))
 
+<a id="DCATAP2fédéral"></a>
 [DCAT AP 2 fédéral] : norme fédérale informelle contenue dans le présent document conforme à [DCAT AP 2]
 
+<a id="ATOM"></a>
 [ATOM] : norme IETF relative à la syndication de contenus ([https://tools.ietf.org/html/rfc4287](https://tools.ietf.org/html/rfc4287))
 
+<a id="TGrelativesauxservicesdetéléchargement"></a>
 [TG relatives aux services de téléchargement] : norme d&#39;implémentation des services de téléchargement INSPIRE basée sur les normes [WFS] et [ATOM] ([https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services](https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services))
 
 # Annexe I
