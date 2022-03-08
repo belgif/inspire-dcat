@@ -70,10 +70,10 @@
     + [H. skos :Concept](#h-skos--concept)
     + [I. dct :periodOfTime](#i-dct--periodoftime)
     + [J. dqv : QualityMeasurement](#j-dqv--qualitymeasurement)
-  * [K. dct :Location](#k-dct--location)
+    + [K. dct :Location](#k-dct--location)
     + [L. skos :ConceptScheme](#l-skos--conceptscheme)
     + [M. vcard :Organization](#m-vcard--organization)
-  * [N. vcard :Address](#n-vcard--address)
+    + [N. vcard :Address](#n-vcard--address)
 - [Annexe II](#annexe-ii)
 <!-- TOC -->
 
@@ -867,7 +867,7 @@ Instanciation de dqv : QualityMeasurement – ressource matricielle :
 **Tableau 15 : classe dqv: QualityMeasurement se rapportant à la description d&#39;une ressource matricielle**
 
 <a id="k-dct--location"></a>
-## K. dct :Location
+### K. dct :Location
 
 Instanciation de dct :Location dans une instance de toute classe :
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
@@ -882,7 +882,7 @@ géographique | Coordonnées de la géométrie de la ressource | M        | 1   
 **Tableau 15 : classe dct :Location instanciée dans une instance de toute classe**
 
 <a id="l-skos--conceptscheme"></a>
-## L. skos :ConceptScheme
+### L. skos :ConceptScheme
 
 Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 | URI            | Nom                          | Description                  | Exigence | Cardinalité | Domaine     | Source                                                                                                                                                                                                       |
@@ -894,7 +894,7 @@ Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 **Tableau 16 : classe skos:ConceptScheme instanciée dans une instance de dcat :Catalog**
 
 <a id="m-vcard--organization"></a>
-## M. vcard :Organization
+### M. vcard :Organization
 
 | URI                     | Nom             | Description                                               | Exigence | Cardinalité | Domaine       | Source                                                                                  |
 | ----------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | ------------- | --------------------------------------------------------------------------------------- |
@@ -906,7 +906,7 @@ Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 **Tableau 9 : classe vcard :Organization instanciée une instance de toute classe**
 
 <a id="n-vcard--address"></a>
-## N. vcard :Address
+### N. vcard :Address
 
 | URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
 | -------------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
