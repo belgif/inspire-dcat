@@ -91,7 +91,7 @@ Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de
 <a id="i-presentation-generale-des-classes"></a>
 ## I. Présentation générale des classes
 
-[DCAT AP 2 fédéral](#DCATAP2fédéral) inclut toutes les classes et tous les attributs requis par [DCAT AP 2]. De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2](#GEODCATAP2) et à [STAT DCAT AP 1](#STATDCATAP1) ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral](#DCATAP2fédéral) :
+[DCAT AP 2 fédéral](#DCATAP2fédéral) inclut toutes les classes et tous les attributs requis par [DCAT AP 2](#DCATAP2). De manière complémentaire et non-impérative, les attributs propres à [GEO DCAT AP 2](#GEODCATAP2) et à [STAT DCAT AP 1](#STATDCATAP1) ont été intégrés dans la mesure où ils répondaient aux besoins exprimés par les administrations fédérales. Il comprend les classes présentées ci-dessous. Les classes reprises en gras sont obligatoires dans tout catalogue conforme à [DCAT AP 2 fédéral](#DCATAP2fédéral) :
 
 - **dcat:Catalog** qui représente et décrit des catalogues ;
 - **dcat:Dataset** qui représente et décrit des jeux de données ;
@@ -141,7 +141,7 @@ Le présent profil prévoit des spécifications différentes en fonction de l&#3
 
 Les attributs propres à l&#39;instance présente dans l&#39;élément racine sont spécifiés dans le tableau 1 présent en annexe. Les attributs propres aux autres instances sont spécifiés dans le tableau 2 présent en annexe.
 
-Les spécifications applicables à la classe, indépendamment de l&#39;endroit où elle s&#39;instancie, prévoient la possibilité d&#39;expliciter les modalités d&#39;acquisition du catalogue décrit au moyen de l&#39;attribut dcat :Distribution. Il s&#39;agit d&#39;un ajout par rapport à la norme [DCAT AP 2].
+Les spécifications applicables à la classe, indépendamment de l&#39;endroit où elle s&#39;instancie, prévoient la possibilité d&#39;expliciter les modalités d&#39;acquisition du catalogue décrit au moyen de l&#39;attribut dcat :Distribution. Il s&#39;agit d&#39;un ajout par rapport à la norme [DCAT AP 2](#DCATAP2).
 
 <a id="instanciation-à-partir-d-éléments-inspire-1"></a>
 #### Instanciation à partir d&#39;éléments [INSPIRE]
@@ -161,11 +161,11 @@ De manière dérogatoire, certains attributs ne sont pas mis en correspondance a
 <a id="instanciation-sans--l-ment--inspire-1"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dcat : Catalog n&#39;est pas mise en correspondance avec une fiche [ISO 19139] décrivant un [CSW], alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 2.
+Si l&#39;instance de la classe dcat : Catalog n&#39;est pas mise en correspondance avec une fiche [ISO 19139](#ISO19139) décrivant un [CSW](#CSW), alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 2.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit égal à une ou plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
-De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments ou des classes [ISO 19139]. En l&#39;espèce, les règles suivantes sont d&#39;application :
+De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments ou des classes [ISO 19139](#ISO19139). En l&#39;espèce, les règles suivantes sont d&#39;application :
 
 1. Le contenu de l&#39;attribut foaf:homepage doit renvoyer vers une version human readable du catalogue ;
 2. Le contenu de l&#39;attribut dcat :themeTaxonomy doit être généré _a posteriori¸_ dès que tous les attributs de toutes les classes sont pourvus, de manière à recenser tous les thésaurus effectivement utilisés dans le catalogue considéré ;
@@ -191,9 +191,9 @@ Le présent profil prévoit des spécifications différentes en fonction de l&#3
 
 Les attributs propres aux instances présentes dans l&#39;attribut dcat :dataset sont spécifiés dans le tableau 3 présent en annexe. Les attributs propres aux autres instances sont spécifiés dans le tableau 4 présent en annexe.
 
-Les spécifications applicables à la classe prévoient que les versions d&#39;un même jeu de données correspondent à autant d&#39;instances différentes de la classe dcat :Distribution. Elles ne prévoient dès lors pas les attributs afférents à la version proposés par [DCAT AP 2.0].
+Les spécifications applicables à la classe prévoient que les versions d&#39;un même jeu de données correspondent à autant d&#39;instances différentes de la classe dcat :Distribution. Elles ne prévoient dès lors pas les attributs afférents à la version proposés par [DCAT AP 2.0](#DCATAP2).
 
-Les spécifications applicables à la classe incluent les attributs dct :license et adms :representationTechnique car, selon les [TG 2.0] et [ISO 19115], ils caractérisent les jeux de données et non une distribution particulière d&#39;un jeu de données.
+Les spécifications applicables à la classe incluent les attributs dct :license et adms :representationTechnique car, selon les [TG 2.0](#TG2) et [ISO 19115](#ISO19115), ils caractérisent les jeux de données et non une distribution particulière d&#39;un jeu de données.
 
 Les spécifications applicables à classe prévoient que les instances présentes dans l&#39;attribut dcat :dataset aient au moins un attribut dûment pourvu parmi les attributs suivants (dct :created, dct :modified ou dct :issued).
 
@@ -202,13 +202,13 @@ Les spécifications applicables à la classe prévoient que les instances prése
 <a id="instanciation-à-partir-d-éléments-inspire-2"></a>
 #### Instanciation à partir d&#39;éléments [INSPIRE]
 
-Seul le contenu des fiches [ISO 19139] décrivant un jeu de données, une série ou une carte statique peut être converti en instances de la classe dcat :Dataset. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Dataset soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 3.
+Seul le contenu des fiches [ISO 19139](#ISO19139) décrivant un jeu de données, une série ou une carte statique peut être converti en instances de la classe dcat :Dataset. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Dataset soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 3.
 
-Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139] associé.
+Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139](#ISO19139) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139](#ISO19139) associé.
 
 <a id="instanciation-sans--l-ment--inspire-2"></a>
 #### Instanciation sans élément [INSPIRE]
-Si l&#39;instance de la classe dcat : Dataset n&#39;est pas mise en correspondance avec une fiche [ISO 19139] décrivant un jeu de données, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 4.
+Si l&#39;instance de la classe dcat : Dataset n&#39;est pas mise en correspondance avec une fiche [ISO 19139](#ISO19139) décrivant un jeu de données, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 4.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit égal à une ou plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
@@ -226,7 +226,7 @@ Le présent profil prévoit des spécifications différentes en fonction de l&#3
 
 Les attributs propres aux instances présentes dans l&#39;attribut dcat :service sont spécifiés dans le tableau 5 présent en annexe. Les attributs propres aux autres instances sont spécifiés dans le tableau 6 présent en annexe.
 
-Les spécifications applicables à la classe incluent les attributs dct :license et dct :conformsTo car, selon les [TG 2.0] et [ISO 19115], ils caractérisent les services.
+Les spécifications applicables à la classe incluent les attributs dct :license et dct :conformsTo car, selon les [TG 2.0](#TG2) et [ISO 19115](#ISO19115), ils caractérisent les services.
 
 Les spécifications applicables à classe prévoient que les instances présentes dans l&#39;attribut dcat :service ait au moins un attribut dûment pourvu parmi les attributs suivants (dct :created, dct :modified ou dct :issued).
 
@@ -235,16 +235,16 @@ Les spécifications applicables à la classe prévoient que les instances prése
 <a id="instanciation-à-partir-d-éléments-inspire-3"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des fiches [ISO 19139] décrivant un service de visualisation, un service de téléchargement ou une application peut être converti en instances de la classe dcat :DataService. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat: DataService soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 5. Le contenu de fiches décrivant un service de découverte ne peut être converti en instances de la classe dcat : DataService.
+Seul le contenu des fiches [ISO 19139](#ISO19139) décrivant un service de visualisation, un service de téléchargement ou une application peut être converti en instances de la classe dcat :DataService. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat: DataService soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 5. Le contenu de fiches décrivant un service de découverte ne peut être converti en instances de la classe dcat : DataService.
 
-Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139] associé.
+Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139](#ISO19139) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139](#ISO19139) associé.
 
-En outre, les spécifications de [DCAT AP 2 fédéral](#DCATAP2fédéral) prévoient d&#39;instancier, pour chaque jeu de données accessibles au moyen des services décrits, la classe dcat :Dataset dans la classe dcat :Catalog. En effet, il est nécessaire d&#39;instancier explicitement dans tout catalogue [DCAT AP] les jeux de données au moyen de la classe dcat :Dataset accessibles via les services considérés.
+En outre, les spécifications de [DCAT AP 2 fédéral](#DCATAP2fédéral) prévoient d&#39;instancier, pour chaque jeu de données accessibles au moyen des services décrits, la classe dcat :Dataset dans la classe dcat :Catalog. En effet, il est nécessaire d&#39;instancier explicitement dans tout catalogue [DCAT AP](#DCATAP) les jeux de données au moyen de la classe dcat :Dataset accessibles via les services considérés.
 
 <a id="instanciation-sans--l-ment--inspire-3"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dcat :DataService n&#39;est pas mise en correspondance avec une fiche [ISO 19139] décrivant un service éligible, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 6.
+Si l&#39;instance de la classe dcat :DataService n&#39;est pas mise en correspondance avec une fiche [ISO 19139](#ISO19139) décrivant un service éligible, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 6.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit égal à une ou plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
@@ -263,14 +263,14 @@ Les spécifications applicables à la classe incluent les attributs dct :tempora
 <a id="instanciation-à-partir-d-éléments-inspire-4"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des [ATOMFeed] décrivant les liens de téléchargement d&#39;un jeu de données peut être converti en instances de la classe dcat :Distribution. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de la classe dcat :Distribution soit pourvu à partir de l&#39;élément [ATOMFeed] qui lui est associé dans le tableau 7. Les instances de la classe présentes dans une instance de dcat :Catalog ne sont pas générées à partir d&#39;un élément [INSPIRE].
+Seul le contenu des [ATOMFeed] décrivant les liens de téléchargement d&#39;un jeu de données peut être converti en instances de la classe dcat :Distribution. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de la classe dcat :Distribution soit pourvu à partir de l&#39;élément [ATOMFeed](#ATOMFeed) qui lui est associé dans le tableau 7. Les instances de la classe présentes dans une instance de dcat :Catalog ne sont pas générées à partir d&#39;un élément [INSPIRE](#INSPIRE).
 
-Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ATOMFeed] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ATOMFeed] associé.
+Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ATOMFeed](#ATOMFeed) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ATOMFeed](#ATOMFeed) associé.
 
 <a id="instanciation-sans--l-ment--inspire-4"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dcat :Distribution n&#39;est pas mise en correspondance avec un [ATOMFeed], alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément de l&#39;[ATOMFeed] qui lui est associé dans le tableau 7.
+Si l&#39;instance de la classe dcat :Distribution n&#39;est pas mise en correspondance avec un [ATOMFeed](#ATOMFeed), alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément de l&#39;[ATOMFeed](#ATOMFeed) qui lui est associé dans le tableau 7.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit pourvu au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
@@ -287,18 +287,18 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-5"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative aux organisations peut être converti en instances de la classe foaf :Organization. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe foaf : Organization soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 8.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative aux organisations peut être converti en instances de la classe foaf :Organization. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe foaf : Organization soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 8.
 
-Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139] associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139] associé.
+Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139](#ISO19139) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139](#ISO19139) associé.
 
-De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments ou des classes [ISO 19115]. En l&#39;espèce, les règles suivantes sont d&#39;application :
+De manière dérogatoire, certains attributs ne sont pas mis en correspondance avec des éléments ou des classes [ISO 19115](#ISO19115). En l&#39;espèce, les règles suivantes sont d&#39;application :
 
-a) Le contenu de l&#39;attribut dct :type n&#39;est mis en association avec aucun élément [ISO 19115]. Dès lors, il n&#39;est pas pourvu pour les instances présentes dans les classes qui correspondent au résultat de la conversion d&#39;une fiche [ISO 19139].
+a) Le contenu de l&#39;attribut dct :type n&#39;est mis en association avec aucun élément [ISO 19115](#ISO19115). Dès lors, il n&#39;est pas pourvu pour les instances présentes dans les classes qui correspondent au résultat de la conversion d&#39;une fiche [ISO 19139](#ISO19139).
 
 <a id="instanciation-sans--l-ment--inspire-5"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe foaf : Organization n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 8.
+Si l&#39;instance de la classe foaf : Organization n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 8.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit pourvu au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
@@ -314,11 +314,11 @@ Cette classe vise à identifier et à décrire exhaustivement les classes consid
 
 #### Remarques concernant le contenu de la classe
 
-Si une classe dcat : CatalogRecord se rapporte à une classe quelconque qui n&#39;est pas mise en correspondance avec une fiche [ISO 19139], alors ces spécifications prévoient que le contenu des attributs des classes dcat : CatalogRecord soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à ces mêmes éléments.
+Si une classe dcat : CatalogRecord se rapporte à une classe quelconque qui n&#39;est pas mise en correspondance avec une fiche [ISO 19139](#ISO19139), alors ces spécifications prévoient que le contenu des attributs des classes dcat : CatalogRecord soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à ces mêmes éléments.
 
-Si une classe dcat : CatalogRecord se rapporte à une classe quelconque qui est mise en correspondance avec une fiche [ISO 19139], alors ces spécifications prévoient que le contenu des attributs provienne des éléments de la fiche [ISO 19139] référencés dans la colonne XPATH Source.
+Si une classe dcat : CatalogRecord se rapporte à une classe quelconque qui est mise en correspondance avec une fiche [ISO 19139](#ISO19139), alors ces spécifications prévoient que le contenu des attributs provienne des éléments de la fiche [ISO 19139](#ISO19139) référencés dans la colonne XPATH Source.
 
-Certains attributs ne sont pas mis en correspondance avec les élément [ISO 19115]. En pareil cas, ces spécifications prévoient des sources alternatives. En l&#39;espèce, les règles relatives aux attributs suivants sont d&#39;application :
+Certains attributs ne sont pas mis en correspondance avec les élément [ISO 19115](#ISO19115). En pareil cas, ces spécifications prévoient des sources alternatives. En l&#39;espèce, les règles relatives aux attributs suivants sont d&#39;application :
 
 a) Le contenu de l&#39;attribut foaf :primaryTopic doit être généré _a posteriori¸_ dès que toutes les classes ont été instanciées, de manière à toutes les référencer.
 
@@ -335,12 +335,12 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-6"></a>
 ##### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19115] relative aux adresses postales peut être converti en instances de la classe locn : Address. En pareil cas, ces spécifications prévoient que chaque attribut de la classe locn :Address soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 9.
+Seul le contenu des instances de la classe [ISO 19115](#ISO19115) relative aux adresses postales peut être converti en instances de la classe locn : Address. En pareil cas, ces spécifications prévoient que chaque attribut de la classe locn :Address soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 9.
 
 <a id="instanciation-sans--l-ment--inspire-6"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe locn : Address n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 9.
+Si l&#39;instance de la classe locn : Address n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 9.
 
 ### H. Classe skos: Concept
 
@@ -355,18 +355,18 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-7"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relatives à des mots-clés issus de thésaurus et dûment identifiées par une URI peut être directement converti en instances de la classe skos : Concept.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relatives à des mots-clés issus de thésaurus et dûment identifiées par une URI peut être directement converti en instances de la classe skos : Concept.
 
-En pareil cas, ces spécifications prévoient que chaque attribut de la classe skos :Concept soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 10.
+En pareil cas, ces spécifications prévoient que chaque attribut de la classe skos :Concept soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 10.
 
-Le contenu des instances des classes [ISO 19139] relatives aux langues, aux thèmes [ISO 19115], au type de représentation spatiale, à la résolution spatiale des ressources matricielles et au type de service peut également être converti en instances de la classe skos:Concept.
+Le contenu des instances des classes [ISO 19139](#ISO19139) relatives aux langues, aux thèmes [ISO 19115](#ISO19115), au type de représentation spatiale, à la résolution spatiale des ressources matricielles et au type de service peut également être converti en instances de la classe skos:Concept.
 
-En pareil cas, ces spécifications prévoient que chaque attribut de la classe skos :Concept soit pourvu sur base de concepts issus de thésaurus SKOS sémantiquement identiques aux éléments [ISO 19139] considérés. L&#39;annexe II propose pour chaque valeur de ces éléments [ISO 19139], un concept skos identique.
+En pareil cas, ces spécifications prévoient que chaque attribut de la classe skos :Concept soit pourvu sur base de concepts issus de thésaurus SKOS sémantiquement identiques aux éléments [ISO 19139](#ISO19139) considérés. L&#39;annexe II propose pour chaque valeur de ces éléments [ISO 19139](#ISO19139), un concept skos identique.
 
 <a id="instanciation-sans--l-ment--inspire-7"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe skos :Concept n&#39;est mise en correspondance avec un élément [ISO 19139], alors ces spécifications prévoient que le contenu des attributs soit pourvu par des concepts issus de thésaurus SKOS. L&#39;annexe II propose, pour chaque attribut où peut s&#39;instancier la classe skos :Concept, une liste de thésaurus obligatoires, recommandés ou optionnels.
+Si l&#39;instance de la classe skos :Concept n&#39;est mise en correspondance avec un élément [ISO 19139](#ISO19139), alors ces spécifications prévoient que le contenu des attributs soit pourvu par des concepts issus de thésaurus SKOS. L&#39;annexe II propose, pour chaque attribut où peut s&#39;instancier la classe skos :Concept, une liste de thésaurus obligatoires, recommandés ou optionnels.
 
 ### I. Classe dct: PeriodOfTime
 
@@ -381,12 +381,12 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-8"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative aux séquences temporelles peut être converti en instances de la classe dct : PeriodOfTime. En pareil cas, ces spécifications prévoient que chaque attribut de la classe dct :PeriodOfTime soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 11.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative aux séquences temporelles peut être converti en instances de la classe dct : PeriodOfTime. En pareil cas, ces spécifications prévoient que chaque attribut de la classe dct :PeriodOfTime soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 11.
 
 <a id="instanciation-sans--l-ment--inspire-8"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dct : PeriodOfTime n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une séquence temporelle, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 11.
+Si l&#39;instance de la classe dct : PeriodOfTime n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une séquence temporelle, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 11.
 
 ### J. Classe dqv: QualityMeasurement
 
@@ -403,12 +403,12 @@ Les attributs propres aux instances relatives aux ressources vectorielles sont s
 <a id="instanciation-à-partir-d-éléments-inspire-9"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative à la résolution spatiale peut être converti en instances de la classe dqv : QualityMeasurement. En pareil cas, ces spécifications prévoient que chaque attribut soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau en annexe.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative à la résolution spatiale peut être converti en instances de la classe dqv : QualityMeasurement. En pareil cas, ces spécifications prévoient que chaque attribut soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau en annexe.
 
 <a id="instanciation-sans--l-ment--inspire-9"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dqv : QualityMeasurement n&#39;est mise en correspondance avec un élément [ISO 19139] relatif à la résolution spatiale, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau en annexe.
+Si l&#39;instance de la classe dqv : QualityMeasurement n&#39;est mise en correspondance avec un élément [ISO 19139](#ISO19139) relatif à la résolution spatiale, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau en annexe.
 
 ### K. Classe dct: Location
 
@@ -431,12 +431,12 @@ En l&#39;absence de standards réellement communs, les spécifications applicabl
 <a id="instanciation-à-partir-d-éléments-inspire-10"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative à la résolution spatiale peut être converti en instances de la classe dct :Location. En pareil cas, ces spécifications prévoient que chaque attribut soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau en annexe.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative à la résolution spatiale peut être converti en instances de la classe dct :Location. En pareil cas, ces spécifications prévoient que chaque attribut soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau en annexe.
 
 <a id="instanciation-sans--l-ment--inspire-10"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe dct :Location n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 14.
+Si l&#39;instance de la classe dct :Location n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 14.
 
 ### L. Classe skos: ConceptScheme
 
@@ -451,7 +451,7 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-11"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Aucune classe [ISO 19115] ne peut être convertie en une instance de la classe skos :ConceptScheme.
+Aucune classe [ISO 19115](#ISO19115) ne peut être convertie en une instance de la classe skos :ConceptScheme.
 
 <a id="instanciation-sans--l-ment--inspire-11"></a>
 #### Instanciation sans élément [INSPIRE]
@@ -471,14 +471,14 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-12"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative aux organismes peut être converti en instances de la classe vcard :Organization. En pareil cas, ces spécifications prévoient que chaque attribut de la classe vcard : Organization soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 16.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative aux organismes peut être converti en instances de la classe vcard :Organization. En pareil cas, ces spécifications prévoient que chaque attribut de la classe vcard : Organization soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 16.
 
 Ces spécifications prévoient également que les attributs dont le domaine correspond à une classe soient pourvus au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
 <a id="instanciation-sans--l-ment--inspire-12"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe vcard :Organization n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau en annexe.
+Si l&#39;instance de la classe vcard :Organization n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau en annexe.
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit pourvu au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
@@ -495,12 +495,12 @@ Le présent profil prévoit des spécifications indépendantes de l&#39;attribut
 <a id="instanciation-à-partir-d-éléments-inspire-13"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
 
-Seul le contenu des instances de la classe [ISO 19139] relative aux adresses postales peut être converti en instances de la classe vcard : Address. En pareil cas, ces spécifications prévoient que chaque attribut de la classe vcard :Address soit pourvu à partir de l&#39;élément [ISO 19139] qui lui est associé dans le tableau 17.
+Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative aux adresses postales peut être converti en instances de la classe vcard : Address. En pareil cas, ces spécifications prévoient que chaque attribut de la classe vcard :Address soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 17.
 
 <a id="instanciation-sans--l-ment--inspire-13"></a>
 #### Instanciation sans élément [INSPIRE]
 
-Si l&#39;instance de la classe vcard : Address n&#39;est mise en correspondance avec un instance de la classe [ISO 19139] relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral] applicables à l&#39;élément [ISO 19139] qui lui est associé dans le tableau 17.
+Si l&#39;instance de la classe vcard : Address n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 17.
 
 <a id="normes-r-f-renc-es"></a>
 ## Normes référencées
