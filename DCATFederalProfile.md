@@ -578,9 +578,9 @@ Instanciation de dcat :Catalog dans l’élément racine :
 |  dct:identifier                                                                           | identifiant                            | Identifiant alphanumérique unique du catalogue                                                      | M        | 1           | unilingue                                                                          | Pas de XPATH :  sérialisation X ML ?                                                                                                                            |
 | dcat:theme                                                                                | mot-clé iss’ d'un vocabulaire contrôlé | Mot clé iss’ d'un thésaurus décrivant le jeu de données                                             | O        | 0-n         | skos:Concept                                                                      | //\*/ gmd:identificationInfo/\*/ gmd:descriptiveKeywords/ gmd:MD\_Keywords\[ gmd:thesaurusName/ gmd:CI\_Citation/ gmd:title/\*={}\]/ gmd:keyword/\*              |
 
-**Tableau  1 : classe dcat :Catalog instanciée dans l&#39;élément racine**
+**Tableau  1 : classe dcat:Catalog instanciée dans l&#39;élément racine**
 
-Instanciation de dcat :Catalog dans une autre instance de dcat :Catalog :
+Instanciation de dcat:Catalog dans tout autre attribut
 
 | URI                | Nom                                    | Description                                                                                         | Exigence | Cardinalité | Domaine                                                                           | Source                                                                                                                                                                   |
 | ------------------ | -------------------------------------- | --------------------------------------------------------------------------------------------------- | -------- | ----------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -603,12 +603,12 @@ Instanciation de dcat :Catalog dans une autre instance de dcat :Catalog :
 | dct:identifier     | identifiant                            | Identifiant alphanumérique unique du catalogue                                                      | M        | 1           | unilingue                                                                         | Pas de XPATH :  sérialisation XML ?                                                                                                                                      |
 | dcat:theme         | mot-clé issu d'un vocabulaire contrôlé | Mot clé issu d'un thésaurus décrivant le jeu de données                                             | W        | 0           | skos:Concept                                                                      |                                                                                                                                                                          |
 
-**Tableau 2 : classe dcat :Catalog instanciée dans une autre instance de la classe dcat :Catalog**
+**Tableau 2 : Classe dcat:Catalog instanciée dans tout autre attribut**
 
 <a id="b-dcat--dataset"></a>
 ### B. dcat :Dataset
 
-Instanciation de dcat :Dataset dans une instance de dcat :Catalog :
+Instanciation de dcat :Dataset dans l'attribut dcat:Dataset
 | URI                            | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                 | Source                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                      | titre                                   | Titre du jeu de données considéré                                                                      | M        | 1           | multilingue             | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*  (titre saisi conformément aux spécifications du profil fédéral)                                                                                                                                                               
@@ -648,9 +648,9 @@ Instanciation de dcat :Dataset dans une instance de dcat :Catalog :
 | dct:license                    | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument     | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | adms:representationTechnique   | type de jeu de données                  | Informations relatives à la représentation spatiale du jeu de données                                  | R        | 1           | skos:Concept            | //\*/gmd:identificationInfo/\*/gmd:spatialRepresentationType                                                                                                                                                                                                                                                              |
 
-**Tableau 3 : classe dcat :Dataset instanciée dans une instance de la classe dcat :Catalog**
+**Tableau 3 : Classe dcat :Dataset instanciée dans l'attribut dcat:Dataset**
 
-Instanciation de dcat :Dataset dans une autre instance toute autre classe que dcat :Catalog :
+Instanciation de dcat :Dataset dans tout autre attribut
 | URI                            | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                   |
 | ------------------------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                      | titre                                   | Titre du jeu de données considéré                                                                      | M        | 1           | multilingue                                                                                    | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*                                                                                                                                                                                |
@@ -690,12 +690,12 @@ Instanciation de dcat :Dataset dans une autre instance toute autre classe que dc
 | dct:license                    | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | W        | 1           | dct:LicenseDocument                                                                            |                                                                                                                                                                                                                                                          |
 | adms:representationTechnique   | type de jeu de données                  | Informations relatives à la représentation spatiale du jeu de données                                  | W        | 0           | [skos:Concept](http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType)        |                                                                                                                                                                                                                                                          |
 
-**Tableau 4 : classe dcat :Dataset instanciée dans une instance toute autre classe que dcat :Catalog**
+**Tableau 4 : classe dcat :Dataset instanciée dans tout autre attribut**
 
 <a id="c-dcat--dataservice"></a>
 ### C. dcat :DataService
 
-Instanciation de dcat :Dataservice dans une instance de dcat :Catalog :
+Instanciation de dcat:Dataservice dans l'attribut dcat:service
 | URI                           | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                     | titre                                   | Titre du service renseigné                                                                             | M        | 1           | multilingue                                                                                    | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*                                                                                                                                                                                                                                                 |
@@ -722,9 +722,9 @@ Instanciation de dcat :Dataservice dans une instance de dcat :Catalog :
 | dct:license                   | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument                                                                            | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | dct:conformsTo                | système de projection géographique      | Informations relatives aux systèmes de référence spatiaux ou temporels                                 | R        | 0-n         | [codedValue](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue)                     | //\*/gmd:dataQualityInfo/gmd:DQ\_DataQuality/gmd:report/gmd:DQ\_DomainConsistency/gmd:result/gmd:DQ\_ConformanceResult/gmd:specification/gmd:CI\_Citation                                                                                                                                                               |
 
-**Tableau 5 : classe dcat :DataService instanciée dans une instance de la classe dcat :Catalog**
+**Tableau 5 : classe dcat :DataService instanciée l'attribut dcat:service**
 
-Instanciation de dcat :DataService dans une autre instance toute autre classe que dcat :Catalog :
+Instanciation de dcat:Dataservice dans tout autre attribut
 | URI                           | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                     | titre                                   | Titre du service renseigné                                                                             | M        | 1           | multilingue                                                                                    | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*                                                                                                                                                                                                                                                 |
@@ -751,12 +751,12 @@ Instanciation de dcat :DataService dans une autre instance toute autre classe qu
 | dct:license                   | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument                                                                            | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | dct:conformsTo                | système de projection géographique      | Informations relatives aux systèmes de référence spatiaux ou temporels                                 | R        | 0-n         | [codedValue](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue)                     | //\*/gmd:dataQualityInfo/gmd:DQ\_DataQuality/gmd:report/gmd:DQ\_DomainConsistency/gmd:result/gmd:DQ\_ConformanceResult/gmd:specification/gmd:CI\_Citation                                                                                                                                                                 |
 
-**Tableau 6 : classe dcat :DataService instanciée dans une instance de toute autre classe que dcat :Catalog**
+**Tableau 6 : classe dcat :DataService instanciée dans tout autre attribut**
 
 <a id="d-dcat--distribution"></a>
 ### D. dcat :Distribution
 
-Toute instanciation de dcat :Distribution :
+Toute instanciation de dcat :Distribution
 | URI                  | Nom                                | Description                                                                            | Exigence | Cardinalité | Domaine                                                                              | Source                                    |
 | -------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------ | ----------------------------------------- |
 | dct :title           | titre                              | Titre de la distribution concernée                                                     | O        | 0-1         | multilingue                                                                          | //atom :feed/atom :title                  |
@@ -773,12 +773,12 @@ Toute instanciation de dcat :Distribution :
 | dct :temporal        | couverture temporelle              | Informations relatives à l’intervalle temporelle couvert par la distribution concernée | R        | 0-1         | dct:PeriodOfTime                                                                     | //atom:feed/atom:entry/atom:link/@time    |
 | dct:type             | type de distribution               | Lien vers un type de distribution                                                      | O        | 0-n         | skos:Concept                                                                         |                                           |
 
-**Tableau 7 : classe dcat :Distribution instanciée dans une instance de la classe dcat :Dataset**
+**Tableau 7 : classe dcat :Distribution instanciée dans tout attribut**
 
 <a id="e-foaf--organization"></a>
 ### E. foaf :Organization
 
-Instanciation de foaf :Organization dans une instance de toute classe :
+Toute Instanciation de foaf :Organization
 | URI                    | Nom             | Description                                               | Exigence | Cardinalité | Domaine                                             | Source                                                                                  |
 | ---------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | --------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | foaf:name              | nom             | Nom de l'organisation                                     | M        | 1-n         | Multilingue                                         | ./gmd:organisationName                                                                  |
@@ -787,12 +787,12 @@ Instanciation de foaf :Organization dans une instance de toute classe :
 | foaf:workplaceHomepage | Site web        | Site web de l’organisation                                | R        | 0-1         | Unilingue                                           | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | locn:address           | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | locn:Address                                        | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
-**Tableau 9 : classe foaf :Organization instanciée dans une instance de toute classe**
+**Tableau 9 : classe foaf :Organization instanciée dans tout attribut**
 
 <a id="f-dcat--catalogrecord"></a>
 ### F. dcat :CatalogRecord
 
-Instanciation de dcat :CatalogRecord dans une instance de dcat :Catalog :
+Instanciation de dcat :CatalogRecord dans tout attribut
 | URI               | Nom                                      | Description                                                                            | Exigence | Cardinalité | Domaine                                        | Source                                                                                                                                                                    |
 | ----------------- | ---------------------------------------- | -------------------------------------------------------------------------------------- | -------- | ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | foaf:primaryTopic | instance à laquelle la fiche se rapporte | Information relative au jeu de données, service ou catalogue                           | M        | 1           | dcat:Dataset | dcat:Dataservice | dcat:Catalog | génération a posteriori en intégrant tous les ID de toutes instanciations primaires (i.e. les instances qui ne correspondent à la valeur d'un attribut de la même classe) |
@@ -801,12 +801,12 @@ Instanciation de dcat :CatalogRecord dans une instance de dcat :Catalog :
 | dcat:contactPoint | Point de contact                         | Informations relatives aux modalités de prise de contact à propos du service           | M        | 1           | vcard:Organization                             | //\*/gmd:contact/gmd:CI\_ResponsibleParty                                                                                                                                 |
 | dct:identifier    | identifiant                              | Identifiant alphanumérique unique du catalogrecord concerné                            | M        | 1           | unilingue                                      | //\*/gmd:fileIdentifier                                                                                                                                                   |
 
-**Tableau 10 : classe dcat :CatalogRecord instanciée dans une instance de la classe dcat :Catalog**
+**Tableau 10 : classe dcat :CatalogRecord instanciée dans tout attribut**
 
 <a id="g-locn--address"></a>
 ### G. locn :Address
 
-Instanciation de locn :Address dans une instance de toute classe :
+Instanciation de locn :Address dans tout attribut
 | URI               | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
 | ----------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
 | locn:thoroughfare | Adresse postale | Rue et numéro de police  | M        | 1           | multilingue | .  /gmd:deliveryPoint |
@@ -814,24 +814,24 @@ Instanciation de locn :Address dans une instance de toute classe :
 | locn:postCode     | Code postal     | Code postal de l’adresse | M        | 1           | unilingue   | ./gmd:postalCode      |
 | locn:adminUnitL1  | Pays            | Pays                     | M        | 1           | multilingue | ./gmd:country         |
 
-**Tableau 11 : classe locn :Address instanciée dans une instance de toute classe**
+**Tableau 11 : classe locn :Address instanciée dans tout attribut**
 
 <a id="h-skos--concept"></a>
 ### H. skos :Concept
 
-| Instanciation de skos :Concept dans une instance de toute classe |
+| Instanciation de skos :Concept dans dans tout attribut |
 | URI            | Nom                 | Description                        | Exigence | Cardinalité | Domaine     | Source                                           |
 | -------------- | ------------------- | ---------------------------------- | -------- | ----------- | ----------- | ------------------------------------------------ |
 | skos:prefLabel | Nom du concept      | Nom du concept                     | M        | 1           | multilingue | ./  gmd:keyword                                  |
 | rdf:type       | Type de concept     | Type de concept                    | O        | 0-1         | unilingue   | néant                                            |
 | skos:inScheme  | Thésaurus d’origine | Thésaurus dont est issu le concept | R        | 0-1         | URL         | .  /gmd:thesaurusName/gmd:CI\_Citation/gmd:title |
 
-**Tableau 12 : classe skos:Concept instanciée une instance de toute classe**
+**Tableau 12 : classe skos:Concept instanciée tout attribut**
 
 <a id="i-dct--periodoftime"></a>
 ### I. dct :periodOfTime
 
-Instanciation de dct :PeriodOfTime dans une instance de toute classe :
+Instanciation de dct :PeriodOfTime ddans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
 | --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ----------- | ------ |
 | locn:geometry   | géométrie                               | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
@@ -839,12 +839,12 @@ Instanciation de dct :PeriodOfTime dans une instance de toute classe :
 | Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
 | dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
 
-**Tableau 13 : classe dct:PeriodOfTime instanciée une instance de toute classe**
+**Tableau 13 : classe dct:PeriodOfTime instanciée dans tout attribut**
 
 <a id="j-dqv--qualitymeasurement"></a>
 ### J. dqv : QualityMeasurement
 
-Instanciation de dqv : QualityMeasurement – ressource vectorielle :
+Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressource vectorielle
 | URI                              | Nom                                         | Description                                 | Exigence | Cardinalité | Domaine      | Source                                                                                                 |
 | -------------------------------- | ------------------------------------------- | ------------------------------------------- | -------- | ----------- | ------------ | ------------------------------------------------------------------------------------------------------ |
 | dqv:isMeasurementOf              | Grandeur scalaire mesurée                   | Grandeur scalaire mesurée                   | O        | 0-1         | multilingue  | Valeur hardcodée en fonction du type de jeu de données                                                 |
@@ -854,7 +854,7 @@ Instanciation de dqv : QualityMeasurement – ressource vectorielle :
 
 **Tableau 14 : classe dqv:QualityMeasurement se rapportant à la description d&#39;une ressource vectorielle**
 
-Instanciation de dqv : QualityMeasurement – ressource matricielle :
+Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressource matricielle
 | dqv:isMeasurementOf              | Grandeur scalaire mesurée                   | Grandeur scalaire mesurée                   | O | 0-1 | multilingue  | Valeur hardcodée en fonction du type de jeu de données                                                 |
 | -------------------------------- | ------------------------------------------- | ------------------------------------------- | - | --- | ------------ | ------------------------------------------------------------------------------------------------------ |
 | sdmx-attribut:unitMeasure        | Unité de mesure des grandeurs scalaires     | Unité de mesure des grandeurs scalaires     | R | 1   | skos:Concept | ./gmd :MD\_Resolution/gmd:distance/gco:Distance/@uom                                                   |
@@ -866,7 +866,7 @@ Instanciation de dqv : QualityMeasurement – ressource matricielle :
 <a id="k-dct--location"></a>
 ### K. dct :Location
 
-Instanciation de dct :Location dans une instance de toute classe :
+Instanciation de dct :Location dans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
 | --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ----------- | ------ |
 | locn:geometry   | géométrie                               | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
@@ -876,22 +876,26 @@ géographique | Coordonnées de la géométrie de la ressource | M        | 1   
 | Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
 | dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
 
-**Tableau 15 : classe dct :Location instanciée dans une instance de toute classe**
+**Tableau 15 : classe dct :Location instanciée dans tout attribut**
 
 <a id="l-skos--conceptscheme"></a>
 ### L. skos :ConceptScheme
 
-Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
+Instanciation de skos :ConceptScheme dans tout attribut
 | URI            | Nom                          | Description                  | Exigence | Cardinalité | Domaine     | Source                                                                                                                                                                                                       |
 | -------------- | ---------------------------- | ---------------------------- | -------- | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | dct:title      | Titre du thésaurus           | Titre du thésaurus           | M        | 1           | multilingue | Génération sur base des URL fournies dans les propriétés skos:inScheme des instances de la classe skos :Concept (il faut donc la propriété inScheme et que celle-ci soit pourvue d’une URL machine-readable) |
 | dct:issued     | Date de première publication | Date de première publication | O        | 0-1         | date        |  Génération sur base des URL fournies dans les propriétés skos:inScheme des instances de la classe skos :Concept (il faut donc la propriété inScheme et que celle-ci soit pourvue d’une URL machine-readable) |
 | Dct:identifier | Identifiant du thésaurus     | Identifiant du thésaurus     | M        | 1           | URL         | Génération sur base des URL fournies dans les propriétés skos:inScheme des instances de la classe skos :Concept (il faut donc la propriété inScheme et que celle-ci soit pourvue d’une URL machine-readable) |
 
-**Tableau 16 : classe skos:ConceptScheme instanciée dans une instance de dcat :Catalog**
+**Tableau 16 : classe skos:ConceptScheme instanciée dans tout attribut**
+Instanciation de skos :ConceptScheme dans tout attribut
+
 
 <a id="m-vcard--organization"></a>
 ### M. vcard :Organization
+
+Instanciation de vcard:Organization dans tout attribut
 
 | URI                     | Nom             | Description                                               | Exigence | Cardinalité | Domaine       | Source                                                                                  |
 | ----------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | ------------- | --------------------------------------------------------------------------------------- |
@@ -900,10 +904,13 @@ Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 | vcard:hasURL            | Site web        | Site web de l’organisation                                | R        | 0-1         | Unilingue     | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | vcard:hasAddress        | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | vcard:Address | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
-**Tableau 9 : classe vcard :Organization instanciée une instance de toute classe**
+**Tableau 9 : classe vcard :Organization instanciée dans tout attribut**
 
 <a id="n-vcard--address"></a>
 ### N. vcard :Address
+
+Instanciation de vcard:Address dans tout attribut
+
 
 | URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
 | -------------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
@@ -912,7 +919,7 @@ Instanciation de skos :ConceptScheme dans une instance de dcat :Catalog :
 | vcard:postal-code    | Code postal     | Code postal de l’adresse | M        | 1           | unilingue   | ./gmd:postalCode      |
 | vcard:country-name   | Pays            | Pays                     | M        | 1           | multilingue | ./gmd:country         |
 
-**Tableau 11 : classe vcard:Address instanciée une instance de vcard :Organization**
+**Tableau 11 : classe vcard:Address instanciée dans tout attribut**
 
 # Annexe II
 
