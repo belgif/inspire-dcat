@@ -23,7 +23,7 @@
       - [Profil de la classe](#profil-de-la-classe-4)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-5)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-5)
-    + [F. Classe catalogRecord](#f-classe-catalogrecord)
+    + [F. Classe dcat:catalogRecord](#f-classe-catalogrecord)
       - [Remarques concernant les attributs de la classe](#remarques-concernant-les-attributs-de-la-classe)
       - [Remarques concernant le contenu de la classe](#remarques-concernant-le-contenu-de-la-classe)
     + [G. Classe locn:Address](#g-classe-locn-address)
