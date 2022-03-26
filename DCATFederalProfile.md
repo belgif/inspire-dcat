@@ -441,7 +441,7 @@ Si l&#39;instance de la classe dct :Location n&#39;est mise en correspondance av
 
 ### L. Classe skos: ConceptScheme
 
-La classe skos:ConceptSchemecorrespond à la description d&#39;un thésaurus, c&#39;est-à-dire un ensemble structurés de concepts mis en relation.
+La classe skos:ConceptSchemecorrespond à la description d&#39;un thésaurus, c&#39;est-à-dire un ensemble structuré de concepts mis en relation.
 
 Conformément à ces spécifications, la classe peut s&#39;instancier dans l&#39;attribut dcat:themeTaxonomy.
 
