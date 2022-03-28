@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dcat:Catalog xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gn-fn-metadata="http://geonetwork-opensource.org/xsl/functions/metadata" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:spdx="http://spdx.org/rdf/terms#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sr="http://www.w3.org/2005/sparql-results#" xmlns:locn="http://www.w3.org/ns/locn#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:dct="http://purl.org/dc/terms/" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:fn-rdf="http://geonetwork-opensource.org/xsl/functions/rdf" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:schema="http://schema.org/" xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+      <dct:title xml:lang="nl">Operationele en statistische cijfers - FOD Financiën</dct:title>
+      <dct:title xml:lang="fr">Chiffres opérationnels et statistiques – SPF Finances</dct:title>
+      <dct:identifier>https://opendata.fin.belgium.be/30a103d8-9e1c-4901-a12e-4e0c40bae746</dct:identifier>
+      <dct:description xml:lang="nl">Deze catalogus bevat alle operationele en statistische cijferreeksen van de FOD Financiën. De geproduceerde statistieken hebben betrekking op alle activiteiten van de FOD Financiën en van haar Algemene Administraties. Deze cijferreeksen worden jaarlijks, trimestrieel of maandelijks geüpdatet. Deze catalogus bevat onder meer cijferreeksen over de ontvangsten van de Belgische federale overheid, het budget, de aangiften voor elk type van inkomstenbelasting, fiscale controlegegevens, compliance en invordering, fiscale geschillen, … Op deze manier wil de FOD Financiën open en transparant communiceren over haar werking en haar kernopdrachten.</dct:description>
+      <dct:description xml:lang="fr">Ce catalogue reprend l’ensemble des séries temporelles du SPF Finances. Les statistiques produites couvrent l'ensemble des activités du SPF Finances et de ses Administrations Générales. Ces séries temporelles sont mises à jour annuellement, trimestriellement ou mensuellement. Ce catalogue comprend des séries temporelles relatives aux recettes de l’Autorité fédérale,  au budget, aux déclarations pour chaque type d’impôt sur les revenus, aux données des contrôles fiscaux, à la compliance et au recouvrement,  aux litiges fiscaux, etc. En agissant de la sorte, le SPF Finances entend communiquer de manière transparente et ouverte à propos de son travail et des missions-clés.</dct:description>
+      <dct:publisher><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <foaf:name xml:lang="nl">FOD Financien</foaf:name>
+            <foaf:name xml:lang="fr">SPF Finances</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:workplaceHomepage rdf:resource="https://financien.belgium.be"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+                <locn:thoroughfare xml:lang="nl">Koning Albert II Laan 33</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard du Roi Albert II, 33</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Schaarbeek</locn:postName>
+                <locn:postName xml:lang="fr">Schaerbeek</locn:postName>
+                <locn:postCode>1030</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:publisher>
+      <dcat:contactPoint><vcard:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <vcard:organization-name xml:lang="nl">FOD Financien</vcard:organization-name>
+            <vcard:organization-name xml:lang="fr">SPF Finances</vcard:organization-name>
+            <vcard:hasURL rdf:resource="https://financien.belgium.be"/>
+            <vcard:hasAddress><vcard:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+    <vcard:street-address xml:lang="nl">Koning Albert II Laan 33</vcard:street-address>
+    <vcard:street-address xml:lang="fr">Boulevard du Roi Albert II, 33</vcard:street-address>
+    <vcard:locality xml:lang="nl">Schaarbeek</vcard:locality>
+    <vcard:locality xml:lang="fr">Schaerbeek</vcard:locality>
+    <vcard:postal-code>1030</vcard:postal-code>
+    <vcard:country-name xml:lang="nl">België</vcard:country-name>
+<vcard:country-name xml:lang="fr">Belgique</vcard:country-name>
+</vcard:Address></vcard:hasAddress>
+</vcard:Organization></dcat:contactPoint>
+      <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/nl"> 
+    <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Néerlandais</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+      <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/fr"> 
+    <skos:prefLabel xml:lang="nl">Frans</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Français</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+      <dct:issued>2022-04-01</dct:issued>
+      <dct:spatial>
+          <dct:Location>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</locn:geometry>
+            <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</dcat:bbox>
+            <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+          </dct:Location>
+      </dct:spatial>
+      <dct:isPartOf><dcat:Catalog xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+      <dct:title xml:lang="nl">Catalogue Open data national</dct:title>
+      <dct:title xml:lang="fr">Nationale Open data catalogus</dct:title>
+      <dct:identifier>TBDMetBart</dct:identifier>
+      <dct:publisher><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0671.516.647">
+            <foaf:name xml:lang="nl">FOD Beleid &amp; Ondersteuning</foaf:name>
+            <foaf:name xml:lang="fr">SPF Stratégie &amp; Appui</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:mbox rdf:resource="opendata@belgium.be"/>
+            <foaf:workplaceHomepage rdf:resource="https://bosa.belgium.be"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.210591">
+                <locn:thoroughfare xml:lang="nl">Simon Bolivarlaan 30</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard Simon Bolivar, 30</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Brussel</locn:postName>
+                <locn:postName xml:lang="fr">Bruxelles</locn:postName>
+                <locn:postCode>1000</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:publisher>
+      <dcat:contactPoint><vcard:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0671.516.647">
+            <vcard:organization-name xml:lang="nl">FOD Beleid &amp; Ondersteuning</vcard:organization-name>
+            <vcard:organization-name xml:lang="fr">SPF Stratégie &amp; Appui</vcard:organization-name>
+            <vcard:hasEmail rdf:resource="opendata@belgium.be"/>
+            <vcard:hasURL rdf:resource="https://bosa.belgium.be"/>
+            <vcard:hasAddress><vcard:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.210591">
+    <vcard:street-address xml:lang="nl">Simon Bolivarlaan 30</vcard:street-address>
+    <vcard:street-address xml:lang="fr">Boulevard Simon Bolivar, 30</vcard:street-address>
+    <vcard:locality xml:lang="nl">Brussel</vcard:locality>
+    <vcard:locality xml:lang="fr">Bruxelles</vcard:locality>
+    <vcard:postal-code>1000</vcard:postal-code>
+    <vcard:country-name xml:lang="nl">België</vcard:country-name>
+<vcard:country-name xml:lang="fr">Belgique</vcard:country-name>
+</vcard:Address></vcard:hasAddress>
+</vcard:Organization></dcat:contactPoint>
+      <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/nl"> 
+    <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Néerlandais</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+      <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/fr"> 
+    <skos:prefLabel xml:lang="nl">Frans</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Français</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+      <dct:spatial>
+          <dct:Location>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</locn:geometry>
+            <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+            <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</dcat:bbox>
+            <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+            <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+          </dct:Location>
+      </dct:spatial>
+      <foaf:homepage rdf:about="https://data.gov.be/en"/>      
+</dcat:Catalog></dct:isPartOf>
+      <dcat:theme><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/data-theme/ECON"> 
+    <skos:prefLabel xml:lang="nl">Economie en financiën</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Économie et finances</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    </skos:Concept></dcat:theme>      
+      <dcat:theme><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/data-theme/GOVE"> 
+    <skos:prefLabel xml:lang="nl">Overheid en publieke sector</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Gouvernement et secteur public</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    </skos:Concept></dcat:theme>      
+      <dcat:distribution><dcat:Distribution xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+    <dcat:accessURL rdf:resource="30a103d8-9e1c-4901-a12e-4e0c40bae746.xml"/>
+    <dcat:downloadURL rdf:resource="https://opendata.fin.belgium.be/download/DCAT///30a103d8-9e1c-4901-a12e-4e0c40bae746.xml"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/rdf+xml"/>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+    </dcat:Distribution></dcat:distribution>     
+      <dcat:dataset><dcat:Dataset xmlns:geodcat="http://data.europa.eu/930/" xmlns:dqv="http://www.w3.org/ns/dqv#" xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+            <dct:identifier>TEST1</dct:identifier>
+            <dct:title xml:lang="nl"> Aantal bezwaarschriften tegen de onroerende voorheffing als gevolg van de kennisgeving van het kadastraal inkomen</dct:title>
+            <dct:title xml:lang="fr"> Nombre de réclamations contre le précompte immobilier suite à la notification du revenu cadastral</dct:title>
+            <dct:description xml:lang="nl">Herberekend op basis van de laatste beschikbare gegevens</dct:description>
+            <dct:description xml:lang="fr">recalculé sur la base des dernières données disponibles recalculé sur la base des dernières données disponibles               </dct:description>
+            <dct:creator><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <foaf:name xml:lang="nl">SPF Finances -AGDP</foaf:name>
+            <foaf:name xml:lang="fr">FOD Financiën - AAPD</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:workplaceHomepage rdf:resource="https://financien.belgium.be/nl/over_de_fod/structuur_en_diensten/algemene_administraties/patrimoniumdocumentatie"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+                <locn:thoroughfare xml:lang="nl">Koning Albert II Laan 33</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard du Roi Albert II, 33</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Schaarbeek</locn:postName>
+                <locn:postName xml:lang="fr">Schaerbeek</locn:postName>
+                <locn:postCode>1030</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:creator>
+            <dct:publisher><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <foaf:name xml:lang="nl">FOD Financien</foaf:name>
+            <foaf:name xml:lang="fr">SPF Finances</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:workplaceHomepage rdf:resource="https://financien.belgium.be"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+                <locn:thoroughfare xml:lang="nl">Koning Albert II Laan 33</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard du Roi Albert II, 33</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Schaarbeek</locn:postName>
+                <locn:postName xml:lang="fr">Schaerbeek</locn:postName>
+                <locn:postCode>1030</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:publisher>
+            <dcat:contactPoint><vcard:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <vcard:organization-name xml:lang="nl">FOD Financien</vcard:organization-name>
+            <vcard:organization-name xml:lang="fr">SPF Finances</vcard:organization-name>
+            <vcard:hasURL rdf:resource="https://financien.belgium.be"/>
+            <vcard:hasAddress><vcard:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+    <vcard:street-address xml:lang="nl">Koning Albert II Laan 33</vcard:street-address>
+    <vcard:street-address xml:lang="fr">Boulevard du Roi Albert II, 33</vcard:street-address>
+    <vcard:locality xml:lang="nl">Schaarbeek</vcard:locality>
+    <vcard:locality xml:lang="fr">Schaerbeek</vcard:locality>
+    <vcard:postal-code>1030</vcard:postal-code>
+    <vcard:country-name xml:lang="nl">België</vcard:country-name>
+<vcard:country-name xml:lang="fr">Belgique</vcard:country-name>
+</vcard:Address></vcard:hasAddress>
+</vcard:Organization></dcat:contactPoint>          
+            <dcat:theme><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/data-theme/ECON"> 
+    <skos:prefLabel xml:lang="nl">Economie en financiën</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Économie et finances</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    </skos:Concept></dcat:theme>         
+            <dcat:keyword xml:lang="nl">onroerende voorheffing</dcat:keyword>         
+            <dcat:keyword xml:lang="fr">revenu cadastral</dcat:keyword>         
+            <dcat:keyword xml:lang="nl">kadastraal inkomen</dcat:keyword>         
+            <dcat:keyword xml:lang="fr">précompte immobilier</dcat:keyword>         
+            <dct:spatial>
+              <dct:Location>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</locn:geometry>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</locn:geometry>
+                <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</dcat:bbox>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</dcat:bbox>
+                <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+              </dct:Location>
+            </dct:spatial>
+              <dct:temporal>
+              <dct:PeriodOfTime>
+    <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014</schema:startDate>
+    <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020</schema:endDate>
+ </dct:PeriodOfTime></dct:temporal>
+              <dct:modified>2022-02-08</dct:modified>
+              <dct:issued>2021-07-08</dct:issued>
+              <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/nl"> 
+    <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Néerlandais</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+              <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/fr"> 
+    <skos:prefLabel xml:lang="nl">Frans</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Français</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+              <dct:accrualPeriodicity><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/frequency/ANNUAL"> 
+    <skos:prefLabel xml:lang="nl">jaarlijks</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">annuel</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/frequency"/>
+    </skos:Concept></dct:accrualPeriodicity>                 
+              <dct:accessRights><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"> 
+    <skos:prefLabel xml:lang="nl">Geen beperkingen op openbare toegang</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Pas de restrictions concernant l'accès public</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/access-right"/>
+    </skos:Concept></dct:accessRights>
+              <dcat:distribution><dcat:Distribution xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+    <dcat:accessURL rdf:resource="TEST1.XLSX"/>
+    <dcat:downloadURL rdf:resource="https://opendata.fin.belgium.be/download/DCAT///TEST1.XLSX"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XLSX"/>
+    </dcat:Distribution></dcat:distribution>                  
+         </dcat:Dataset></dcat:dataset>
+      <dcat:dataset><dcat:Dataset xmlns:geodcat="http://data.europa.eu/930/" xmlns:dqv="http://www.w3.org/ns/dqv#" xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+            <dct:identifier>TEST2</dct:identifier>
+            <dct:title xml:lang="nl"> Aantal bezwaarschriften tegen de onroerende voorheffing als gevolg van de kennisgeving van het kadastraal inkomen +++++++++++++</dct:title>
+            <dct:title xml:lang="fr"> Nombre de réclamations contre le précompte immobilier suite à la notification du revenu cadastral +++++++++</dct:title>
+            <dct:description xml:lang="nl">Herberekend op basis van de laatste beschikbare gegevens</dct:description>
+            <dct:description xml:lang="fr">recalculé sur la base des dernières données disponibles lors de l'exercice 2022              </dct:description>
+            <dct:creator><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <foaf:name xml:lang="nl">SPF Finances -AGF</foaf:name>
+            <foaf:name xml:lang="fr">FOD Financiën - AAF</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:workplaceHomepage rdf:resource="https://financien.belgium.be/nl/over_de_fod/structuur_en_diensten/algemene_administraties/patrimoniumdocumentatie"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+                <locn:thoroughfare xml:lang="nl">Koning Albert II Laan 33</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard du Roi Albert II, 33</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Schaarbeek</locn:postName>
+                <locn:postName xml:lang="fr">Schaerbeek</locn:postName>
+                <locn:postCode>1030</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:creator>
+            <dct:publisher><foaf:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <foaf:name xml:lang="nl">FOD Financien</foaf:name>
+            <foaf:name xml:lang="fr">SPF Finances</foaf:name>
+            <dct:type rdf:resource="http://purl.org/adms/publishertype/NationalAuthority/"/>
+            <foaf:workplaceHomepage rdf:resource="https://financien.belgium.be"/>         
+            <locn:address><locn:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+                <locn:thoroughfare xml:lang="nl">Koning Albert II Laan 33</locn:thoroughfare>
+                <locn:thoroughfare xml:lang="fr">Boulevard du Roi Albert II, 33</locn:thoroughfare>
+                <locn:postName xml:lang="nl">Schaarbeek</locn:postName>
+                <locn:postName xml:lang="fr">Schaerbeek</locn:postName>
+                <locn:postCode>1030</locn:postCode>
+                <locn:adminUnitL1 xml:lang="nl">België</locn:adminUnitL1>
+<locn:adminUnitL1 xml:lang="fr">Belgique</locn:adminUnitL1>
+</locn:Address></locn:address>
+ </foaf:Organization></dct:publisher>
+            <dcat:contactPoint><vcard:Organization xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="0308.357.159">
+            <vcard:organization-name xml:lang="nl">FOD Financien</vcard:organization-name>
+            <vcard:organization-name xml:lang="fr">SPF Finances</vcard:organization-name>
+            <vcard:hasURL rdf:resource="https://financien.belgium.be"/>
+            <vcard:hasAddress><vcard:Address xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:resource="BE.BRUSSELS.BRIC.ADM.ADDR.241767">
+    <vcard:street-address xml:lang="nl">Koning Albert II Laan 33</vcard:street-address>
+    <vcard:street-address xml:lang="fr">Boulevard du Roi Albert II, 33</vcard:street-address>
+    <vcard:locality xml:lang="nl">Schaarbeek</vcard:locality>
+    <vcard:locality xml:lang="fr">Schaerbeek</vcard:locality>
+    <vcard:postal-code>1030</vcard:postal-code>
+    <vcard:country-name xml:lang="nl">België</vcard:country-name>
+<vcard:country-name xml:lang="fr">Belgique</vcard:country-name>
+</vcard:Address></vcard:hasAddress>
+</vcard:Organization></dcat:contactPoint>          
+            <dcat:theme><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/data-theme/JUST"> 
+    <skos:prefLabel xml:lang="nl">Justitie, rechtsstelsel en openbare veiligheid</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Justice, système juridique et sécurité publique</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    </skos:Concept></dcat:theme>         
+            <dcat:keyword xml:lang="nl">onroerende voorheffing</dcat:keyword>         
+            <dcat:keyword xml:lang="fr">revenu cadastral</dcat:keyword>         
+            <dcat:keyword xml:lang="nl">kadastraal inkomen</dcat:keyword>         
+            <dcat:keyword xml:lang="fr">précompte immobilier</dcat:keyword>         
+            <dct:spatial>
+              <dct:Location>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</locn:geometry>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</locn:geometry>
+                <locn:geometry rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+                <locn:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</locn:geometry>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))</dcat:bbox>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName="http://www.opengis.net/def/crs/OGC/1.3/CRS84"&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</dcat:bbox>
+                <dcat:bbox rdf:datatype="https://www.iana.org/assignments/media-types/application/vnd.geo+json">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+                <dcat:bbox rdf:datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral">{"type":"Polygon","coordinates":[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}</dcat:bbox>
+              </dct:Location>
+            </dct:spatial>
+              <dct:temporal>
+              <dct:PeriodOfTime>
+    <schema:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015</schema:startDate>
+    <schema:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022</schema:endDate>
+ </dct:PeriodOfTime></dct:temporal>
+              <dct:modified>2022-01-31</dct:modified>
+              <dct:issued>2019-06-30</dct:issued>
+              <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/nl"> 
+    <skos:prefLabel xml:lang="nl">Nederlands</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Néerlandais</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+              <dct:language><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://id.loc.gov/vocabulary/iso639-1/fr"> 
+    <skos:prefLabel xml:lang="nl">Frans</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Français</skos:prefLabel>
+    <rdf:type rdf:resource="dct:LinguisticSystem"/>
+</skos:Concept></dct:language>
+              <dct:accrualPeriodicity><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://publications.europa.eu/resource/authority/frequency/ANNUAL"> 
+    <skos:prefLabel xml:lang="nl">jaarlijks</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">annuel</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/frequency"/>
+    </skos:Concept></dct:accrualPeriodicity>                 
+              <dct:accessRights><skos:Concept xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd" rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"> 
+    <skos:prefLabel xml:lang="nl">Geen beperkingen op openbare toegang</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Pas de restrictions concernant l'accès public</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/access-right"/>
+    </skos:Concept></dct:accessRights>
+              <dcat:distribution><dcat:Distribution xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.openarchives.org/OAI/2.0/rdf.xsd">
+    <dcat:accessURL rdf:resource="TEST2.XSLX"/>
+    <dcat:downloadURL rdf:resource="https://opendata.fin.belgium.be/download/DCAT///TEST2.XSLX"/>
+    <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XLSX"/>
+    </dcat:Distribution></dcat:distribution>                  
+         </dcat:Dataset></dcat:dataset>
+      <foaf:homepage rdf:about="http://rapportannuel.be"/>      
+</dcat:Catalog>
