@@ -771,7 +771,7 @@ Toute instanciation de dcat :Distribution
 | adms :status         | statut                             | Informations relatives à la maturité de la distribution                                | O        | 1           | [skos :Concept](http://purl.org/adms/status/)                                        | pas de XPATH spécifié                     |
 | dct :spatial         | couverture spatiale                | Informations relatives à la région géographique couverte par la distribution concernée | O        | 0-1         | dct :Location                                                                        | //atom:feed/atom:entry/georss:box         |
 | dct :temporal        | couverture temporelle              | Informations relatives à l’intervalle temporelle couvert par la distribution concernée | R        | 0-1         | dct:PeriodOfTime                                                                     | //atom:feed/atom:entry/atom:link/@time    |
-| dct:type             | type de distribution               | Lien vers un type de distribution                                                      | O        | 0-n         | skos:Concept                                                                         |                                           |
+| dct:type             | type de distribution               | Lien vers un type de distribution                                                      | O        | 0-n         | skos:Concept                                                                         | pas de XPATH spécifié                     |
 
 **Tableau 7 : classe dcat :Distribution instanciée dans tout attribut**
 
