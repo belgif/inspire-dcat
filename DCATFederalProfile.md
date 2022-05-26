@@ -870,9 +870,7 @@ Instanciation de dct :Location dans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
 | --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ----------- | ------ |
 | locn:geometry   | géométrie                               | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
-| dcat:bbox       | Rectangle de délimitation
-
-géographique | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
+| dcat:bbox       | Rectangle de délimitation géographique  | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
 | Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
 | dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
 
