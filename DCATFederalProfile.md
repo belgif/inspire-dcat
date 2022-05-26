@@ -925,43 +925,43 @@ Instanciation de vcard:Address dans tout attribut
 
 | classe concernée | attribut concerné | thésaurus proposés | Exigence |
 | --- | --- | --- | --- |
-| catalogue | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | O |
-| catalogue | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
-| catalogue | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
-| catalogue | dct:spatial | [http://publications.europa.eu/resource/authority/place](http://publications.europa.eu/resource/authority/place) | R |
-| dataset | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
-| dataset | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | R |
-| dataset | dcat:theme | [http://inspire.ec.europa.eu/featureconcept](http://inspire.ec.europa.eu/featureconcept) | O |
-| dataset | dcat:theme | [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) | O |
-| dataset | dct:subject | http://inspire.ec.europa.eu/metadata-codelist/TopicCategory | O |
-| dataset | dct:accrualPeriodicity | http://publications.europa.eu/resource/authority/frequency | M |
-| dataset | dct:accrualPeriodicity | http://inspire.ec.europa.eu/metadata-codelist/MaintenanceFrequency | R |
-| dataset | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
-| dataset | dct:accessRights | [http://publications.europa.eu/resource/authority/access-right](http://publications.europa.eu/resource/authority/access-right) | R |
-| dataset | dct:accessRights | [http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess) | R |
-| dataset | dct:license | https://creativecommons.org/licenses/ | R |
-| dataset | adms:representationTechnique | [http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType](http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType) | R |
-| dataservice | dct:accessRights | [http://publications.europa.eu/resource/authority/access-right](http://publications.europa.eu/resource/authority/access-right) | R |
-| dataservice | dct:accessRights | [http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess) | R |
-| dataservice | dct:type | https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType | R |
-| dataservice | dct:type | https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory | R |
-| dataservice | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
-| dataservice | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | R |
-| dataservice | dcat:theme | [http://inspire.ec.europa.eu/featureconcept](http://inspire.ec.europa.eu/featureconcept) | O |
-| dataservice | dcat:theme | [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) | O |
-| dataservice | dct:license | https://creativecommons.org/licenses/ | R |
-| dataservice | dct:conformsTo | http://www.opengis.net/def/crs/EPSG/0/ | M |
+| Catalog | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | O |
+| Catalog | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
+| Catalog | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
+| Catalog | dct:spatial | [http://publications.europa.eu/resource/authority/place](http://publications.europa.eu/resource/authority/place) | R |
+| Dataset | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
+| Dataset | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | R |
+| Dataset | dcat:theme | [http://inspire.ec.europa.eu/featureconcept](http://inspire.ec.europa.eu/featureconcept) | O |
+| Dataset | dcat:theme | [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) | O |
+| Dataset | dct:subject | http://inspire.ec.europa.eu/metadata-codelist/TopicCategory | O |
+| Dataset | dct:accrualPeriodicity | http://publications.europa.eu/resource/authority/frequency | M |
+| Dataset | dct:accrualPeriodicity | http://inspire.ec.europa.eu/metadata-codelist/MaintenanceFrequency | R |
+| Dataset | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
+| Dataset | dct:accessRights | [http://publications.europa.eu/resource/authority/access-right](http://publications.europa.eu/resource/authority/access-right) | R |
+| Dataset | dct:accessRights | [http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess) | R |
+| Dataset | dct:license | https://creativecommons.org/licenses/ | R |
+| Dataset | adms:representationTechnique | [http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType](http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType) | R |
+| DataService | dct:accessRights | [http://publications.europa.eu/resource/authority/access-right](http://publications.europa.eu/resource/authority/access-right) | R |
+| DataService | dct:accessRights | [http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess) | R |
+| DataService | dct:type | https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType | R |
+| DataService | dct:type | https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory | R |
+| DataService | dcat:theme | [http://publications.europa.eu/resource/authority/data-theme](http://publications.europa.eu/resource/authority/data-theme) | M |
+| DataService | dcat:theme | [http://inspire.ec.europa.eu/theme](http://inspire.ec.europa.eu/theme) | R |
+| DataService | dcat:theme | [http://inspire.ec.europa.eu/featureconcept](http://inspire.ec.europa.eu/featureconcept) | O |
+| DataService | dcat:theme | [https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) | O |
+| DataService | dct:license | https://creativecommons.org/licenses/ | R |
+| DataService | dct:conformsTo | http://www.opengis.net/def/crs/EPSG/0/ | M |
 | Distribution | dct:format | http://publications.europa.eu/resource/authority/file-type | R |
 | Distribution | dcat:mediaType | [http://www.iana.org/assignments/media-types](http://www.iana.org/assignments/media-types) | R |
 | Distribution | dct:conformsTo | http://www.opengis.net/def/crs/EPSG/0/ | M |
 | Distribution | adms:status | [http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType](http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType) | R |
 | Distribution | dct:type | http://publications.europa.eu/resource/authority/distribution-type | O |
 | Distribution | dcat:compressFormat | [http://www.iana.org/assignments/media-types](http://www.iana.org/assignments/media-types) | O |
-| foaf:organization | dct:type | http://publications.europa.eu/resource/authority/corporate-body | O |
-| catalogrecord | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
-| qualitymeasurement | sdmx-attribut:unitMeasure | http://www.qudt.org/vocab/unit/ | M |
-| location | dct:identifier | http://publications.europa.eu/resource/authority/country | M |
-| location | dct:identifier | belgif UA + thésuarus du cadastre en devenir | O |
+| foaf:Organization | dct:type | http://publications.europa.eu/resource/authority/corporate-body | O |
+| CatalogRecord | dct:language | [http://publications.europa.eu/resource/authority/language](http://publications.europa.eu/resource/authority/language) | M |
+| QualityMeasurement | sdmx-attribut:unitMeasure | http://www.qudt.org/vocab/unit/ | M |
+| Location | dct:identifier | http://publications.europa.eu/resource/authority/country | M |
+| Location | dct:identifier | belgif UA + thésuarus du cadastre en devenir | O |
 
 **Liste 1: thésaurus**
 
