@@ -829,7 +829,7 @@ Instanciation de locn :Address dans tout attribut
 **Tableau 12 : classe skos:Concept instanciée tout attribut**
 
 <a id="i-dct--periodoftime"></a>
-### I. dct :periodOfTime
+### I. dct :PeriodOfTime
 
 Instanciation de dct :PeriodOfTime ddans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
