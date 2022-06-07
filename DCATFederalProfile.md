@@ -111,7 +111,7 @@ Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de
 Le diagramme suivant présentes les classes ainsi que les attributs propres à [DCAT AP 2 fédéral](#DCATAP2fédéral).
 
 
-![DCATAPfederal](https://user-images.githubusercontent.com/87412262/158567470-10e2c1f1-3229-4746-8083-9685d1e4a3e0.png)
+![DCATAPfederal](https://user-images.githubusercontent.com/87412262/172340154-63fcc973-50f8-4a2e-934d-d1b84056996a.png)
 
 Le point II, ainsi que les tableaux en annexes qui lui sont associés, précise les attributs propres à chaque classe. Il précise en outre les règles applicables au contenu des attributs de chaque classe, ainsi que notamment, l&#39;élément de la fiche [ISO 19139](#ISO19139) à utiliser en cas de conversion. Dans tous les tableaux de l&#39;annexe I, figurent, pour chaque attribut, les éléments suivants :
 
