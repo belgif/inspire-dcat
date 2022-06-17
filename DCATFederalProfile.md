@@ -831,13 +831,11 @@ Instanciation de locn :Address dans tout attribut
 <a id="i-dct--periodoftime"></a>
 ### I. dct :PeriodOfTime
 
-Instanciation de dct :PeriodOfTime ddans tout attribut
+Instanciation de dct :PeriodOfTime dans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
 | --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ----------- | ------ |
-| locn:geometry   | géométrie                               | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
-| dcat:bbox       | Rectangle de délimitation géographique  | Coordonnées de la géométrie de la ressource | M        | 1           | Unilingue   |        |
-| Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
-| dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
+| dcat:startDate  | Date de début                           | Date de début de la période temporelle      | M        | 1           | Unilingue   |   /gmd:EX_TemporalExtent/gmd :extent/gml32:TimePeriod/gml32:beginPosition     |
+| dcat:endDate    | Date de fin                             | Date de fin de la période temporelle        | M        | 1           | Unilingue   | ./gmd:EX_TemporalExtent/gmd :extent/gml32:TimePeriod/gml32:endPosition      |
 
 **Tableau 13 : classe dct:PeriodOfTime instanciée dans tout attribut**
 
