@@ -917,6 +917,20 @@ Instanciation de vcard:Address dans tout attribut
 
 **Tableau 11 : classe vcard:Address instanciée dans tout attribut**
 
+<a id="n-dct-LicenseDocument"></a>
+### N. dct: LicenseDocument
+
+Instanciation de dct: LicenseDocument dans tout attribut
+
+
+| URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
+| -------------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
+| dct:type             | Type de document| Type de document | M        | 1           | URI |  |
+| dct:title            | Titre du document| Titre du document| M        | 1           | multilingue |         |
+| dct:description      | Description du document| Description du document| O        | 0-1           | multilingue  |    |
+
+**Tableau 11 : classe vcard:Address instanciée dans tout attribut**
+
 # Annexe II
 
 | classe concernée | attribut concerné | thésaurus proposés | Exigence |
