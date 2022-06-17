@@ -784,7 +784,7 @@ Toute Instanciation de foaf :Organization
 | foaf:name              | nom             | Nom de l'organisation                                     | M        | 1-n         | Multilingue                                         | ./gmd:organisationName                                                                  |
 | dct:type               | type            | Indique le type d'organisation                            | O        | 0-1         | [skos:Concept](http://purl.org/adms/publishertype/) | pas de XPATH spécifié                                                                   |
 | foaf:mbox              | adresse mail    | adresse mail de l'organisation (en utilisant URI mailto:) | R        | 0-1         | Unilingue                                           | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address/gmd:electronicMailAddress |
-| foaf:workplaceHomepage | Site web        | Site web de l’organisation                                | R        | 0-1         | Unilingue                                           | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
+| foaf:workplaceHomepage | Site web        | Site web de l’organisation                                | R        | 1-4         | rdf:Document                                          | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | locn:address           | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | locn:Address                                        | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
 **Tableau 9 : classe foaf :Organization instanciée dans tout attribut**
@@ -897,7 +897,7 @@ Instanciation de vcard:Organization dans tout attribut
 | ----------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | ------------- | --------------------------------------------------------------------------------------- |
 | vcard:organization-name | nom             | Nom de l'organisation                                     | M        | 1-n         | Multilingue   | ./gmd:organisationName                                                                  |
 | vcard:hasEmail          | adresse mail    | Adresse mail de l'organisation (en utilisant URI mailto:) | R        | 0-1         | Unilingue     | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address/gmd:electronicMailAddress |
-| vcard:hasURL            | Site web        | Site web de l’organisation                                | R        | 0-1         | Unilingue     | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
+| vcard:hasURL            | Site web        | Site web de l’organisation                                | R        | 1-4         | rdf:Document    | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | vcard:hasAddress        | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | vcard:Address | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
 **Tableau 9 : classe vcard :Organization instanciée dans tout attribut**
@@ -918,7 +918,7 @@ Instanciation de vcard:Address dans tout attribut
 **Tableau 11 : classe vcard:Address instanciée dans tout attribut**
 
 <a id="n-dct-LicenseDocument"></a>
-### N. dct: LicenseDocument
+### O. dct: LicenseDocument
 
 Instanciation de dct: LicenseDocument dans tout attribut
 
@@ -929,7 +929,19 @@ Instanciation de dct: LicenseDocument dans tout attribut
 | dct:title            | Titre du document| Titre du document| M        | 1           | multilingue |         |
 | dct:description      | Description du document| Description du document| O        | 0-1           | multilingue  |    |
 
-**Tableau 11 : classe vcard:Address instanciée dans tout attribut**
+**Tableau 12 : classe dct: LicenseDocument instanciée dans tout attribut**
+
+<a id="n-rdf-Description"></a>
+### P. rdf: Description
+
+Instanciation de rdf: Description dans tout attribut
+
+
+| URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
+| -------------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
+| dct:language         | Langue du document| Langue du document | M        | 1           | codedValue | /gmd:LocaliseCharacterString/@locale |
+
+**Tableau 13 : classe rdf: Description instanciée dans tout attribut**
 
 # Annexe II
 
