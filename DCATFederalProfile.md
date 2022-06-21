@@ -75,7 +75,7 @@
     + [M. vcard :Organization](#m-vcard--organization)
     + [N. vcard :Address](#n-vcard--address)
     + [O. dct :LicenseDocument](#n-dct-LicenseDocument)
-    + [O. rdf :Description](#n-rdf-Description)
+    + [P. rdf :Description](#n-rdf-Description)
 - [Annexe II](#annexe-ii)
 <!-- TOC -->
 
