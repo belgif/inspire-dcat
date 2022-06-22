@@ -130,7 +130,7 @@ Les attributs de domaine « multilingue » doivent être remplis en allemand, en
 <a id="ii-presentation-detaillee-des-classes"></a>
 ## II. Présentation détaillée des classes
 
-### A. Classe dcat: Catalog
+### A. Classe dcat:Catalog
 
 La classe dcat :Catalog correspond à un catalogue, c&#39;est-à-dire à un ensemble particulier d&#39;un ou de plusieurs jeux de données et éventuellement de services identifiés et documentés de manière cohérente.
 
@@ -176,7 +176,7 @@ De manière dérogatoire, certains attributs ne sont pas mis en correspondance a
 4. Le contenu de l&#39;attribut dcat :dataset est généré à partir des jeux de données effectivement intégrés à partir du catalogue ;
 5. Le contenu de l&#39;attribut dcat :dataset est généré à partir des services effectivement intégrés à partir du catalogue.
 
-### B. Classe dcat: Dataset
+### B. Classe dcat:Dataset
 
 La classe dcat :Dataset correspond à la description d&#39;un jeu de données, c&#39;est-à-dire à un ensemble de données, identifié et maintenu par une organisation, accessible dans un ou plusieurs formats.
 
@@ -215,7 +215,7 @@ Si l&#39;instance de la classe dcat : Dataset n&#39;est pas mise en correspondan
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit égal à une ou plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
-### C. Classe dcat: DataService
+### C. Classe dcat:DataService
 
 La classe dcat : DataService correspond à la description d&#39;un service de données, c&#39;est-à-dire à un service web, une application ou une API identifié et maintenu par une organisation et donnant accès à un ou plusieurs jeux de données identifiés.
 
@@ -251,7 +251,7 @@ Si l&#39;instance de la classe dcat :DataService n&#39;est pas mise en correspon
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit égal à une ou plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
-### D. Classe dcat :Distribution
+### D. Classe dcat:Distribution
 
 La classe dcat : Distribution correspond à la description d&#39;un fichier numérique particulier d&#39;une ressource considérée, c&#39;est-à-dire un fichier numérique dans un format particulier.
 
@@ -277,7 +277,7 @@ Si l&#39;instance de la classe dcat :Distribution n&#39;est pas mise en correspo
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit pourvu au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
-### E. Classe foaf: Organization
+### E. Classe foaf:Organization
 
 La classe foaf :Organization correspond à la description d&#39;une organisation, c&#39;est-à-dire un ensemble structuré de personnes ayant un ou des buts déterminés.
 
@@ -305,7 +305,7 @@ Si l&#39;instance de la classe foaf : Organization n&#39;est mise en corresponda
 
 Ces spécifications prévoient également que le contenu des attributs dont le domaine correspond à une classe soit pourvu au moyen d&#39;une ou de plusieurs instanciations de ladite classe conformes aux spécifications du présent profil.
 
-### F. Classe catalogRecord
+### F. Classe dcat:catalogRecord
 
 La classe dcat :CatalogRecord correspond à l&#39;identification des instances particulières des classes dcat :Dataset, dcat :DataService (dcat :Catalog).
 
@@ -345,7 +345,7 @@ Seul le contenu des instances de la classe [ISO 19115](#ISO19115) relative aux a
 
 Si l&#39;instance de la classe locn : Address n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 9.
 
-### H. Classe skos: Concept
+### H. Classe skos:Concept
 
 La classe skos :Concept correspond à la description d&#39;un concept, c&#39;est-à-dire une notion identifiée de manière univoque et nommée en au moins une langue.
 
@@ -371,15 +371,15 @@ En pareil cas, ces spécifications prévoient que chaque attribut de la classe s
 
 Si l&#39;instance de la classe skos :Concept n&#39;est mise en correspondance avec un élément [ISO 19139](#ISO19139), alors ces spécifications prévoient que le contenu des attributs soit pourvu par des concepts issus de thésaurus SKOS. L&#39;annexe II propose, pour chaque attribut où peut s&#39;instancier la classe skos :Concept, une liste de thésaurus obligatoires, recommandés ou optionnels.
 
-### I. Classe dct: PeriodOfTime
+### I. Classe dct:PeriodOfTime
 
-La classe dct :PeriodOfTime correspond à la description d&#39;une séquence temporelle, c&#39;est-à-dire un intervalle de temps borné.
+La classe dct:PeriodOfTime correspond à la description d&#39;une séquence temporelle, c&#39;est-à-dire un intervalle de temps borné.
 
 Conformément à ces spécifications, la classe peut s&#39;instancier dans l&#39;attribut dct :temporal.
 
 #### Profil de la classe
 
-Le présent profil prévoit des spécifications indépendantes de l&#39;attribut au sein duquel la classe s&#39;instancie. Les attributs propres à toutes les instances de la classe dct : PeriodOfTime sont spécifiés dans le tableau 11 présent en annexe.
+Le présent profil prévoit des spécifications indépendantes de l&#39;attribut au sein duquel la classe s&#39;instancie. Les attributs propres à toutes les instances de la classe dct:PeriodOfTime sont spécifiés dans le tableau 11 présent en annexe.
 
 <a id="instanciation-à-partir-d-éléments-inspire-8"></a>
 #### Instanciation à partir d'éléments [INSPIRE]
@@ -391,7 +391,7 @@ Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative aux s
 
 Si l&#39;instance de la classe dct : PeriodOfTime n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une séquence temporelle, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 11.
 
-### J. Classe dqv: QualityMeasurement
+### J. Classe dqv:QualityMeasurement
 
 La classe dqv: QualityMeasurement correspond à la résolution spatiale de la ressource considérée, c&#39;est-à-dire au niveau de détail de la ressource.
 
@@ -413,7 +413,7 @@ Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative à la
 
 Si l&#39;instance de la classe dqv : QualityMeasurement n&#39;est mise en correspondance avec un élément [ISO 19139](#ISO19139) relatif à la résolution spatiale, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau en annexe.
 
-### K. Classe dct: Location
+### K. Classe dct:Location
 
 La classe dct : Location correspond à la description d&#39;une zone géographique, c&#39;est-à-dire une portion bornée de la surface terrestre.
 
@@ -441,7 +441,7 @@ Seul le contenu des instances de la classe [ISO 19139](#ISO19139) relative à la
 
 Si l&#39;instance de la classe dct :Location n&#39;est mise en correspondance avec un instance de la classe [ISO 19139](#ISO19139) relative à une organisation, alors ces spécifications prévoient néanmoins que le contenu des attributs de domaine multilingue ou unilingue soit pourvu selon les règles terminologiques et syntaxiques du [profil de métadonnées fédéral](#profildemétadonnéesfédéral) applicables à l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 14.
 
-### L. Classe skos: ConceptScheme
+### L. Classe skos:ConceptScheme
 
 La classe skos:ConceptSchemecorrespond à la description d&#39;un thésaurus, c&#39;est-à-dire un ensemble structuré de concepts mis en relation.
 
@@ -461,7 +461,7 @@ Aucune classe [ISO 19115](#ISO19115) ne peut être convertie en une instance de 
 
 Ces spécifications prévoient que la classe skos : ConceptScheme soit instanciée _a posteriori_, alors que toutes les autres classes ont été dûment instanciées. Ces spécifications prévoient que la classe skos :ConceptScheme soit instanciée sur base des URL présents dans les attributs skos :inScheme des instances de la classe skos :Concept.
 
-### M. Classe vcard: Organization
+### M. Classe vcard:Organization
 
 La classe vcard :Organization correspond à la description d&#39;une organisation, c&#39;est-à-dire un ensemble structuré de personnes ayant un ou des buts déterminés.
 
@@ -556,9 +556,9 @@ Si l&#39;instance de la classe vcard : Address n&#39;est mise en correspondance 
 # Annexe I
 
 <a id="a-dcat--catalog"></a>
-### A. dcat :Catalog
+### A. dcat:Catalog
 
-Instanciation de dcat :Catalog dans l’élément racine :
+Instanciation de dcat:Catalog dans l’élément racine :
 | URI                                                                                       | Nom                                    | Description                                                                                         | Exigence | Cardinalité | Domaine                                                                            | Source                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------- | -------- | ----------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                                                                                 | titre                                  | Titre du catalogue considéré                                                                        | M        | 1           | multilingue                                                                        | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title                                                                                           |
@@ -570,9 +570,9 @@ Instanciation de dcat :Catalog dans l’élément racine :
 | foaf:homepage                                                                             | page d'acceuil                         | Version human readable du catalogue considéré                                                       | R        | 0-1         | rdf:Description                                                                      | Pas de XPATH : https://www.geo.be/home (ou homepage du catalogue propre à l'institution si celui-ci est harvesté)                                                |
 | dct:language                                                                              | langue                                 | Langue(s) dans le(s)quelle(s) on peut consulter le catalogue considéré                                                                    | M        | 4           | skos:Concept                                                                       | //\*/gmd:locale/gmd:PT\_Locale/gmd:languageCode/gmd:LanguageCode/@codeListValue                                                                                  |
 | dct:issued                                                                                | date de première publication           | Date de première publication du catalogue                                                           | R        | 1           | date (YYYY-MM-DD)                                                                  | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:date/gmd:CI\_Date\[gmd:dateType/gmd:CI\_DateTypeCode\[@codeListValue='publication'\]\]/gmd:date |
-| dct:spatial                                                                               | couverture spatiale                    | Description de la couverture spatiale des ressources comprises dans le catalogue                    | R        | 1-n         | dct :Location                                                                      | //\*/gmd :identificationInfo/\*/gmd :extent/gmd :EX\_Extent/gmd :geographicElement                                                                               |
+| dct:spatial                                                                               | couverture spatiale                    | Description de la couverture spatiale des ressources comprises dans le catalogue                    | R        | 1-n         | dct:Location                                                                      | //\*/gmd :identificationInfo/\*/gmd :extent/gmd :EX\_Extent/gmd :geographicElement                                                                               |
 | dcat :themeTaxonomy                                                                       | vocabulaire contrôlé                   | Informations relatives aux thésaurus dont sont extraits les mots clés décrivant les jeux de données | O        | 0-n         | [skos :ConceptScheme](http://publications.europa.eu/resource/authority/data-theme) | génération a posteriori en recensant tous les thésaurus référencés dans les classes Dataset et DataService                                                       |
-| dct :hasPart                                                                              | catalogue inclus                       | Informations relatives au(x) catalogue(s) compris dans le catalogue considéré                       | O        | 0-n         | dcat :Catalog                                                                      | si catalogue généré à partir d’un \[CSW\] --> néant <> si catalogue généré par wizard : prévoir champ
+| dct :hasPart                                                                              | catalogue inclus                       | Informations relatives au(x) catalogue(s) compris dans le catalogue considéré                       | O        | 0-n         | dcat:Catalog                                                                      | si catalogue généré à partir d’un \[CSW\] --> néant <> si catalogue généré par wizard : prévoir champ
 |  dct:isPartOf                                                                             | catalogue incluant                     | Informations relatives au(x) catalogue(s) comprenant dans le catalogue considéré                    | O        | 0-n         | dcat:Catalog                                                                      | si catalogue généré à parti’ d'un \[CSW\] --> ID du catalogue de BOSA + ID du catalogue suprême DCAT de l'IGN <> si catalogue généré par wizard : prévoir champ
 | dcat:record                                                                               | signalétique                           | Informations relatives aux instances figurant dans le catalogue considéré                           | R        | 0-n         | dcat:CatalogRecord                                                                | génération a posteriori en recensant toutes les instances CatalogRecord                                                                                          |
 | dcat:distribution                                                                         | distribution                           | Informations relatives aux modalité’ d'acquisition du catalogue                                     | R        | 0-n         | dcat:Distribution                                                                 |  --> générer en utilisant le lien vers la sérialisation XML (et éventuellement JSON)                                                                             |
@@ -590,10 +590,10 @@ Instanciation de dcat:Catalog dans tout autre attribut
 |  dct:title         | titre                                  | Titre du catalogue considéré                                                                        | M        | 1           | multilingue                                                                       | //\*/ gmd:identificationInfo/\*/ gmd:citation/ gmd:CI\_Citation/ gmd:title                                                                                               |
 |  dct:description   | description                            | Description du catalogue considéré                                                                  | O        | 1           | multilingue                                                                       | //\*/ gmd:identificationInfo/\*/ gmd:abstract                                                                                                                            |
 |  dct:publisher     | éditeur                                | Organisation responsable de la publication du catalogue considéré                                   | O        | 1           | f oaf:Organization                                                                | //\*/ gmd:contact/ gmd:CI\_ResponsibleParty\[ gôleole/ gmd:CI\_RoleCode\[@codeListValue=’publisher’\]\]                                                                  |
-| dcat:dataset       | jeu de données                         | Informations relatives au(x) jeu(x) de données référencés dans le catalogue  considéré              | W        | 0           | d cat:Dataset                                                                     |                                                                                                                                                                          |
-| dcat:service       | service                                | Informations relatives au(x)service(s) référencés dans le catalogue considéré                       | W        | 0           | d cat:DataService                                                                 |                                                                                                                                                                          |
+| dcat:dataset       | jeu de données                         | Informations relatives au(x) jeu(x) de données référencés dans le catalogue  considéré              | W        | 0           | dcat:Dataset                                                                     |                                                                                                                                                                          |
+| dcat:service       | service                                | Informations relatives au(x)service(s) référencés dans le catalogue considéré                       | W        | 0           | dcat:DataService                                                                 |                                                                                                                                                                          |
 | foaf:homepage      | pag’ d'acceuil                         | Version human readable du catalogue considéré                                                       | R        | 0-1         | URL multilingue                                                                   | Pas de XPATH : ht tps://www.geo.be/home (ou homepage du catalogue propre ’ l'institution si celui-ci est harvesté)                                                      |
-|  dct:language      | langue                                 | Langue(s) du catalogue considéré                                                                    | O        | 4           | skos :Concept                                                                     | //\*/ gmd:locale/ gmd:PT\_Locale/ gmd:languageCode/ gmd:LanguageCode/@codeListValue                                                                                      |
+|  dct:language      | langue                                 | Langue(s) du catalogue considéré                                                                    | O        | 4           | skos:Concept                                                                     | //\*/ gmd:locale/ gmd:PT\_Locale/ gmd:languageCode/ gmd:LanguageCode/@codeListValue                                                                                      |
 |  dct:issued        | date de première publication           | Date de première publication du catalogue                                                           | O        | 1           | date (YYYY-MM-DD)                                                                 | //\*/ gmd:identificationInfo/\*/ gmd:citation/ gmd:CI\_Citation/ gmd:date/ gmd:CI\_Date\[ gmd:dateType/ gmd:CI\_DateTypeCode\[@codeListVal’e='publicat’on'\]\]/ gmd:date |
 |  dct:spatial       | couverture spatiale                    | Description de la couverture spatiale des ressources comprises dans le catalogue                    | O        | 1-n         | dct:Location                                                                      | //\*/gmd:identificationInfo/\*/gmd:extent/gmd:EX\_Extent/gmd:geographicElement                                                                                           |
 | dcat:themeTaxonomy | vocabulaire contrôlé                   | Informations relatives aux thésaurus dont sont extraits les mots clés décrivant les jeux de données | W        | 0           | [skos:ConceptScheme](http://publications.europa.eu/resource/authority/data-theme) | Pas de XPATH : généré _a posteriori _en recensant tous les thésaurus référencés dans les classes Dataset et DataService                                                  |
@@ -609,9 +609,9 @@ Instanciation de dcat:Catalog dans tout autre attribut
 **Tableau 2 : Classe dcat:Catalog instanciée dans tout autre attribut**
 
 <a id="b-dcat--dataset"></a>
-### B. dcat :Dataset
+### B. dcat:Dataset
 
-Instanciation de dcat :Dataset dans l'attribut dcat:Dataset
+Instanciation de dcat:Dataset dans l'attribut dcat:Dataset
 | URI                            | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                 | Source                                                                                                                                                                                                                                                                                                                    |
 | ------------------------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                      | titre                                   | Titre du jeu de données considéré                                                                      | M        | 1           | multilingue             | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*  (titre saisi conformément aux spécifications du profil fédéral)                                                                                                                                                               
@@ -629,11 +629,11 @@ Instanciation de dcat :Dataset dans l'attribut dcat:Dataset
 | dct:accrualPeriodicity         | fréquence de mise à jour                | Informations relatives à la fréquence de mise à jour du jeu de données concerné                        | R        | 0-1         | skos:Concept           | //\*/gmd:identificationInfo/\*/gmd:resourceMaintenance/gmd:MD\_MaintenanceInformation/gmd:maintenanceAndUpdateFrequency/gmd:MD\_MaintenanceFrequencyCode/@codeListValue                                                                                                                                                   |
 | dct:identifier                 | identifiant                             | Identifiant alphanumérique unique du jeu de données concerné                                           | M        | 1           | multilingue             | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:identifier/\*/gmd:code/\*                                                                                                                                                                                                                                |
 | dcat:landingPage               | page d'accueil                          | Page de métadonnées HTML d’origine                                                                     | R        | 0-1         | rdf:Description           | https://www.geo.be/catalog/details/ + //\*/gmd:fileIdentifier                                                                                                                                                                                                                                                             |
-| dct:language                   | langue                                  | Informations relatives au(x) langue(s) du jeu de données considéré                                     | R        | 0-4         | skos :Concept           | //\*/gmd:identificationInfo/\*/gmd:language/gmd:LanguageCode/@codeListValue                                                                                                                                                                                                                                               |
+| dct:language                   | langue                                  | Informations relatives au(x) langue(s) du jeu de données considéré                                     | R        | 0-4         | skos:Concept           | //\*/gmd:identificationInfo/\*/gmd:language/gmd:LanguageCode/@codeListValue                                                                                                                                                                                                                                               |
 | dct:provenance                 | origine                                 | Informations relatives à l'origine du jeu de données considéré                                         | O        | 0-1         | dct:ProvenanceStatement | //\*/gmd:dataQualityInfo/gmd:DQ\_DataQuality/gmd:lineage/gmd:LI\_Lineage/gmd:statement                                                                                                                                                                                                                                    |
 | dct:conformsTo                 | spécification ou règle de structuration | Informations relative(s) aux normes de qualité du jeu de données                                       | O        | 0-n         | dct:Standard            | //\*/gmd:dataQualityInfo/gmd:DQ\_DataQuality/gmd:report/gmd:DQ\_DomainConsistency/gmd:result/gmd:DQ\_ConformanceResult/gmd:specification/gmd:CI\_Citation ET //\*/gmd:distributionInfo/gmd:MD\_Distribution/gmd:transferOptions/gmd:MD\_DigitalTransferOptions/gmd:onLine/gmd:CI\_OnlineResource\[gmd:protocol/\*={WWW:LINK-1.0-http--link} and gmd:function/\*/@codeListValue={'information'}\]/gmd:linkage/gmd:name                                                                                                                                                                |
 | dct:source                     | jeu de données source                   | Informations relatives à un jeu de données source                                                      | O        | 0-1         | dcat:Dataset            | si dataset généré à partir d'une fiche \[ISO 19139\] --> utiliser le XPATH //\*/gmd:identificationInfo/\*/gmd:aggregationInfo <> si dataset généré par wizard :  générer par sélection  manuelle dans un champ ad hoc                                                                                                                                                                                                                                      |
-| dqv:hasQualityMeasurement      | résolution spatiale                     | Informations relatives à l’échelle conceptuelle du jeu de données considéré                            | R        | 0-1         | dqv :QualityMeasurement | //\*/gmd:identificationInfo/\*/gmd:spatialResolution/gmd:MD\_Resolution                                                                                                                                                                                                                                                   |
+| dqv:hasQualityMeasurement      | résolution spatiale                     | Informations relatives à l’échelle conceptuelle du jeu de données considéré                            | R        | 0-1         | dqv:QualityMeasurement | //\*/gmd:identificationInfo/\*/gmd:spatialResolution/gmd:MD\_Resolution                                                                                                                                                                                                                                                   |
 | dct:accessRights               | accessibilité                           | Informations relatives aux restrictions concernant l'utilisation du jeu de données                     | M        | 1           | dct:RightsStatement     | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | adms:sample                    | exemple de distribution                 | Référence à un exemple de distribution du jeu de données                                               | O        | 0-1         | dcat:Distribution       | pas de XPATH spécifié                                                                                                                                                                                                                                                                                                     |
 | dct:publisher                  | éditeur                                 | Informations relatives à l'organisation responsable de la disponibilité du jeu de données              | O        | 0-n         | foaf:Organization       | //\*/gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI\_ResponsibleParty\[gmd:role/gmd:CI\_RoleCode\[@codeListValue='publisher'\]\]                                                                                                                                                                                     |
@@ -649,9 +649,9 @@ Instanciation de dcat :Dataset dans l'attribut dcat:Dataset
 | dct:license                    | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument     | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | adms:representationTechnique   | type de jeu de données                  | Informations relatives à la représentation spatiale du jeu de données                                  | R        | 1           | skos:Concept            | //\*/gmd:identificationInfo/\*/gmd:spatialRepresentationType                                                                                                                                                                                                                                                              |
 
-**Tableau 3 : Classe dcat :Dataset instanciée dans l'attribut dcat:dataset**
+**Tableau 3 : Classe dcat:Dataset instanciée dans l'attribut dcat:dataset**
 
-Instanciation de dcat :Dataset dans tout autre attribut
+Instanciation de dcat:Dataset dans tout autre attribut
 | URI                            | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                   |
 | ------------------------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------- | ----------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | dct:title                      | titre                                   | Titre du jeu de données considéré                                                                      | M        | 1           | multilingue                                                                                    | //\*/gmd:identificationInfo/\*/gmd:citation/gmd:CI\_Citation/gmd:title/\*                                                                                                                                                                                |
@@ -691,10 +691,10 @@ Instanciation de dcat :Dataset dans tout autre attribut
 | dct:license                    | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | W        | 1           | dct:LicenseDocument                                                                            |                                                                                                                                                                                                                                                          |
 | adms:representationTechnique   | type de jeu de données                  | Informations relatives à la représentation spatiale du jeu de données                                  | W        | 0           | [skos:Concept](http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType)        |                                                                                                                                                                                                                                                          |
 
-**Tableau 4 : classe dcat :Dataset instanciée dans tout autre attribut**
+**Tableau 4 : classe dcat:Dataset instanciée dans tout autre attribut**
 
 <a id="c-dcat--dataservice"></a>
-### C. dcat :DataService
+### C. dcat:DataService
 
 Instanciation de dcat:Dataservice dans l'attribut dcat:service
 | URI                           | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                                                                                    |
@@ -723,7 +723,7 @@ Instanciation de dcat:Dataservice dans l'attribut dcat:service
 | dct:license                   | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument                                                                            | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | dct:conformsTo                | système de projection géographique      | Informations relatives aux systèmes de référence spatiaux ou temporels                                 | R        | 0-n         | codedValue                    | //*gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code                                                                                                                                                              |
 
-**Tableau 5 : classe dcat :DataService instanciée l'attribut dcat:service**
+**Tableau 5 : classe dcat:DataService instanciée l'attribut dcat:service**
 
 Instanciation de dcat:Dataservice dans tout autre attribut
 | URI                           | Nom                                     | Description                                                                                            | Exigence | Cardinalité | Domaine                                                                                        | Source                                                                                                                                                                                                                                                                                                                    |
@@ -752,34 +752,34 @@ Instanciation de dcat:Dataservice dans tout autre attribut
 | dct:license                   | conditions d'utilisation                | Informations relatives aux conditions d'utilisation particulières de cette distribution                | M        | 1           | dct:LicenseDocument                                                                            | //\*/gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD\_LegalConstraints\[\*/gmd:MD\_RestrictionCode\[@codeListValue='otherRestrictions'\]\]/gmd:otherConstraints\[gco:CharacterString or gmx:Anchor\[not(starts-with(@xlink:href, 'http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess'))\]\] |
 | dct:conformsTo                | système de projection géographique      | Informations relatives aux systèmes de référence spatiaux ou temporels                                 | R        | 0-n         | codedValue                     | //\*/gmd:dataQualityInfo/gmd:DQ\_DataQuality/gmd:report/gmd:DQ\_DomainConsistency/gmd:result/gmd:DQ\_ConformanceResult/gmd:specification/gmd:CI\_Citation                                                                                                                                                                 |
 
-**Tableau 6 : classe dcat :DataService instanciée dans tout autre attribut**
+**Tableau 6 : classe dcat:DataService instanciée dans tout autre attribut**
 
 <a id="d-dcat--distribution"></a>
-### D. dcat :Distribution
+### D. dcat:Distribution
 
-Toute instanciation de dcat :Distribution
+Toute instanciation de dcat:Distribution
 | URI                  | Nom                                | Description                                                                            | Exigence | Cardinalité | Domaine                                                                              | Source                                    |
 | -------------------- | ---------------------------------- | -------------------------------------------------------------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------ | ----------------------------------------- |
 | dct :title           | titre                              | Titre de la distribution concernée                                                     | O        | 0-1         | multilingue                                                                          | //atom :feed/atom :title                  |
 | dcat :accessURL      | URL d’accès                        | Adresse web de la distribution concernée du jeu de données                             | M        | 1           | URL                                                                                  | //atom:feed/atom:entry/atom:id            |
 | dct :description     | description                        | Description des particularités de cette description                                    | O        | 0-1         | multilingue                                                                          | //atom:feed/atom:entry/atom:subtitle           |
 | dct :format          | format                             | Informations relatives au format particulier de cette distribution                     | M        | 1           | [dct :MediaTypeOrExtent](http://publications.europa.eu/resource/authority/file-type) | //atom :feed/atom :entry/atom :link/@type |
-| dcat :mediaType      | type de format                     | Type de format/support de la distribution (IANA)                                       | O        | 0-1         | [dct :MediaType](http://www.iana.org/assignments/media-types)                        | //atom :feed/atom :entry/atom :link/@type |
+| dcat :mediaType      | type de format                     | Type de format/support de la distribution (IANA)                                       | O        | 0-1         | [dct:MediaType](http://www.iana.org/assignments/media-types)                        | //atom :feed/atom :entry/atom :link/@type |
 | dcat :downloadURL    | URL de téléchargement              | Adresse web pour télécharger directement la distribution concernée                     | O        | 0-1         | URL                                                                                  | //atom:feed/atom:entry/atom:id            |
 | dcat :compressFormat | format comprimé                    | Informations relatives au format comprimé particulier de cette distribution (IANA)     | O        | 0-1         | dct :MediaType                                                                       | //atom :feed/atom :entry/atom :link/@type |
-| dct :conformsTo      | système de projection géographique | Informations relatives à la projection particulière de cette distribution              | O        | 0-1         | [dct :Standard](http://www.opengis.net/def/crs/EPSG/0/)                              | //atom:feed/atom:entry/atom:category      |
+| dct :conformsTo      | système de projection géographique | Informations relatives à la projection particulière de cette distribution              | O        | 0-1         | [dct:Standard](http://www.opengis.net/def/crs/EPSG/0/)                              | //atom:feed/atom:entry/atom:category      |
 | dcat :byteSize       | taille                             | Taille de la distribution en bytes                                                     | O        | 0-1         | xsd :decimal                                                                         | pas de XPATH spécifié                     |
-| adms :status         | statut                             | Informations relatives à la maturité de la distribution                                | O        | 1           | [skos :Concept](http://purl.org/adms/status/)                                        | pas de XPATH spécifié                     |
-| dct :spatial         | couverture spatiale                | Informations relatives à la région géographique couverte par la distribution concernée | O        | 0-1         | dct :Location                                                                        | //atom:feed/atom:entry/georss:box         |
+| adms :status         | statut                             | Informations relatives à la maturité de la distribution                                | O        | 1           | [skos:Concept](http://purl.org/adms/status/)                                        | pas de XPATH spécifié                     |
+| dct :spatial         | couverture spatiale                | Informations relatives à la région géographique couverte par la distribution concernée | O        | 0-1         | dct:Location                                                                        | //atom:feed/atom:entry/georss:box         |
 | dct :temporal        | couverture temporelle              | Informations relatives à l’intervalle temporelle couvert par la distribution concernée | R        | 0-1         | dct:PeriodOfTime                                                                     | //atom:feed/atom:entry/atom:link/@time    |
 | dct:type             | type de distribution               | Lien vers un type de distribution                                                      | O        | 0-n         | skos:Concept                                                                         | pas de XPATH spécifié                     |
 
-**Tableau 7 : classe dcat :Distribution instanciée dans tout attribut**
+**Tableau 7 : classe dcat:Distribution instanciée dans tout attribut**
 
 <a id="e-foaf--organization"></a>
-### E. foaf :Organization
+### E. foaf:Organization
 
-Toute Instanciation de foaf :Organization
+Toute Instanciation de foaf:Organization
 | URI                    | Nom             | Description                                               | Exigence | Cardinalité | Domaine                                             | Source                                                                                  |
 | ---------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | --------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | foaf:name              | nom             | Nom de l'organisation                                     | M        | 1-n         | Multilingue                                         | ./gmd:organisationName                                                                  |
@@ -788,12 +788,12 @@ Toute Instanciation de foaf :Organization
 | foaf:workplaceHomepage | Site web        | Site web de l’organisation                                | R        | 1-4         | rdf:Description                                          | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | locn:address           | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | locn:Address                                        | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
-**Tableau 9 : classe foaf :Organization instanciée dans tout attribut**
+**Tableau 9 : classe foaf:Organization instanciée dans tout attribut**
 
 <a id="f-dcat--catalogrecord"></a>
-### F. dcat :CatalogRecord
+### F. dcat:CatalogRecord
 
-Instanciation de dcat :CatalogRecord dans tout attribut
+Instanciation de dcat:CatalogRecord dans tout attribut
 | URI               | Nom                                      | Description                                                                            | Exigence | Cardinalité | Domaine                                        | Source                                                                                                                                                                    |
 | ----------------- | ---------------------------------------- | -------------------------------------------------------------------------------------- | -------- | ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | foaf:primaryTopic | instance à laquelle la fiche se rapporte | Information relative au jeu de données, service ou catalogue                           | M        | 1           | dcat:Dataset | dcat:Dataservice | dcat:Catalog | génération a posteriori en intégrant tous les ID de toutes instanciations primaires (i.e. les instances qui ne correspondent à la valeur d'un attribut de la même classe) |
@@ -804,10 +804,10 @@ Instanciation de dcat :CatalogRecord dans tout attribut
 | dct:source    | Catalogrecord source                              | Le catalogrecord dans un autre catalogue qui contient les informations sources relatives au jeu de données                            | O        | 0-1           | unilingue                                      | http://csw.geo.be/eng/csw?request=GetRecordById&service=CSW&version=2.0.2&elementSetName=full&outputSchema=http://www.isotc211.org/2005/gmd&id=+//\*/gmd:fileIdentifier                                                                                                                                                   |
 | dcat:landingPage   | page d'acceuil                             | Informations relative(s) à la fiche de métadonnées HTML originale décrivant le jeu de données concerné                            | O        | 1           | rdf:Description                                      | https://www.geo.be/catalog/details/ + //*/gmd:fileIdentifier                                                                                                                                                  |
 
-**Tableau 10 : classe dcat :CatalogRecord instanciée dans tout attribut**
+**Tableau 10 : classe dcat:CatalogRecord instanciée dans tout attribut**
 
 <a id="g-locn--address"></a>
-### G. locn :Address
+### G. locn:Address
 
 Instanciation de locn :Address dans tout attribut
 | URI               | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
@@ -817,10 +817,10 @@ Instanciation de locn :Address dans tout attribut
 | locn:postCode     | Code postal     | Code postal de l’adresse | M        | 1           | unilingue   | ./gmd:postalCode      |
 | locn:adminUnitL1  | Pays            | Pays                     | M        | 1           | multilingue | ./gmd:country         |
 
-**Tableau 11 : classe locn :Address instanciée dans tout attribut**
+**Tableau 11 : classe locn:Address instanciée dans tout attribut**
 
 <a id="h-skos--concept"></a>
-### H. skos :Concept
+### H. skos:Concept
 
 | Instanciation de skos :Concept dans dans tout attribut |
 | URI            | Nom                 | Description                        | Exigence | Cardinalité | Domaine     | Source                                           |
@@ -832,7 +832,7 @@ Instanciation de locn :Address dans tout attribut
 **Tableau 12 : classe skos:Concept instanciée tout attribut**
 
 <a id="i-dct--periodoftime"></a>
-### I. dct :PeriodOfTime
+### I. dct:PeriodOfTime
 
 Instanciation de dct :PeriodOfTime dans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
@@ -843,9 +843,9 @@ Instanciation de dct :PeriodOfTime dans tout attribut
 **Tableau 13 : classe dct:PeriodOfTime instanciée dans tout attribut**
 
 <a id="j-dqv--qualitymeasurement"></a>
-### J. dqv : QualityMeasurement
+### J. dqv:QualityMeasurement
 
-Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressource vectorielle
+Instanciation de dqv:QualityMeasurement dans un attribut décrivant une ressource vectorielle
 | URI                              | Nom                                         | Description                                 | Exigence | Cardinalité | Domaine      | Source                                                                                                 |
 | -------------------------------- | ------------------------------------------- | ------------------------------------------- | -------- | ----------- | ------------ | ------------------------------------------------------------------------------------------------------ |
 | dqv:isMeasurementOf              | Grandeur scalaire mesurée                   | Grandeur scalaire mesurée                   | O        | 0-1         | multilingue  | Valeur hardcodée en fonction du type de jeu de données                                                 |
@@ -855,7 +855,7 @@ Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressou
 
 **Tableau 14 : classe dqv:QualityMeasurement se rapportant à la description d&#39;une ressource vectorielle**
 
-Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressource matricielle
+Instanciation de dqv:QualityMeasurement dans un attribut décrivant une ressource matricielle
 | dqv:isMeasurementOf              | Grandeur scalaire mesurée                   | Grandeur scalaire mesurée                   | O | 0-1 | multilingue  | Valeur hardcodée en fonction du type de jeu de données                                                 |
 | -------------------------------- | ------------------------------------------- | ------------------------------------------- | - | --- | ------------ | ------------------------------------------------------------------------------------------------------ |
 | sdmx-attribut:unitMeasure        | Unité de mesure des grandeurs scalaires     | Unité de mesure des grandeurs scalaires     | R | 1   | skos:Concept | ./gmd :MD\_Resolution/gmd:distance/gco:Distance/@uom                                                   |
@@ -865,7 +865,7 @@ Instanciation de dqv : QualityMeasurement dans un attribut décrivant une ressou
 **Tableau 15 : classe dqv: QualityMeasurement se rapportant à la description d&#39;une ressource matricielle**
 
 <a id="k-dct--location"></a>
-### K. dct :Location
+### K. dct:Location
 
 Instanciation de dct :Location dans tout attribut
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine     | Source |
@@ -875,10 +875,10 @@ Instanciation de dct :Location dans tout attribut
 | Skos :prefLabel | Nom de l’entité géographique            | Nom de l’entité géographique                | R        | 0-1         | multilingue |        |
 | dct:identifier  | Identifiant de l’entité géographique    | Identifiant de l’entité géographique        | R        | 0-1         | codedValue  |        |
 
-**Tableau 15 : classe dct :Location instanciée dans tout attribut**
+**Tableau 15 : classe dct:Location instanciée dans tout attribut**
 
 <a id="l-skos--conceptscheme"></a>
-### L. skos :ConceptScheme
+### L. skos:ConceptScheme
 
 Instanciation de skos :ConceptScheme dans tout attribut
 | URI            | Nom                          | Description                  | Exigence | Cardinalité | Domaine     | Source                                                                                                                                                                                                       |
@@ -888,11 +888,11 @@ Instanciation de skos :ConceptScheme dans tout attribut
 | Dct:identifier | Identifiant du thésaurus     | Identifiant du thésaurus     | M        | 1           | URL         | Génération sur base des URL fournies dans les propriétés skos:inScheme des instances de la classe skos :Concept (il faut donc la propriété inScheme et que celle-ci soit pourvue d’une URL machine-readable) |
 
 **Tableau 16 : classe skos:ConceptScheme instanciée dans tout attribut**
-Instanciation de skos :ConceptScheme dans tout attribut
+Instanciation de skos:ConceptScheme dans tout attribut
 
 
 <a id="m-vcard--organization"></a>
-### M. vcard :Organization
+### M. vcard:Organization
 
 Instanciation de vcard:Organization dans tout attribut
 
@@ -903,10 +903,10 @@ Instanciation de vcard:Organization dans tout attribut
 | vcard:hasURL            | Site web        | Site web de l’organisation                                | R        | 1-4         | rdf:Description    | ./gmd:contactInfo/gmd:CI\_Contact/gmd:onlineResource/gmd:CI\_OnlineResource/gmd:linkage |
 | vcard:hasAddress        | Adresse postale | Adresse postale de l’organisation                         | O        | 0-1         | vcard:Address | ./gmd:contactInfo/gmd:CI\_Contact/gmd:address/gmd:CI\_Address                           |
 
-**Tableau 9 : classe vcard :Organization instanciée dans tout attribut**
+**Tableau 9 : classe vcard:Organization instanciée dans tout attribut**
 
 <a id="n-vcard--address"></a>
-### N. vcard :Address
+### N. vcard:Address
 
 Instanciation de vcard:Address dans tout attribut
 
@@ -921,9 +921,9 @@ Instanciation de vcard:Address dans tout attribut
 **Tableau 11 : classe vcard:Address instanciée dans tout attribut**
 
 <a id="n-dct-LicenseDocument"></a>
-### O. dct: LicenseDocument
+### O. dct:LicenseDocument
 
-Instanciation de dct: LicenseDocument dans tout attribut
+Instanciation de dct:LicenseDocument dans tout attribut
 
 
 | URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
@@ -935,16 +935,16 @@ Instanciation de dct: LicenseDocument dans tout attribut
 **Tableau 12 : classe dct: LicenseDocument instanciée dans tout attribut**
 
 <a id="n-rdf-Description"></a>
-### P. rdf: Description
+### P. rdf:Description
 
-Instanciation de rdf: Description dans tout attribut
+Instanciation de rdf:Description dans tout attribut
 
 
 | URI                  | Nom             | Description              | Exigence | Cardinalité | Domaine     | Source                |
 | -------------------- | --------------- | ------------------------ | -------- | ----------- | ----------- | --------------------- |
 | dct:language         | Langue du document| Langue du document | M        | 1           | codedValue | /gmd:LocaliseCharacterString/@locale |
 
-**Tableau 13 : classe rdf: Description instanciée dans tout attribut**
+**Tableau 13 : classe rdf:Description instanciée dans tout attribut**
 
 # Annexe II
 
