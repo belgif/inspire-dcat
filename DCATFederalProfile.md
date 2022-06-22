@@ -3,23 +3,23 @@
   * [Introduction](#introduction)
   * [I. Présentation générale des classes](#i-presentation-generale-des-classes)
   * [II. Présentation détaillée des classes](#ii-presentation-detaillee-des-classes)
-    + [A. Classe dcat: Catalog](#a-classe-dcat--catalog)
+    + [A. Classe dcat:Catalog](#a-classe-dcat--catalog)
       - [Profil de la classe](#profil-de-la-classe)
       - [Instanciation à partir d&#39;éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-1)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-1)
-    + [B. Classe dcat: Dataset](#b-classe-dcat--dataset)
+    + [B. Classe dcat:Dataset](#b-classe-dcat--dataset)
       - [Profil de la classe](#profil-de-la-classe-1)
       - [Instanciation à partir d&#39;éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-2)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-2)
-    + [C. Classe dcat: DataService](#c-classe-dcat--dataservice)
+    + [C. Classe dcat:DataService](#c-classe-dcat--dataservice)
       - [Profil de la classe](#profil-de-la-classe-2)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-3)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-3)
-    + [D. Classe dcat :Distribution](#d-classe-dcat--distribution)
+    + [D. Classe dcat:Distribution](#d-classe-dcat--distribution)
       - [Profil de la classe](#profil-de-la-classe-3)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-4)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire--4)
-    + [E. Classe foaf: Organization](#e-classe-foaf--organization)
+    + [E. Classe foaf:Organization](#e-classe-foaf--organization)
       - [Profil de la classe](#profil-de-la-classe-4)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-5)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-5)
@@ -30,27 +30,27 @@
         * [Profil de la classe](#profil-de-la-classe-5)
         * [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-6)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-6)
-    + [H. Classe skos: Concept](#h-classe-skos--concept)
+    + [H. Classe skos:Concept](#h-classe-skos--concept)
       - [Profil de la classe](#profil-de-la-classe-6)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-7)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-7)
-    + [I. Classe dct: PeriodOfTime](#i-classe-dct--periodoftime)
+    + [I. Classe dct:PeriodOfTime](#i-classe-dct--periodoftime)
       - [Profil de la classe](#profil-de-la-classe-7)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-8)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-8)
-    + [J. Classe dqv: QualityMeasurement](#j-classe-dqv--qualitymeasurement)
+    + [J. Classe dqv:QualityMeasurement](#j-classe-dqv--qualitymeasurement)
       - [Profil de la classe](#profil-de-la-classe-8)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-9)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-9)
-    + [K. Classe dct: Location](#k-classe-dct--location)
+    + [K. Classe dct:Location](#k-classe-dct--location)
       - [Profil de la classe](#profil-de-la-classe-9)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation-à-partir-d-éléments-inspire-10)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-10)
-    + [L. Classe skos: ConceptScheme](#l-classe-conceptscheme)
+    + [L. Classe skos:ConceptScheme](#l-classe-conceptscheme)
       - [Profil de la classe](#profil-de-la-classe-10)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation---partir-d-éléments--inspire--11)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-11)
-    + [M. Classe vcard: Organization](#m-classe-vcard--organization)
+    + [M. Classe vcard:Organization](#m-classe-vcard--organization)
       - [Profil de la classe](#profil-de-la-classe-11)
       - [Instanciation à partir d'éléments [INSPIRE]](#instanciation---partir-d-éléments--inspire--12)
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-12)
@@ -60,22 +60,22 @@
       - [Instanciation sans élément [INSPIRE]](#instanciation-sans--l-ment--inspire-13)
   * [Normes référencées](#normes-r-f-renc-es)
 - [Annexe I](#annexe-i)
-    + [A. dcat :Catalog](#a-dcat--catalog)
-    + [B. dcat :Dataset](#b-dcat--dataset)
-    + [C. dcat :DataService](#c-dcat--dataservice)
-    + [D. dcat :Distribution](#d-dcat--distribution)
-    + [E. foaf :Organization](#e-foaf--organization)
-    + [F. dcat :CatalogRecord](#f-dcat--catalogrecord)
-    + [G. locn :Address](#g-locn--address)
-    + [H. skos :Concept](#h-skos--concept)
-    + [I. dct :periodOfTime](#i-dct--periodoftime)
-    + [J. dqv : QualityMeasurement](#j-dqv--qualitymeasurement)
-    + [K. dct :Location](#k-dct--location)
-    + [L. skos :ConceptScheme](#l-skos--conceptscheme)
-    + [M. vcard :Organization](#m-vcard--organization)
-    + [N. vcard :Address](#n-vcard--address)
-    + [O. dct :LicenseDocument](#n-dct-LicenseDocument)
-    + [P. rdf :Description](#n-rdf-Description)
+    + [A. dcat:Catalog](#a-dcat--catalog)
+    + [B. dcat:Dataset](#b-dcat--dataset)
+    + [C. dcat:DataService](#c-dcat--dataservice)
+    + [D. dcat:Distribution](#d-dcat--distribution)
+    + [E. foaf:Organization](#e-foaf--organization)
+    + [F. dcat:CatalogRecord](#f-dcat--catalogrecord)
+    + [G. locn:Address](#g-locn--address)
+    + [H. skos:Concept](#h-skos--concept)
+    + [I. dct:periodOfTime](#i-dct--periodoftime)
+    + [J. dqv:QualityMeasurement](#j-dqv--qualitymeasurement)
+    + [K. dct:Location](#k-dct--location)
+    + [L. skos:ConceptScheme](#l-skos--conceptscheme)
+    + [M. vcard:Organization](#m-vcard--organization)
+    + [N. vcard:Address](#n-vcard--address)
+    + [O. dct:LicenseDocument](#n-dct-LicenseDocument)
+    + [P. rdf:Description](#n-rdf-Description)
 - [Annexe II](#annexe-ii)
 <!-- TOC -->
 
@@ -101,14 +101,14 @@ Dès lors, [DCAT AP 2 fédéral](#DCATAP2fédéral) restreint la cardinalité de
 - **foaf:Organization** qui représente et décrit des organisations ;
 - dcat:Distribution qui représente et décrit des fichiers accessibles d&#39;un jeu de données ;
 - dcat:CatalogRecord qui représente et décrit un objet quelconque du catalogue (un jeu de données, un service ou un catalogue) ;
-- locn :Address qui représente et décrit des adresses postales d&#39;un agent foaf ;
-- skos :Concept qui représente et décrit des concepts ;
-- dct :PeriodOfTime qui représente et décrit des périodes temporelles ;
-- dqv :QualityMeasurement qui représente et décrit la résolution spatiale de ressources ;
-- dct :Location qui représente et décrit des zones géographiques ;
-- skos :ConceptScheme qui représente et décrit des thésaurus ;
-- vcard :Organization qui représente des organisations ;
-- vcard :Address qui représente et décrit des adresses postale.
+- locn:Address qui représente et décrit des adresses postales d&#39;un agent foaf ;
+- skos:Concept qui représente et décrit des concepts ;
+- dct:PeriodOfTime qui représente et décrit des périodes temporelles ;
+- dqv:QualityMeasurement qui représente et décrit la résolution spatiale de ressources ;
+- dct:Location qui représente et décrit des zones géographiques ;
+- skos:ConceptScheme qui représente et décrit des thésaurus ;
+- vcard:Organization qui représente des organisations ;
+- vcard:Address qui représente et décrit des adresses postale.
 
 Le diagramme suivant présentes les classes ainsi que les attributs propres à [DCAT AP 2 fédéral](#DCATAP2fédéral).
 
