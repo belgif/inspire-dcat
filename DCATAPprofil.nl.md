@@ -136,7 +136,7 @@ Punt II en de tabellen in bijlage die erbij horen, preciseren de attributen eige
 1. URI: dit element komt overeen met de unieke identifier van het betrokken attribuut;
 2. Naam: dit element komt overeen met de naam van het betrokken attribuut;
 3. Beschrijving: dit element komt overeen met de beschrijving van het betrokken attribuut;
-4. Vereiste: dit element komt overeen met een van de vier vereist niveaus [1^] eigen aan het betrokken attribuut;
+4. Vereiste: dit element komt overeen met een van de vier vereist niveaus [^1] eigen aan het betrokken attribuut;
 5. Kardinaliteit: dit element komt overeen met het minimaal en het maximaal aantal toegelaten attributen van dit type;
 6. Domein: dit element komt overeen met de aanvaardbare waarden die het betrokken attribuut kan aannemen. Als de aanvaardbare waarden opgenomen zijn in een of meer beperkt(e) geheel/gehelen (namelijk een thesaurus), dan is/zijn het/de optionele, aanbevolen en verplichte geheel/gehelen opgenomen in bijlage II;
 7. Bron: dit element komt overeen met de XPATH van het element dat verplicht moet worden gebruikt als waarde van het betrokken attribuut als de klasse waartoe het behoort wordt gelinkt aan een [ISO 19115](#ISO19115) klasse en als zijn domein overeenstemt met een eentalige waarde, een meertalige waarde of een URL. Indien zijn domein overeenkomt met een andere klasse van het huidige profiel, komt de bron overeen met de [ISO 19115](#ISO19115) klasse die is gelinkt aan de klasse van het huidige profiel.
