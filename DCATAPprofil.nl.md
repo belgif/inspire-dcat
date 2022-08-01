@@ -83,7 +83,7 @@
     - [Instantiëring van dqv: QualityMeasurement – vectoriële dataset](#instantiëring-van-dqv-qualitymeasurement--vectoriële-dataset)
     - [Instantiëring van dqv: QualityMeasurement – matriciële dataset](#instantiëring-van-dqv-qualitymeasurement--matriciële-dataset)
   - [K. dct:Location](#k-dctlocation)
-    - [Instanciation de dct :Location dans tout attribut](#instanciation-de-dct-location-dans-tout-attribut)
+    - [Instantiëring van dct :Location in een instantie van om het even welke klasse](#instantiëring-van-dct-location-in-een-instantie-van-om-het-even-welke-klasse)
   - [L. skos:ConceptScheme](#l-skosconceptscheme)
     - [Instantiëring van skos:ConceptScheme in een instantie van dcat:Catalog](#instantiëring-van-skosconceptscheme-in-een-instantie-van-dcatcatalog)
   - [M. vcard:Organization](#m-vcardorganization)
@@ -102,13 +102,13 @@
 
 Dit document stelt het [DCAT AP 2 fédéral](#DCATAP2fédéral) in dat werd uitgewerkt door de federale administraties die betrokken zijn bij de implementatie van de INSPIRE-richtlijn overeenkomstig [DCAT AP 2](#DCATAP2) . Dit profiel voldoet aan de norm [DCAT AP 2](#DCATAP2) . Enerzijds specificeert en beperkt het deze norm door de regels te preciseren voor de concretisering van zijn klassen. Anderzijds geeft het regels over de inhoud van de klassen en hun respectieve attributen.
 
-[DCAT AP 2 fédéral](#DCATAP2fédéral) heeft immers als eerste doel de semantische rijkdom te integreren van de metadata-elementen afkomstig van de [TG 2.0](#TG2) , alsook de semantische opportuniteiten te exploiteren die worden geboden door de [TG met betrekking tot de downloaddiensten]. 
+[DCAT AP 2 fédéral](#DCATAP2fédéral) heeft immers als eerste doel de semantische rijkdom te integreren van de metadata-elementen afkomstig van de [TG 2.0](#TG2) , alsook de semantische opportuniteiten te exploiteren die worden geboden door de [TG met betrekking tot de downloaddiensten](#TGrelativesauxservicesdetéléchargement). 
 
-Bijgevolg beperkt [federaal DCAT AP 2] de kardinaliteit van bepaalde attributen, voegt het er andere toe die vreemd zijn aan [DCAT AP 2](#DCATAP2) zodat het deze attributen linkt aan metadata-elementen afkomstig van de [TG 2.0](#TG2) . Op dezelfde manier legt [federaal DCAT AP 2] normen vast voor zijn attributen om er, als het nodig is, de inhoud van de elementen afkomstig van de [TG 2.0](#TG2) in te integreren.
+Bijgevolg beperkt [federaal DCAT AP 2](#DCATAP2fédéral) de kardinaliteit van bepaalde attributen, voegt het er andere toe die vreemd zijn aan [DCAT AP 2](#DCATAP2) zodat het deze attributen linkt aan metadata-elementen afkomstig van de [TG 2.0](#TG2) . Op dezelfde manier legt [federaal DCAT AP 2](#DCATAP2fédéral) normen vast voor zijn attributen om er, als het nodig is, de inhoud van de elementen afkomstig van de [TG 2.0](#TG2) in te integreren.
 
 ## I. Algemene voorstelling van de klassen
 
-[Federaal DCAT AP 2] omvat alle klassen en alle attributen die vereist zijn door [DCAT AP 2](#DCATAP2) . Bovendien werden als aanvulling en zonder dat dit een verplichting is de attributen die eigen zijn aan [GEO DCAT AP 2] en aan [STAT DCAT AP 1] geïntegreerd voor zover ze beantwoordden aan de behoeften die werden uitgedrukt door de federale administraties. Het omvat alle klassen die hieronder vermeld staan. De in het vet vermelde klassen zijn verplicht in elke catalogus die conform [federaal DCAT AP 2] is:
+[Federaal DCAT AP 2](#DCATAP2fédéral) omvat alle klassen en alle attributen die vereist zijn door [DCAT AP 2](#DCATAP2) . Bovendien werden als aanvulling en zonder dat dit een verplichting is de attributen die eigen zijn aan [GEO DCAT AP 2](#GEODCATAP2) en aan [STAT DCAT AP 1](#STATDCATAP1) geïntegreerd voor zover ze beantwoordden aan de behoeften die werden uitgedrukt door de federale administraties. Het omvat alle klassen die hieronder vermeld staan. De in het vet vermelde klassen zijn verplicht in elke catalogus die conform [federaal DCAT AP 2](#DCATAP2fédéral) is:
 
 - **dcat:Catalog** die de catalogi vermeldt en beschrijft;
 - **dcat:Dataset** die de datasets vermeldt en beschrijft;
@@ -126,7 +126,7 @@ dataset, een service of een catalogus);
 - skos:ConceptScheme die thesaurussen vermeldt en beschrijft;
 - vcard:Organization die organisaties vermeldt;
 - vcard:Address die postadressen vermeldt en beschrijft.
-Het diagram hieronder toont de klassen en attributen die eigen zijn aan [federaal DCAT AP 2].
+Het diagram hieronder toont de klassen en attributen die eigen zijn aan [federaal DCAT AP 2](#DCATAP2fédéral).
 
 ![DCATAPfederal](https://user-images.githubusercontent.com/87412262/180747799-287ac27e-a6eb-4766-87fc-4c402d8a81a1.png)
 
@@ -202,7 +202,7 @@ Het huidige profiel voorziet in verschillende specificaties naar gelang van het 
 De attributen eigen aan de instanties die aanwezig zijn in het attribuut dcat:dataset, worden gespecificeerd in tabel 3 in bijlage. 
 
 De attributen eigen aan de andere instanties, worden gespecificeerd in tabel 4 in bijlage.
-De specificaties die op de klasse van toepassing zijn, bepalen dat de versies van eenzelfde dataset overeenkomen met evenveel verschillende instanties van de klasse dcat:Distribution. Bijgevolg bepalen ze niet de bij de versie behorende attributen die worden voorgesteld door [DCAT AP 2.0].
+De specificaties die op de klasse van toepassing zijn, bepalen dat de versies van eenzelfde dataset overeenkomen met evenveel verschillende instanties van de klasse dcat:Distribution. Bijgevolg bepalen ze niet de bij de versie behorende attributen die worden voorgesteld door [DCAT AP 2.0](#DCATAP2).
 
 De specificaties die op de klasse van toepassing zijn, omvatten ook de attributen dct:license en adms:representationTechnique, want volgens de [TG 2.0](#TG2) en [ISO 19115](#ISO19115) kenmerken ze datasets en niet een welbepaalde verdeling van een dataset.
 De specificaties die op de klasse van toepassing zijn, bepalen dat de instanties die aanwezig zijn in het attribuut dcat:dataset ten minste één naar behoren voorzien attribuut moeten hebben van de hierna volgende (dct:created, dct:modified of dct:issued). De specificaties die op de klasse van toepassing zijn, bepalen dat de instanties die aanwezig zijn in het attribuut dcat:dataset ten minste één naar behoren voorzien attribuut moeten hebben van de hierna volgende (dct:publisher, geodcat:custodian, dct:creator, geodcat:distributor, geodcat: originator, geodcat:principalInvestigator, geodcat:processor, geodcat:resourceProvider, geodcat:user of dct:rightsHolder).
@@ -247,12 +247,12 @@ De specificaties die van toepassing zijn op de klasse, omvatten de attributen dc
 
 #### Omzetting vanuit [INSPIRE] elementen
 
-Alleen de inhoud van de [ATOMFeed] die de downloadlinks van een dataset beschrijven, kan worden omgezet in instanties van de klasse dcat:Distribution. In een dergelijk geval bepalen die specificaties dat de inhoud van elk attribuut van de klasse dcat: Distributie aangereikt wordt vanaf het [ATOMFeed] element dat eraan gekoppeld is in tabel 7. De instanties van de klasse die aanwezig zijn in een instantie van dcat:Catalog, worden niet gegenereerd vanuit een [INSPIRE] element.
-De inhoud van de meertalige of eentalige attributen moet worden aangereikt vanuit de inhoud van het verbonden [ATOMFeed] element. De inhoud van de attributen waarvan het domein overeenkomt met een klasse, is gelijk aan één of meer instantiëringen van die klasse, conform de specificaties van het huidige profiel. Deze instantiëringen nemen de inhoud van het gekoppelde [ATOMFeed] element over.
+Alleen de inhoud van de [ATOMFeed](#ATOMFeed) die de downloadlinks van een dataset beschrijven, kan worden omgezet in instanties van de klasse dcat:Distribution. In een dergelijk geval bepalen die specificaties dat de inhoud van elk attribuut van de klasse dcat: Distributie aangereikt wordt vanaf het [ATOMFeed](#ATOMFeed) element dat eraan gekoppeld is in tabel 7. De instanties van de klasse die aanwezig zijn in een instantie van dcat:Catalog, worden niet gegenereerd vanuit een [INSPIRE](#INSPIRE) element.
+De inhoud van de meertalige of eentalige attributen moet worden aangereikt vanuit de inhoud van het verbonden [ATOMFeed](#ATOMFeed) element. De inhoud van de attributen waarvan het domein overeenkomt met een klasse, is gelijk aan één of meer instantiëringen van die klasse, conform de specificaties van het huidige profiel. Deze instantiëringen nemen de inhoud van het gekoppelde [ATOMFeed](#ATOMFeed) element over.
 
 #### Instantiëring zonder [INSPIRE] element
 
-Als de instantie van de klasse dcat: Catalog niet wordt gekoppeld aan een [ATOMFeed], dan bepalen deze specificaties toch dat in de inhoud van de meertalige of eentalige domeinattributen wordt voorzien volgens de terminologische en syntactische regels van het [federaal metadataprofiel](#profildemétadonnéesfédéral) die van toepassing zijn op het element van de [ATOMFeed] dat eraan gekoppeld is in tabel 7.
+Als de instantie van de klasse dcat: Catalog niet wordt gekoppeld aan een [ATOMFeed](#ATOMFeed), dan bepalen deze specificaties toch dat in de inhoud van de meertalige of eentalige domeinattributen wordt voorzien volgens de terminologische en syntactische regels van het [federaal metadataprofiel](#profildemétadonnéesfédéral) die van toepassing zijn op het element van de [ATOMFeed](#ATOMFeed) dat eraan gekoppeld is in tabel 7.
 Deze specificaties bepalen eveneens dat de inhoud van de attributen waarvan het domein overeenkomt met een klasse, wordt aangereikt door middel van een of meer instantiëringen van die klasse, conform de specificaties van het huidige profiel.
 
 ### Klasse foaf: Organization
@@ -758,7 +758,7 @@ norm voor de implementatie van de INSPIRE downloaddiensten, gebaseerd op de [WFS
 
 ## K. dct:Location
 
-### Instanciation de dct :Location dans tout attribut
+### Instantiëring van dct :Location in een instantie van om het even welke klasse
 | URI             | Nom                                     | Description                                 | Exigence | Cardinalité | Domaine    | Source |
 | --------------- | --------------------------------------- | ------------------------------------------- | -------- | ----------- | ---------- | ------ |
 | locn:geometry   | Geometrie                               | Coördinaten van de geometrie van de dataset | M        | 1           | Eentalig   |        |
