@@ -166,7 +166,7 @@ Les spécifications applicables à la classe, indépendamment de l&#39;endroit o
 
 #### Instanciation à partir d&#39;éléments [INSPIRE]
 
-Seul le contenu de fiches [ISO 19139](#ISO19139) décrivant un [CSW](#CSW)(#CSW)(#CSW) peut être converti en instances de la classe dcat :Catalog. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Catalog soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 1.
+Seul le contenu de fiches [ISO 19139](#ISO19139) décrivant un [CSW](#CSW) peut être converti en instances de la classe dcat :Catalog. En pareil cas, ces spécifications prévoient que le contenu de chaque attribut de de la classe dcat : Catalog soit pourvu à partir de l&#39;élément [ISO 19139](#ISO19139) qui lui est associé dans le tableau 1.
 
 Le contenu des attributs multilingues ou unilingues doit être pourvu à partir du contenu de l&#39;élément [ISO 19139](#ISO19139) associé. Le contenu des attributs dont le domaine correspond à une classe est égal à une ou plusieurs instanciations de ladite classe conforme(s) aux spécifications du présent profil. Ces instanciations reprennent le contenu de l&#39;élément [ISO 19139](#ISO19139) associé.
 
