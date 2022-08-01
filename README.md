@@ -9,6 +9,6 @@ INSPIRE - DCAT-AP mapping
 **Federal DCAT AP 2** is the profile "Data Catalogue Application Profile" (DCAT AP) developed by the Belgian federal administrations involved in the implementation of the INSPIRE Directive.
 It also contains a **mapping** between the INSPIRE and DCAT AP elements.
 
----
+
 
 
