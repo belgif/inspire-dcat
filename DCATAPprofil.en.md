@@ -1,6 +1,6 @@
 **Table of content**
 
-- [Federaal DCAT AP profile](#federaal-dcat-ap-profile)
+- [Federal DCAT AP profile](#federal-dcat-ap-profile)
   - [Introduction](#introduction)
   - [II. Detailed presentation of the classes](#ii-detailed-presentation-of-the-classes)
     - [A.	Class dcat:Catalog](#aclass-dcatcatalog)
@@ -89,7 +89,7 @@
     - [Instantiation of rdf:Description in any attribute](#instantiation-of-rdfdescription-in-any-attribute)
 - [Annexe II](#annexe-ii)
 
-# Federaal DCAT AP profile
+# Federal DCAT AP profile
 
 ## Introduction
 This document establishes the [federal DCAT AP 2 profile](#DCATAP2fédéral), developed by the federal administrations involved in the implementation of the INSPIRE directive. This profile complies with the [DCAT AP 2](#DCATAP2) standard. On the one hand, it specifies and restricts this standard by specifying the rules governing the instantiation of its classes. On the other hand, it implements rules applicable to the content of the classes and their respective attributes.
