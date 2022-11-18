@@ -597,7 +597,6 @@
 		sh:maxCount 1;
 		sh:path foaf:mbox
 	], [
-		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 4;
