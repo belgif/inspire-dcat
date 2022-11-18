@@ -4,6 +4,8 @@
 @prefix dqv: <http://www.w3.org/ns/dqv#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geodcat: <http://data.europa.eu/930/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ianageo: <https://www.iana.org/assignments/media-types/geo/> .
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -717,16 +719,16 @@
 		sh:uniqueLang true;
 		sh:path skos:prefLabel
 	], [
-		sh:datatype xsd:string;
+		sh:or ( [ sh:datatype geosparql:wktLiteral ] [ sh:datatype geosparql:geoJSONLiteral ] [ sh:datatype geosparql:gmlLiteral ] [ sh:datatype ianageo:json ] );
 		sh:minCount 0;
-		sh:maxCount 1;
+		sh:maxCount 4;
 		sh:path dcat:bbox
 	], [
-		sh:datatype xsd:string;
+		sh:or ( [ sh:datatype geosparql:wktLiteral ] [ sh:datatype geosparql:geoJSONLiteral ] [ sh:datatype geosparql:gmlLiteral ] [ sh:datatype ianageo:json ] );
 		sh:minCount 0;
-		sh:maxCount 1;
+		sh:maxCount 4;
 		sh:path locn:geometry
-  	];
+	];
 	sh:targetClass dcterms:Location .
 
 <http://vocab.belgif.be/shacl/bedcatap2#QualityMeasurementShape> a sh:NodeShape;
