@@ -19,7 +19,7 @@
   rdfs:comment "Federal INSPIRE / (Geo)DCAT-AP 2 profile"@en, "Profil fédéral INSPIRE / (Geo)DCAT-AP 2"@fr,
     "Federaal INSPIRE / (Geo)DCAT-AP 2 profiel"@nl, "föderales INSPIRE / (Geo)DCAT-AP 2 Profil"@de;
   rdfs:label "Fed DCAT-AP 2"@de, "Fed DCAT-AP 2"@en, "Fed DCAT-AP 2"@fr, "Fed DCAT-AP 2"@nl;
-  owl:versionInfo "2022-08-29" .
+  owl:versionInfo "2022-11-18-draft" .
 
 <http://vocab.belgif.be/shacl/bedcatap2#CatalogShape> a sh:NodeShape;
     sh:property [
@@ -651,10 +651,9 @@
 		sh:uniqueLang true;
 		sh:path locn:postName
 	], [
- 		sh:datatype rdf:langString;
+ 		sh:datatype xsd:string;
 		sh:minCount 1;
 		sh:maxCount 1;
-		sh:uniqueLang true;
 		sh:path locn:postCode
 	], [
  		sh:datatype rdf:langString;
@@ -679,10 +678,9 @@
 		sh:uniqueLang true;
 		sh:path vcard:locality
 	], [
- 		sh:datatype rdf:langString;
+ 		sh:datatype xsd:string;
 		sh:minCount 1;
 		sh:maxCount 1;
-		sh:uniqueLang true;
 		sh:path vcard:postal-code
 	], [
  		sh:datatype rdf:langString;
