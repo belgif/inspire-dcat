@@ -310,7 +310,7 @@
     ], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 1;
+		sh:minCount 0;
 		sh:path adms:representationTechnique
 	];
 	sh:targetClass dcat:Dataset .
