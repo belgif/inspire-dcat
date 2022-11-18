@@ -1,0 +1,1310 @@
+@prefix DCAT: <http://www.w3.org/ns/dcat#> .
+@prefix DCT: <http://purl.org/dc/terms/> .
+@prefix FOAF: <http://xmlns.com/foaf/0.1/> .
+@prefix GEOSPARQL: <http://www.opengis.net/ont/geosparql#> .
+@prefix IANAGEO: <https://www.iana.org/assignments/media-types/geo/> .
+@prefix LOCN: <http://www.w3.org/ns/locn#> .
+@prefix RDFS: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix SKOS: <http://www.w3.org/2004/02/skos/core#> .
+@prefix VCARD: <http://www.w3.org/2006/vcard/ns#> .
+@prefix XSD: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.gov.be/catalog/statbelopen> a DCAT:Catalog ;
+    DCT:description "DCAT Katalog für Statbel Open Data"@de,
+        "DCAT Catalogue for Statbel Open Data"@en,
+        "Catalogue DCAT pour Statbel Open Data"@fr,
+        "DCAT Catalogue voor Statbel Open Data"@nl ;
+    DCT:identifier "http://data.gov.be/id/catalog/statbelopen" ;
+    DCT:issued "2015-10-22"^^XSD:date ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:title "DCAT Statbel Open Data"@de,
+        "DCAT Statbel Open Data"@en,
+        "DCAT Statbel Open Data"@fr,
+        "DCAT Statbel Open Data"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:dataset <https://statbel.fgov.be/node/1546>,
+        <https://statbel.fgov.be/node/4057>,
+        <https://statbel.fgov.be/node/4108>,
+        <https://statbel.fgov.be/node/4136>,
+        <https://statbel.fgov.be/node/4151>,
+        <https://statbel.fgov.be/node/531>,
+        <https://statbel.fgov.be/node/532>,
+        <https://statbel.fgov.be/node/554>,
+        <https://statbel.fgov.be/node/593>,
+        <https://statbel.fgov.be/node/594> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/ECON>,
+        <https://vocab.belgif.be/auth/datatheme/ENVI>,
+        <https://vocab.belgif.be/auth/datatheme/GOVE>,
+        <https://vocab.belgif.be/auth/datatheme/SOCI>,
+        <https://vocab.belgif.be/auth/datatheme/TRAN> ;
+    DCAT:themeTaxonomy <http://publications.europa.eu/resource/authority/country/>,
+        <http://publications.europa.eu/resource/authority/file-type/>,
+        <http://purl.org/adms/publishertype/1.0>,
+        <http://vocab.belgif.be/auth/datatheme/> ;
+    FOAF:homepage <https://statbel.fgov.be/de/open-data>,
+        <https://statbel.fgov.be/en/open-data>,
+        <https://statbel.fgov.be/fr/open-data>,
+        <https://statbel.fgov.be/nl/open-data> .
+
+<http://publications.europa.eu/resource/authority/file-type/XLS> a DCT:mediaTypeOrExtent ;
+    RDFS:label "XLS" .
+
+<http://publications.europa.eu/resource/authority/file-type/ZIP> a DCT:MediaTypeOrExtent ;
+    RDFS:label "ZIP" .
+
+<http://publications.europa.eu/resource/authority/file-type/CSV> a DCT:MediaTypeOrExtent ;
+    RDFS:label "CSV" .
+
+<http://publications.europa.eu/resource/authority/file-type/GML> a DCT:mediaTypeOrExtent ;
+    RDFS:label "GML" .
+
+<http://purl.org/adms/publishertype/NationalAuthority/> a SKOS:Concept ;
+    SKOS:inScheme <http://purl.org/adms/publishertype/1.0> ;
+    SKOS:prefLabel "National Authority"@en .
+
+<https://statbel.fgov.be/de/open-data/bevoelkerung-nach-statistischen-sektoren-10> DCT:language <http://publications.europa.eu/resource/authority/language/DEU> .
+
+<https://statbel.fgov.be/de/open-data/zahl-der-geburten-pro-tag> DCT:language <http://publications.europa.eu/resource/authority/language/DEU> .
+
+<https://statbel.fgov.be/en/open-data/cadastral-statistics-building-stock> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/census-2011-matrix-commutes-sex> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/census-2011-population-sex-according-km2-grid> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/enterprises-subject-vat-according-employer-class> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/enterprises-subject-vat-according-employer-class-13> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/fiscal-statistics-income-statistical-sector> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/number-births-day> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/number-deaths-day> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/population-statistical-sector-10> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data/statistical-sectors-2022> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/fr/open-data/census-2011-matrice-des-deplacements-domicile-travail-par-sexe> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/census-2011-population-par-sexe-selon-la-grille-km2-grid> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/entreprises-assujetties-la-tva-par-classe-demploi-1> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/entreprises-assujetties-la-tva-par-classe-demploi-13> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/nombre-de-deces-par-jour> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/nombre-de-naissances-par-jour> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/population-par-secteur-statistique-10> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/secteurs-statistiques-2022> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/statistique-cadastrale-du-parc-de-batiments> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data/statistique-fiscale-des-revenus-par-secteur-statistique> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/nl/open-data/aantal-geboorten-dag> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/aantal-sterfgevallen-dag> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/bevolking-statistische-sector-10> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/btw-plichtige-ondernemingen-volgens-werknemersklasse> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/btw-plichtige-ondernemingen-volgens-werknemersklasse-13> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/census-2011-bevolking-naar-geslacht-volgens-het-km2-raster-grid> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/census-2011-matrix-van-woon-werkverkeer-geslacht> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/fiscale-statistiek-van-de-inkomsten-sector> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/kadastrale-statistiek-van-het-bestand-van-de-gebouwen> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data/statistische-sectoren-2022> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T38.STAT_DTST_503.CTAC_ORG_1.DIFF_LVL_1.EN.pdf> a FOAF:Document ;
+    FOAF:topic "Structure of the population based on the National Register"@en .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_381.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Structure et Mouvement de la population résidente"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_42.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Structure et Mouvement de la population résidente"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_62.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Statistique fiscale des revenus"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_843.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Décès"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_42.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Structuur en Beweging van de residentiële bevolking"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_62.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Fiscale statistiek van de inkomsten"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_843.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Sterfte"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Jaarevolutie van de btw-plichtige ondernemingen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/TF_Building_stock_metadata%20variables.xlsx> a FOAF:Document ;
+    FOAF:topic "variables"@en,
+        "variables"@fr,
+        "variables"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.xlsx#distribution4108> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4108> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.zip#distribution4108> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4108> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Census%202011%20-%20Leeftijd%2C%20Arbeidsmarktsituatie%2C%20Land%20van%20staatsburgerschap%2C%20Verblijfplaats%2C%20Positie%20in%20het%20huishouden%2C%20Burgerlijke%20staat%2C%20Geboorteplaats%2C%20Geslacht/READ%20ME.xlsx> a FOAF:Document ;
+    FOAF:topic "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/REGULATION-EU-519-2010-FR.pdf> a FOAF:Document ;
+    FOAF:topic "Census 2011, Règlement (UE) N° 519/2010"@en,
+        "Census 2011, Règlement (UE) N° 519/2010 "@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/ReglementEuropeen1201-2009.pdf> a FOAF:Document ;
+    FOAF:topic "Règlement (CE) N°1201/2009"@en,
+        "Règlement (CE) N°1201/2009 "@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/20200105-Note%20Refnis%20et%20Nuts-FR.pdf> a FOAF:Document ;
+    FOAF:topic "nomenclatures REFNIS et NUTS"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/20201005-Nota%20Refnis%20en%20Nuts-NL.pdf> a FOAF:Document ;
+    FOAF:topic "REFNIS- en NUTS-nomenclaturen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Columns%20description_0.xlsx> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        "Variables"@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Secteur%20stat-FR_tcm326-174181.pdf> a FOAF:Document ;
+    FOAF:topic "Secteurs statistique"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Secteurs%20stat-NL_tcm325-174181.pdf> a FOAF:Document ;
+    FOAF:topic "statistical sectors"@en,
+        "statistische sectoren"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.geojson.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/GEOJSON> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "geojson (ZIP) Belgian Lambert 1972 (EPSG: 31370)"@en,
+        "geojson (ZIP) Lambert belge 1972 (EPSG: 31370)"@fr,
+        "geojson (ZIP) Belgische Lambert 1972 (EPSG: 31370)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.geojson.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.shp.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/SHP> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "shp (ZIP) Belgian Lambert 1972 (EPSG: 31370)"@en,
+        "shp (ZIP) Lambert belge 1972 (EPSG: 31370)"@fr,
+        "shp (ZIP) Belgische Lambert 1972 (EPSG: 31370)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.shp.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.sqlite.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/BIN> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "SQLITE (ZIP) Belgian Lambert 1972 (EPSG: 31370)"@en,
+        "SQLITE (ZIP) Lambert belge 1972 (EPSG: 31370)"@fr,
+        "SQLITE (ZIP) Belgische Lambert 1972 (EPSG: 31370)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.sqlite.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.geojson.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/GEOJSON> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "geojson (ZIP) Belgian Lambert 2008 (EPSG: 3812)"@en,
+        "geojson (ZIP) Lambert belge 2008 (EPSG: 3812)"@fr,
+        "geojson (ZIP) Belgische Lambert 2008 (EPSG: 3812)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.geojson.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.shp.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/SHP> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "shp (ZIP) Belgian Lambert 2008 (EPSG: 3812)"@en,
+        "shp (ZIP) Lambert belge 2008 (EPSG: 3812)"@fr,
+        "shp (ZIP) Belgische Lambert 2008 (EPSG: 3812)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.shp.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.sqlite.zip#distribution4057> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/BIN> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "SQLITE (ZIP) Belgian Lambert 2008 (EPSG: 3812)"@en,
+        "SQLITE (ZIP) Lambert belge 2008 (EPSG: 3812)"@fr,
+        "SQLITE (ZIP) Belgische Lambert 2008 (EPSG: 3812)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4057> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.sqlite.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/T7.STAT_DTST_562.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Metadata"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/T8.STAT_DTST_381.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Struktur und Bewegung der Wohnbevölkerung"@de,
+        "Structuur en Beweging van de residentiële bevolking"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/T8.STAT_DTST_562.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> a FOAF:Document ;
+    FOAF:topic "Metadata"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.xlsx#distribution554> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/554> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.zip#distribution554> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/554> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/fiscales_variables_vers2.xlsx> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        "Variables"@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS-Columns.xlsx> a FOAF:Document ;
+    FOAF:topic "Variablen"@de,
+        "Variables"@en,
+        "Variables"@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.xlsx#distribution532> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@de,
+        "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/532> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.zip#distribution532> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@de,
+        "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/532> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS-Columns.xlsx> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        "Variables,"@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.xlsx#distribution531> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/531> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.zip#distribution531> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/531> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/Columns%20description2020.xlsx> a FOAF:Document ;
+    FOAF:topic "Variabelen"@de,
+        "Variabeles"@en,
+        "Variables,"@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.xlsx#distribution4151> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@de,
+        "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4151> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.zip#distribution4151> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@de,
+        "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4151> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2016.zip#distribution1546> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/MDB> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "MDB (ZIP)"@en,
+        "MDB (ZIP)"@fr,
+        "MDB (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/1546> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2016.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2021.zip#distribution4136> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/MDB> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "MDB (ZIP)"@en,
+        "MDB (ZIP)"@fr,
+        "MDB (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4136> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2021.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2016.zip#distribution1546> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/BIN> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "sqlite (ZIP)"@en,
+        "sqlite (ZIP)"@fr,
+        "sqlite (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/1546> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2016.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2021.zip#distribution4136> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/BIN> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "sqlite (ZIP)"@en,
+        "sqlite (ZIP)"@fr,
+        "sqlite (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/4136> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2021.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TF_CENSUS_2011_COMMUTERS_MUNTY_SEX-columns.xlsx> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        " Variables, "@fr,
+        "Variabelen"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.xlsx#distribution594> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/XLSX> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "XLSX"@en,
+        "XLSX"@fr,
+        "XLSX"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/594> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.xlsx> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.zip#distribution594> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "TXT (ZIP)"@en,
+        "TXT (ZIP)"@fr,
+        "TXT (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/594> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID.csv.zip#distribution593> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "CSV (ZIP)"@en,
+        "CSV (ZIP)"@fr,
+        "CSV (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/593> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID.csv.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID.xlsx> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        "Variables"@fr,
+        "Variables"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_0.zip#distribution593> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/GML> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "GML (ZIP)"@en,
+        "GML (ZIP)"@fr,
+        "GML (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/593> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_0.zip> .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_2.zip#distribution593> a DCAT:Distribution ;
+    DCT:format <http://publications.europa.eu/resource/authority/file-type/SHP> ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:title "shapefile (ZIP)"@en,
+        "shapefile (ZIP)"@fr,
+        "shapefile (ZIP)"@nl ;
+    DCAT:accessURL <https://statbel.fgov.be/node/593> ;
+    DCAT:downloadURL <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_2.zip> .
+
+<https://vocab.belgif.be/auth/datatheme/ENVI> a SKOS:Concept ;
+    SKOS:inScheme <https://vocab.belgif.be/auth/datatheme/> ;
+    SKOS:prefLabel "Umwelt"@de,
+        "Environment"@en,
+        "Environnement"@fr,
+        "Milieu"@nl .
+
+<https://vocab.belgif.be/auth/datatheme/TRAN> a SKOS:Concept ;
+    SKOS:inScheme <https://vocab.belgif.be/auth/datatheme/> ;
+    SKOS:prefLabel "Verkehr"@de,
+        "Transport"@en,
+        "Transports"@fr,
+        "Vervoer"@nl .
+
+<http://publications.europa.eu/resource/authority/country/> a SKOS:ConceptScheme ;
+    DCT:identifier <http://publications.europa.eu/resource/authority/country/> ;
+    DCT:title "Räumlicher Anwendungsbereich"@de,
+        "Spatial scope"@en,
+        "Etendue géographique"@fr,
+        "Ruimtelijke dekking"@nl .
+
+<http://publications.europa.eu/resource/authority/file-type/> a SKOS:ConceptScheme ;
+    DCT:identifier <http://publications.europa.eu/resource/authority/file-type/> ;
+    DCT:title "Dateityp"@de,
+        "File type"@en,
+        "Type de fichier"@fr,
+        "Type van bestand"@nl .
+
+<http://publications.europa.eu/resource/authority/file-type/GEOJSON> a DCT:mediaTypeOrExtent ;
+    RDFS:label "GeoJSON" .
+
+<http://publications.europa.eu/resource/authority/file-type/MDB> a DCT:mediaTypeOrExtent ;
+    RDFS:label "MDB",
+        "Microsoft Access DB" .
+
+<http://vocab.belgif.be/auth/datatheme/> a SKOS:ConceptScheme ;
+    DCT:identifier <http://vocab.belgif.be/auth/datatheme/> ;
+    DCT:title "Thema Daten"@de,
+        "Data theme"@en,
+        "Thème données"@fr,
+        "Gegevensthema"@nl .
+
+<https://statbel.fgov.be/de> DCT:language <http://publications.europa.eu/resource/authority/language/DEU> .
+
+<https://statbel.fgov.be/de/open-data> a FOAF:Document ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU> ;
+    FOAF:homepage <https://statbel.fgov.be/de/open-data> .
+
+<https://statbel.fgov.be/en> DCT:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<https://statbel.fgov.be/en/open-data> a FOAF:Document ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    FOAF:homepage <https://statbel.fgov.be/en/open-data> .
+
+<https://statbel.fgov.be/fr> DCT:language <http://publications.europa.eu/resource/authority/language/FRA> .
+
+<https://statbel.fgov.be/fr/open-data> a FOAF:Document ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/FRA> ;
+    FOAF:homepage <https://statbel.fgov.be/fr/open-data> .
+
+<https://statbel.fgov.be/nl> DCT:language <http://publications.europa.eu/resource/authority/language/NLD> .
+
+<https://statbel.fgov.be/nl/open-data> a FOAF:Document ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/NLD> ;
+    FOAF:homepage <https://statbel.fgov.be/nl/open-data> .
+
+<https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_en.pdf> a FOAF:Document ;
+    FOAF:topic "Note for end users"@en .
+
+<https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_fr.pdf> a FOAF:Document ;
+    FOAF:topic "Note for end users"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_nl.pdf> a FOAF:Document ;
+    FOAF:topic "Note for end users"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T38.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.EN.pdf> a FOAF:Document ;
+    FOAF:topic "Annual evolution of VAT-registered enterprises"@en .
+
+<https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.FR.pdf> a FOAF:Document ;
+    FOAF:topic "Evolution annuelle des entreprises assujetties à la tva"@fr .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/EuropeseVerordering1201-2009.pdf> a FOAF:Document ;
+    FOAF:topic "Verordening (EG) nr. 1201/2009"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/Verordening-EU-519-2010-NL.pdf> a FOAF:Document ;
+    FOAF:topic "Verordening (EG) nr. 519/2010"@nl .
+
+<https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_EN.pdf> a FOAF:Document ;
+    FOAF:topic "Variables"@en,
+        "Variables"@fr,
+        "Variabelen"@nl .
+
+<http://publications.europa.eu/resource/authority/file-type/SHP> a DCT:mediaTypeOrExtent ;
+    RDFS:label "SHP" .
+
+<http://purl.org/adms/publishertype/1.0> a SKOS:ConceptScheme ;
+    DCT:identifier <http://purl.org/adms/publishertype/1.0> ;
+    DCT:title "Publisher type"@en .
+
+<https://statbel.fgov.be/node/1546> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Enterprises subject to VAT according to employer class and administrative geography
+Period: 2016
+Metadata: Variables, Annual evolution of VAT-registered enterprises
+Note for end users
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Assujettissements à la TVA par classe d'emploi et localisation du siège social
+Période : 2016 
+Métadonnées : Variables, Evolution annuelle des entreprises assujetties à la tva
+Note for end users
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving: Oprichtingen van btw-plichtige ondernemingen volgens werknemersklasse en plaats maatschappelijke zetel
+Periode: 2016
+Metadata: Variabelen, Jaarevolutie van de btw-plichtige ondernemingen
+Note for end users
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID1546" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2016-12-31"^^XSD:date ;
+            DCAT:startDate "2016-01-01"^^XSD:date ] ;
+    DCT:title "Enterprises subject to VAT according to employer class"@en,
+        "Entreprises assujetties à la TVA par classe d'emploi"@fr,
+        "Btw-plichtige ondernemingen volgens werknemersklasse"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2016.zip#distribution1546>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2016.zip#distribution1546> ;
+    DCAT:keyword "Entreprises"@en,
+        "Entreprises"@fr,
+        "Ondernemingen"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/enterprises-subject-vat-according-employer-class>,
+        <https://statbel.fgov.be/fr/open-data/entreprises-assujetties-la-tva-par-classe-demploi-1>,
+        <https://statbel.fgov.be/nl/open-data/btw-plichtige-ondernemingen-volgens-werknemersklasse> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/ECON> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_en.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_fr.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_nl.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T38.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.EN.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_EN.pdf> .
+
+<https://statbel.fgov.be/node/4108> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description :  Cadastral statistics of the building stock – Geographic location - Type of Building  - Building features
+Period: 2022
+Metadata:  Metadata variables
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Statistique cadastrale du parc de bâtiments – Situation Géographique - Type de construction - Caractéristiques
+Période: 2022
+Métadonnées :  Metadata variables
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving:  Kadastrale statistiek van het bestand van de gebouwen – Geografische ligging - Type bebouwing - Karakteristieken
+Periode: 2022
+Metadata:  Metadata variables
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID4108" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2022-12-31"^^XSD:date ;
+            DCAT:startDate "2022-01-01"^^XSD:date ] ;
+    DCT:title "Cadastral statistics of the building stock"@en,
+        "Statistique cadastrale du parc de bâtiments"@fr,
+        "Kadastrale statistiek van het bestand van de gebouwen"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.xlsx#distribution4108>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/building_stock_open_data_2022.zip#distribution4108> ;
+    DCAT:keyword "Bouwen & wonen"@en,
+        "Building stock"@en,
+        "Construction & logement"@fr,
+        "Parc des bâtiments"@fr,
+        "Bouwen & wonen"@nl,
+        "Gebouwenpark"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/cadastral-statistics-building-stock>,
+        <https://statbel.fgov.be/fr/open-data/statistique-cadastrale-du-parc-de-batiments>,
+        <https://statbel.fgov.be/nl/open-data/kadastrale-statistiek-van-het-bestand-van-de-gebouwen> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/ECON> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/opendata/Buildstock/TF_Building_stock_metadata%20variables.xlsx>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/T7.STAT_DTST_562.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/T8.STAT_DTST_562.CTAC_ORG_1.DIFF_LVL_1.NL.pdf> .
+
+<https://statbel.fgov.be/node/4136> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Enterprises subject to VAT according to employer class and administrative geography
+Period: 2021
+Metadata: Variables, Annual evolution of VAT-registered enterprises
+Note for end users
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Assujettissements à la TVA par classe d'emploi et localisation du siège social
+Période : 2021
+Métadonnées : Variables, Evolution annuelle des entreprises assujetties à la tva
+Note for end users
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving: Oprichtingen van btw-plichtige ondernemingen volgens werknemersklasse en plaats maatschappelijke zetel
+Periode: 2021
+Metadata: Variabelen, Jaarevolutie van de btw-plichtige ondernemingen
+Note for end users
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID4136" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2021-12-31"^^XSD:date ;
+            DCAT:startDate "2021-01-01"^^XSD:date ] ;
+    DCT:title "Enterprises subject to VAT according to employer class"@en,
+        "Entreprises assujetties à la TVA par classe d'emploi"@fr,
+        "Btw-plichtige ondernemingen volgens werknemersklasse"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_MDB_2021.zip#distribution4136>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_SQ_2021.zip#distribution4136> ;
+    DCAT:keyword "Entreprises"@en,
+        "Entreprises"@fr,
+        "Ondernemingen"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/enterprises-subject-vat-according-employer-class-13>,
+        <https://statbel.fgov.be/fr/open-data/entreprises-assujetties-la-tva-par-classe-demploi-13>,
+        <https://statbel.fgov.be/nl/open-data/btw-plichtige-ondernemingen-volgens-werknemersklasse-13> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/ECON> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_en.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_fr.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/documents/Ondernemingen/7.4%20BTW-plichtige%20ondernemers/7.4.1%20Jaarevolutie/Note_for_end_users_nl.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T38.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.EN.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_997.CTAC_ORG_1.DIFF_LVL_1.NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/btw-plichtige/werknemersklasse/TF_VAT_NACE_EMPL_EN.pdf> .
+
+<https://statbel.fgov.be/node/4151> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Beschreibung: Bevölkerung nach statistischen Sektoren
+Periode: 2022
+Metadaten: Variabelen,  Struktur und Bewegung der Wohnbevölkerung 
+Mehr Informationen, Daten und Veröffentlichungen über dieses Thema auf Statbel"""@de,
+        """Description: Population by Statistical sector
+Period: 2022
+Metadata: Variabeles, Structure of the population based on the National Register
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Population par secteur statistique
+Période : 2022
+Métadonnées : Variables, Structure et Mouvement de la population résidente
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving: Bevolking per statistische sector
+Periode: 2022
+Metadata: Variabelen, Structuur en Beweging van de residentiële bevolking
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID4151" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2022-12-31"^^XSD:date ;
+            DCAT:startDate "2022-01-01"^^XSD:date ] ;
+    DCT:title "Bevölkerung nach statistischen Sektoren"@de,
+        "Population by Statistical sector"@en,
+        "Population par secteur statistique"@fr,
+        "Bevolking per statistische sector"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.xlsx#distribution4151>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/OPENDATA_SECTOREN_2022.zip#distribution4151> ;
+    DCAT:keyword "Bevolking"@de,
+        "Bevölkerungsstruktur"@de,
+        "Statistische sectoren"@de,
+        "Population"@en,
+        "Statistical sectors"@en,
+        "Structure of the Population"@en,
+        "Population"@fr,
+        "Secteurs statistiques"@fr,
+        "Structure de la population"@fr,
+        "Bevolking"@nl,
+        "Statistische sectoren"@nl,
+        "Structuur van de bevolking"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/de/open-data/bevoelkerung-nach-statistischen-sektoren-10>,
+        <https://statbel.fgov.be/en/open-data/population-statistical-sector-10>,
+        <https://statbel.fgov.be/fr/open-data/population-par-secteur-statistique-10>,
+        <https://statbel.fgov.be/nl/open-data/bevolking-statistische-sector-10> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/GOVE>,
+        <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/metadata/T38.STAT_DTST_503.CTAC_ORG_1.DIFF_LVL_1.EN.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_42.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_42.CTAC_ORG_1.DIFF_LVL_1.NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/sectoren/Columns%20description2020.xlsx> .
+
+<https://statbel.fgov.be/node/531> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Number of deaths per day
+Period: 1992-2021
+Metadata:Variables, Structure and movement of the resident population (PDF, 67.75 Kb)
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Nombre de décès par jour
+Période : 1992-2021
+Métadonnées :Variables, Décès
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel
+ """@fr,
+        """Beschrijving: Aantal sterfgevallen per dag
+Periode: 1992-2021
+Metadata:Variabelen, Sterfte
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID531" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2021-12-31"^^XSD:date ;
+            DCAT:startDate "1992-01-01"^^XSD:date ] ;
+    DCT:title "Number of deaths per day"@en,
+        "Nombre de décès par jour"@fr,
+        "Aantal sterfgevallen per dag"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.xlsx#distribution531>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.zip#distribution531> ;
+    DCAT:keyword "Deaths"@en,
+        "Population"@en,
+        "Mortalité"@fr,
+        "Population"@fr,
+        "Bevolking"@nl,
+        "Sterfte"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/number-deaths-day>,
+        <https://statbel.fgov.be/fr/open-data/nombre-de-deces-par-jour>,
+        <https://statbel.fgov.be/nl/open-data/aantal-sterfgevallen-dag> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_843.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_843.CTAC_ORG_1.DIFF_LVL_1.NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS-Columns.xlsx> .
+
+<https://statbel.fgov.be/node/532> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Beschreibung: Zahl der Geburten pro Tag
+Periode: 1992-2021
+Metadaten:: Struktur und Bewegung der Wohnbevölkerung, Variablen
+Mehr Informationen, Daten und Veröffentlichungen über dieses Thema auf Statbel"""@de,
+        """Description: Number of births per day
+Period: 1992-2021
+Metadata: Resident population structure and change (PDF, 67.75 Kb),  Variables
+More information, data and publications on this topic on Statbel"""@en,
+        """Description : Nombre de naissances par jour
+Période : 1992-2021
+Métadonnées : Structure et Mouvement de la population résidente (PDF, 67.75 Kb),  Variables
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving: Aantal geboorten per dag
+Periode: 1992-2021
+Metadata: Structuur en Beweging van de residentiële bevolking, Variabelen
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID532" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/DEU>,
+        <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2021-12-31"^^XSD:date ;
+            DCAT:startDate "1992-01-01"^^XSD:date ] ;
+    DCT:title "Zahl der Geburten pro Tag"@de,
+        "Number of births per day"@en,
+        "Nombre de naissances par jour"@fr,
+        "Aantal geboorten per dag"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.xlsx#distribution532>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS.zip#distribution532> ;
+    DCAT:keyword "Bevolking"@de,
+        "Geboorten"@de,
+        "Births"@en,
+        "Population"@en,
+        "Naissances"@fr,
+        "Population"@fr,
+        "Bevolking"@nl,
+        "Geboorten"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/de/open-data/zahl-der-geburten-pro-tag>,
+        <https://statbel.fgov.be/en/open-data/number-births-day>,
+        <https://statbel.fgov.be/fr/open-data/nombre-de-naissances-par-jour>,
+        <https://statbel.fgov.be/nl/open-data/aantal-geboorten-dag> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_381.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/T8.STAT_DTST_381.CTAC_ORG_1.DIFF_LVL_1.NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/Geboorte/TF_BIRTHS-Columns.xlsx> .
+
+<https://statbel.fgov.be/node/554> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Fiscal statistics on income subject to personal income tax by Statistical sector
+Period: 2005-2019
+Metadata: Variables
+More information, data and publications on this topic on Statbel
+ """@en,
+        """Description : Statistique fiscale des revenus soumis à l’impôt des personnes physiques par secteur statistique
+Période : 2005-2019
+Métadonnées : Variables, Statistique fiscale des revenus 
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Statbel"""@fr,
+        """Beschrijving: Fiscale statistiek van de inkomsten onderworpen aan de belasting van de natuurlijke personen per statistische sector
+Periode : 2005-2019
+Metadata: Variabelen,  Fiscale statistiek van de inkomsten 
+Meer informatie, data en publicaties over dit onderwerp op Statbel"""@nl ;
+    DCT:identifier "NodeID554" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2019-12-31"^^XSD:date ;
+            DCAT:startDate "2005-01-01"^^XSD:date ] ;
+    DCT:title "Fiscal statistics on income by Statistical sector"@en,
+        "Statistique fiscale des revenus par secteur statistique"@fr,
+        "Fiscale statistiek van de inkomsten per sector"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.xlsx#distribution554>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/TF_PSNL_INC_TAX_SECTOR.zip#distribution554> ;
+    DCAT:keyword "Households"@en,
+        "Statistical sectors"@en,
+        "Taxable income"@en,
+        "Ménage"@fr,
+        "Revenus fiscaux"@fr,
+        "Secteurs statistiques"@fr,
+        "Fiscale inkomens"@nl,
+        "Huishoudens"@nl,
+        "Statistische sectoren"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/fiscal-statistics-income-statistical-sector>,
+        <https://statbel.fgov.be/fr/open-data/statistique-fiscale-des-revenus-par-secteur-statistique>,
+        <https://statbel.fgov.be/nl/open-data/fiscale-statistiek-van-de-inkomsten-sector> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/ECON>,
+        <https://vocab.belgif.be/auth/datatheme/GOVE>,
+        <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/metadata/T7.STAT_DTST_62.CTAC_ORG_1.DIFF_LVL_1.FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/metadata/T8.STAT_DTST_62.CTAC_ORG_1.DIFF_LVL_1.NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/arbeid%20per%20sector/fiscales_variables_vers2.xlsx> .
+
+<https://statbel.fgov.be/node/594> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Census 2011 - Matrix of commutes by sex
+Period: 2011
+Metadata: Census 2011, Variables, Commission Regulation (EU) No 519/2010 (PDF, 1.04 MB), Commission Regulation (EC) No 1201/2009 (PDF, 2.08 MB)
+More information, data and publications on this topic on Census 2011"""@en,
+        """Description : Census 2011 - Matrice des déplacements domicile-travail par sexe 
+Période : 2011
+Métadonnées : Census 2011, Variables, Règlement (UE) N° 519/2010 (PDF, 1.04 MB), Règlement (CE) N°1201/2009 (PDF, 2.08 MB)
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Census 2011"""@fr,
+        """Beschrijving: Census 2011 - Matrix van woon-werkverkeer per geslacht 
+Periode: 2011
+Metadata: Census 2011, Variabelen, Verordening (EG) nr. 519/2010 , Verordening (EG) nr. 1201/2009 
+Meer informatie, data en publicaties over dit onderwerp op Census 2011"""@nl ;
+    DCT:identifier "NodeID594" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2011-12-31"^^XSD:date ;
+            DCAT:startDate "2011-01-01"^^XSD:date ] ;
+    DCT:title "Census 2011 - Matrix of commutes by sex"@en,
+        "Census 2011 - Matrice des déplacements domicile-travail par sexe"@fr,
+        "Census 2011 - Matrix van woon-werkverkeer per geslacht"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.xlsx#distribution594>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TU_CENSUS_2011_COMMUTERS_MUNTY.zip#distribution594> ;
+    DCAT:keyword "Census 2011"@en,
+        "Census 2011"@fr,
+        "Census 2011"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/census-2011-matrix-commutes-sex>,
+        <https://statbel.fgov.be/fr/open-data/census-2011-matrice-des-deplacements-domicile-travail-par-sexe>,
+        <https://statbel.fgov.be/nl/open-data/census-2011-matrix-van-woon-werkverkeer-geslacht> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/opendata/EuropeseVerordering1201-2009.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Verordening-EU-519-2010-NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/census%202011%20Matrix%20woon-%20werkverkeer%20per%20geslacht/TF_CENSUS_2011_COMMUTERS_MUNTY_SEX-columns.xlsx> .
+
+<http://publications.europa.eu/resource/authority/file-type/BIN> a DCT:mediaTypeOrExtent ;
+    RDFS:label "SQLITE" .
+
+<https://statbel.fgov.be/node/593> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: Vector file and population residing in Belgium on 1 January 2011 on a grid made up of a square areas with sides of 1 km
+Period: 2011
+Metadata: Variables, Census 2011, Règlement (UE) N° 519/2010 , Règlement (CE) N°1201/2009 
+More information, data and publications on this topic on Census 2011."""@en,
+        """Description : Fichier vectoriel et population vivant en Belgique au 01/01/2011 sur une grille composée de carrés de 1km de côté (appelée Grid)
+Période: 2011
+Métadonnées : Variables, Census 2011, Règlement (UE) N° 519/2010 , Règlement (CE) N°1201/2009 
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur Census 2011."""@fr,
+        """Beschrijving: Vectorieel bestand en bevolking in België op 1/1/2011 op een raster dat uit vierkanten met zijden van1 km bestaat (Grid)
+Periode: 2011
+Metadata: Variables, Variabelen, Verordening (EG) nr. 519/2010 , Verordening (EG) nr. 1201/2009 
+Meer informatie, data en publicaties over dit onderwerp op Census 2011"""@nl ;
+    DCT:identifier "NodeID593" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2011-12-31"^^XSD:date ;
+            DCAT:startDate "2011-01-01"^^XSD:date ] ;
+    DCT:title "Census 2011 - Population by sex according to the km² grid"@en,
+        "Census 2011 – Population par sexe selon la grille km² (Grid)"@fr,
+        "Census 2011 - Bevolking naar geslacht volgens het km²-raster (Grid)"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID.csv.zip#distribution593>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_0.zip#distribution593>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID_2.zip#distribution593> ;
+    DCAT:keyword "Census 2011"@en,
+        "Geographic files"@en,
+        "Tools"@en,
+        "Census 2011"@fr,
+        "Fichiers géographiques"@fr,
+        "Tools"@fr,
+        "Census 2011"@nl,
+        "Geografische bestanden"@nl,
+        "Tools"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/census-2011-population-sex-according-km2-grid>,
+        <https://statbel.fgov.be/fr/open-data/census-2011-population-par-sexe-selon-la-grille-km2-grid>,
+        <https://statbel.fgov.be/nl/open-data/census-2011-bevolking-naar-geslacht-volgens-het-km2-raster-grid> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/GOVE>,
+        <https://vocab.belgif.be/auth/datatheme/SOCI> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/opendata/Census%202011%20-%20Leeftijd%2C%20Arbeidsmarktsituatie%2C%20Land%20van%20staatsburgerschap%2C%20Verblijfplaats%2C%20Positie%20in%20het%20huishouden%2C%20Burgerlijke%20staat%2C%20Geboorteplaats%2C%20Geslacht/READ%20ME.xlsx>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/EuropeseVerordering1201-2009.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/REGULATION-EU-519-2010-FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/ReglementEuropeen1201-2009.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Verordening-EU-519-2010-NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/cenus%20bevolking%20km2%20raster/SH_CENSUS_2011_POP_BY_GRID.xlsx> .
+
+<https://vocab.belgif.be/auth/datatheme/ECON> a SKOS:Concept ;
+    SKOS:inScheme <https://vocab.belgif.be/auth/datatheme/> ;
+    SKOS:prefLabel "Wirtschaft und Finanzen"@de,
+        "Economy and finance"@en,
+        "Économie et finances"@fr,
+        "Economie en financiën"@nl .
+
+<https://vocab.belgif.be/auth/datatheme/GOVE> a SKOS:Concept ;
+    SKOS:inScheme <https://vocab.belgif.be/auth/datatheme/> ;
+    SKOS:prefLabel "Regierung und öffentlicher Sektor"@de,
+        "Government and public sector"@en,
+        "Gouvernement et secteur public"@fr,
+        "Overheid en publieke sector"@nl .
+
+<http://publications.europa.eu/resource/authority/file-type/TXT> a DCT:MediaTypeOrExtent ;
+    RDFS:label "Plain text" .
+
+<http://publications.europa.eu/resource/authority/file-type/XLSX> a DCT:mediaTypeOrExtent ;
+    RDFS:label "XLSX" .
+
+<https://statbel.fgov.be/node/4057> a DCAT:Dataset ;
+    DCT:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    DCT:description """Description: vector file with statistical sectors on 2022
+Metadata: Variables
+sh_statbel_statistical_sectors_20220101 includes the statistical sectors of Belgium on 01/01/2022. This file is valid until the next update/correction of the municipal boundaries. The version of the municipality boundaries is the one from 2022. From 01/01/2019, the municipality code can no longer be derived from the statistical sector code.
+1 by the General Administration of Patrimonial Documentation of the FPS Finance
+Reference system:
+
+Belgian Lambert 1972 (EPSG : 31370)
+Belgian Lambert 2008 (EPSG : 3812)
+
+Accuracy: 1/10.000
+More information, data and publications on this topic on:
+Vademecum: statistical sectors"""@en,
+        """Description : fichier vectoriel des limites des secteurs statistiques au 2022
+Métadonnées : Variables, nomenclatures REFNIS et NUTS
+sh_statbel_statistical_sectors_20220101 reprend les secteurs statistiques de Belgique au 01/01/2022. Ce fichier est valable jusqu’à la prochaine modification/correction des limites communales. La version des limites communales est celle de 2022. A partir de la situation 01012019, le code commune ne peut plus être dérivé du code des secteurs statistiques.
+1 par l’Administration générale de la Documentation patrimoniale du SPF Finances
+Système de référence:
+
+Lambert belge 1972 (EPSG : 31370)
+Lambert belge 2008 (EPSG: 3812)
+
+Précision: 1/10.000
+Vous trouverez plus d’informations, de données et de publications à ce sujet sur :
+Vademecum: Secteurs statistique
+ """@fr,
+        """Beschrijving: vectorieel bestand met de statistische sectoren 2022
+Metadata: Variabelen, REFNIS- en NUTS-nomenclaturen
+sh_statbel_statistical_sectors_20220101 bestaat uit de statistische sectoren van België op 01/01/2022. Dit bestand is geldig tot de volgende wijziging/verbetering van de gemeente grenzen. De versie van de gemeentegrenzen is degene van 2022. Vanaf de toestand 01012019 kan de gemeente code niet meer uit de statistische sectorcode afgeleid worden.
+1 door de Algemene Administratie van de Patrimonium Documentatie (AAPD) van de FOD Financiën
+Referentiesysteem:
+
+Belgische Lambert 1972 (EPSG : 31370)
+Belgische Lambert 2008 (EPSG: 3812)
+
+Nauwkeurigheid: 1/10.000
+Meer informatie, data en publicaties over dit onderwerp op:
+Vademecum: statistische sectoren"""@nl ;
+    DCT:identifier "NodeID4057" ;
+    DCT:language <http://publications.europa.eu/resource/authority/language/ENG>,
+        <http://publications.europa.eu/resource/authority/language/FRA>,
+        <http://publications.europa.eu/resource/authority/language/NLD> ;
+    DCT:license [ a DCT:LicenseDocument ;
+            DCT:title "Die Lizenz ist vollständig in Französisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf) und Niederländisch (https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf) verfügbar."@de,
+                "The licence is fully available on https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_EN.pdf"@en,
+                "Le contenu de la licence est intégrablement consultable ici : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_FR.pdf"@fr,
+                "De inhoud van de licentie is hier volledig doorzoekbaar : https://statbel.fgov.be/sites/default/files/files/opendata/Licence%20open%20data_NL.pdf"@nl ] ;
+    DCT:publisher <https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> ;
+    DCT:spatial <http://publications.europa.eu/resource/authority/country/BEL> ;
+    DCT:temporal [ a DCT:PeriodOfTime ;
+            DCAT:endDate "2022-12-31"^^XSD:date ;
+            DCAT:startDate "2022-01-01"^^XSD:date ] ;
+    DCT:title "Statistical sectors 2022"@en,
+        "Secteurs statistiques 2022"@fr,
+        "Statistische sectoren 2022"@nl ;
+    DCAT:contactPoint <https://statbel.fgov.be#contactPoint> ;
+    DCAT:distribution <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.geojson.zip#distribution4057>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.shp.zip#distribution4057>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_31370_20220101.sqlite.zip#distribution4057>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.geojson.zip#distribution4057>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.shp.zip#distribution4057>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/sh_statbel_statistical_sectors_3812_20220101.sqlite.zip#distribution4057> ;
+    DCAT:keyword "Geographic files"@en,
+        "Statistical sectors"@en,
+        "Tools"@en,
+        "Fichiers géographiques"@fr,
+        "Secteurs statistiques"@fr,
+        "Tools"@fr,
+        "Geografische bestanden"@nl,
+        "Statistische sectoren"@nl,
+        "Tools"@nl ;
+    DCAT:landingPage <https://statbel.fgov.be/en/open-data/statistical-sectors-2022>,
+        <https://statbel.fgov.be/fr/open-data/secteurs-statistiques-2022>,
+        <https://statbel.fgov.be/nl/open-data/statistische-sectoren-2022> ;
+    DCAT:theme <https://vocab.belgif.be/auth/datatheme/GOVE> ;
+    FOAF:page <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/20200105-Note%20Refnis%20et%20Nuts-FR.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/20201005-Nota%20Refnis%20en%20Nuts-NL.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Columns%20description_0.xlsx>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Secteur%20stat-FR_tcm326-174181.pdf>,
+        <https://statbel.fgov.be/sites/default/files/files/opendata/Statistische%20sectoren/Secteurs%20stat-NL_tcm325-174181.pdf> .
+
+<https://vocab.belgif.be/auth/datatheme/SOCI> a SKOS:Concept ;
+    SKOS:inScheme <https://vocab.belgif.be/auth/datatheme/> ;
+    SKOS:prefLabel "Bevölkerung und Gesellschaft"@de,
+        "Population and society"@en,
+        "Population et société"@fr,
+        "Bevolking en samenleving"@nl .
+
+<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a DCT:RightsStatement ;
+    SKOS:inScheme <http://publications.europa.eu/resource/authority/access-right/> ;
+    SKOS:prefLabel "öffentlich"@de,
+        "public"@en,
+        "public"@fr,
+        "openbaar"@nl .
+
+<http://publications.europa.eu/resource/authority/country/BEL> a DCT:Location ;
+    DCT:identifier "BEL" ;
+    SKOS:prefLabel "Belgien"@de,
+        "Belgium"@en,
+        "Belgique"@fr,
+        "België"@nl ;
+    DCAT:bbox "{'type':'Polygon','coordinates':[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}"^^GEOSPARQL:geoJSONLiteral,
+        "&lt;gml:Envelope srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;"^^GEOSPARQL:gmlLiteral,
+        "POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))"^^GEOSPARQL:wktLiteral,
+        "{'type':'Polygon','coordinates':[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}"^^IANAGEO:json ;
+    LOCN:geometry "{'type':'Polygon','coordinates':[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}"^^GEOSPARQL:geoJSONLiteral,
+        "&lt;gml:Envelope srsName='http://www.opengis.net/def/crs/OGC/1.3/CRS84'&gt;&lt;gml:lowerCorner&gt;2.54 49.49&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt;6.41 51.51&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;"^^GEOSPARQL:gmlLiteral,
+        "POLYGON((2.54 51.51,6.41 51.51,6.41 49.49,2.54 49.49,2.54 51.51))"^^GEOSPARQL:wktLiteral,
+        "{'type':'Polygon','coordinates':[[[2.54,51.51],[6.41,51.51],[6.41,49.49],[2.54,49.49],[2.54,51.51]]]}"^^IANAGEO:json .
+
+<http://publications.europa.eu/resource/authority/language/DEU> a DCT:LinguisticSystem,
+        SKOS:Concept ;
+    SKOS:inScheme <http://publications.europa.eu/resource/authority/language/> ;
+    SKOS:prefLabel "Deutsch"@de,
+        "German"@en,
+        "Allemand"@fr,
+        "Duits"@nl .
+
+<https://kbopub.economie.fgov.be/kbopub/toonvestigingps.html?vestigingsnummer=2146814391> a FOAF:Organization ;
+    DCT:type <http://purl.org/adms/publishertype/NationalAuthority/> ;
+    LOCN:address [ a LOCN:Address ;
+            LOCN:adminUnitL1 "Belgien"@de,
+                "Belgium"@en,
+                "Belgique"@fr,
+                "België"@nl ;
+            LOCN:postCode "1000" ;
+            LOCN:postName "Brüssel"@de,
+                "Brussels"@en,
+                "Bruxelles"@fr,
+                "Brussel"@nl ;
+            LOCN:thoroughfare "North Gate - Koning Albert II-laan 16"@de,
+                "North Gate - Boulevard du Roi Albert II, 16"@en,
+                "North Gate - Boulevard du Roi Albert II, 16"@fr,
+                "North Gate - Koning Albert II-laan 16"@nl ] ;
+    FOAF:mbox <mailto:statbel@economie.fgov.be> ;
+    FOAF:name "North Gate II & III - NSI (STATBEL - Statistics Belgium)"@de,
+        "North Gate II & III - INS (STATBEL - Statistics Belgium)"@en,
+        "North Gate II & III - INS (STATBEL - Statistics Belgium)"@fr,
+        "North Gate II & III - NSI (STATBEL - Statistics Belgium)"@nl ;
+    FOAF:workplaceHomepage <https://statbel.fgov.be/de>,
+        <https://statbel.fgov.be/en>,
+        <https://statbel.fgov.be/fr>,
+        <https://statbel.fgov.be/nl> .
+
+<https://statbel.fgov.be#contactPoint> a VCARD:Organization ;
+    VCARD:hasAddress [ a VCARD:Address ;
+            VCARD:country-name "Belgien"@de,
+                "Belgium"@en,
+                "Belgique"@fr,
+                "België"@nl ;
+            VCARD:locality "Brüssel"@de,
+                "Brussels"@en,
+                "Bruxelles"@fr,
+                "Brussel"@nl ;
+            VCARD:postal-code "1000" ;
+            VCARD:street-address "North Gate - Koning Albert II-laan 16"@de,
+                "North Gate - Boulevard du Roi Albert II, 16"@en,
+                "North Gate - Boulevard du Roi Albert II, 16"@fr,
+                "North Gate - Koning Albert II-laan 16"@nl ] ;
+    VCARD:hasEmail <mailto:statbel@economie.fgov.be> ;
+    VCARD:hasURL <https://statbel.fgov.be/de>,
+        <https://statbel.fgov.be/en>,
+        <https://statbel.fgov.be/fr>,
+        <https://statbel.fgov.be/nl> ;
+    VCARD:organization-name "Statbel (Generaldirektion Statistik - Statistics Belgium)"@de,
+        "Statbel (Directorate General Statistics - Statistics Belgium)"@en,
+        "Statbel (Direction générale Statistique - Statistics Belgium)"@fr,
+        "Statbel (Algemene Directie Statistiek - Statistics Belgium)"@nl .
+
+<http://publications.europa.eu/resource/authority/language/ENG> a DCT:LinguisticSystem,
+        SKOS:Concept ;
+    SKOS:inScheme <http://publications.europa.eu/resource/authority/language/> ;
+    SKOS:prefLabel "Englisch"@de,
+        "English"@en,
+        "Anglais"@fr,
+        "Engels"@nl .
+
+<http://publications.europa.eu/resource/authority/language/FRA> a DCT:LinguisticSystem,
+        SKOS:Concept ;
+    SKOS:inScheme <http://publications.europa.eu/resource/authority/language/> ;
+    SKOS:prefLabel "Französisch"@de,
+        "French"@en,
+        "Français"@fr,
+        "Frans"@nl .
+
+<http://publications.europa.eu/resource/authority/language/NLD> a DCT:LinguisticSystem,
+        SKOS:Concept ;
+    SKOS:inScheme <http://publications.europa.eu/resource/authority/language/> ;
+    SKOS:prefLabel "Niederländisch"@de,
+        "Dutch"@en,
+        "Néerlandais"@fr,
+        "Nederlands"@nl .
+
