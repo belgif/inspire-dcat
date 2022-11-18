@@ -166,7 +166,7 @@
 		sh:path dcterms:spatial
 	], [
 		sh:class dcterms:PeriodOfTime;
-		sh:nodeKind sh:IRI;
+		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
 		sh:path dcterms:temporal
 	], [
