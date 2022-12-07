@@ -222,7 +222,6 @@
 		sh:class dcterms:Standard;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
-		sh:maxCount 1;
 		sh:path dcterms:conformsTo
 	], [
 		sh:class dcat:Dataset;
@@ -374,7 +373,6 @@
 		sh:class dcterms:Standard;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
-		sh:maxCount 1;
 		sh:path dcterms:conformsTo
 	], [
 		sh:class skos:Concept;
@@ -426,12 +424,6 @@
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 1;
 		sh:path dcterms:license
-	], [
-		sh:class dcterms:Standard;
-		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
-		sh:maxCount 1;
-		sh:path dcterms:conformsTo
 	];
 	sh:targetClass dcat:DataService .
 
