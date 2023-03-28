@@ -649,7 +649,7 @@ implementation standard for INSPIRE download services based on the [WFS] and [AT
 
 ## G. locn:Address
 
-### Instantiëring van locn:Address in een instantie van om het even welke klasse
+### Instantiation of locn:Address in any attribute
 | URI               | Name           | Description                | Requirement | Cardinality | Range        | Source                |
 | ----------------- | -------------- | -------------------------- | ----------- | ----------- | ------------ | --------------------- |
 | locn:thoroughfare | postal address | Street and policy number   | M           | 1           | multilingual | .  /gmd:deliveryPoint |
@@ -657,7 +657,7 @@ implementation standard for INSPIRE download services based on the [WFS] and [AT
 | locn:postCode     | postal code    | Postal code of the address | M           | 1           | unilingual   | ./gmd:postalCode      |
 | locn:adminUnitL1  | country        | Country                    | M           | 1           | multilingual | ./gmd:country         |
 
-**Tabel 7 : klasse locn:Address geïnstantieerd in een instantie van om het even welke klasse**
+**Table 7 : locn:Address in any attribute**
 
 ## H. skos:Concept
 
