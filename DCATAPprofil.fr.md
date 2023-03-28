@@ -696,7 +696,7 @@ norme d&#39;implémentation des services de téléchargement INSPIRE basée sur 
 
 ## E. foaf:Organization
 
-### Instantiëring van foaf:Organization in een instantie van om het even welke klasse
+### Instanciation de foaf:Organization dans tout attribut
 | URI                    | Nom             | Description                                               | Exigence | Cardinalité | Domaine         | Source                                                                                  |
 | ---------------------- | --------------- | --------------------------------------------------------- | -------- | ----------- | --------------- | --------------------------------------------------------------------------------------- |
 | foaf:name              | nom             | Nom de l'organisation                                     | M        | 1-n         | Multilingue     | ./gmd:organisationName                                                                  |
