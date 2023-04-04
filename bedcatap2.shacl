@@ -47,14 +47,18 @@
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 1;
 		sh:path dcat:dataset;
-		sh:severity sh:Warning
+		sh:severity sh:Info
 	], [
 		sh:class dcat:DataService;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:path dcat:service
+		sh:minCount 1;
+		sh:path dcat:service; 
+		sh:severity sh:Info
 	], [
 		sh:nodeKind sh:IRI;
+		sh:minCount 1;		
 		sh:path foaf:homepage
+		sh:severity sh:Info
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
@@ -71,7 +75,7 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:path dcterms:spatial;
-		sh:severity sh:Warning
+		sh:severity sh:Info
 	], [
 		sh:class skos:ConceptScheme;
 		sh:nodeKind sh:IRI;
@@ -93,7 +97,7 @@
 		sh:minCount 0;
 		sh:path dcat:catalog
 	], [
-		sh:class dcat:Record;
+		sh:class dcat:CatalogRecord;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
 		sh:path dcat:record
@@ -138,13 +142,13 @@
 		sh:class vcard:Organization;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
-		sh:maxCount 1;
 		sh:path dcat:contactPoint
 	], [
 		sh:class dcat:Distribution;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:path dcat:distribution;
+		sh:severity sh:Info
     ], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
@@ -163,13 +167,15 @@
 	], [
 		sh:class dcterms:Location;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
-		sh:path dcterms:spatial
+		sh:minCount 1;
+		sh:path dcterms:spatial;
+		sh:severity sh:Info
 	], [
 		sh:class dcterms:PeriodOfTime;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
-		sh:path dcterms:temporal
+		sh:minCount 1;
+		sh:path dcterms:temporal;
+		sh:severity sh:Info
 	], [
         sh:or ( [ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] ) ;
 		sh:minCount 0;
@@ -188,18 +194,21 @@
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dcterms:accrualPeriodicity
+		sh:path dcterms:accrualPeriodicity;
+		sh:severity sh:Info
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
-		sh:path foaf:page
+		sh:minCount 1;
+		sh:path foaf:page;
+		sh:severity sh:Info
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
-		sh:path dcat:landingPage
+		sh:path dcat:landingPage;
+		sh:severity sh:Info
 	], [
 		sh:datatype xsd:string;
 		sh:minCount 1;
@@ -210,7 +219,8 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:maxCount 4;
-		sh:path dcterms:language
+		sh:path dcterms:language;
+		sh:severity sh:Info
 	], [
 		sh:class dcterms:ProvenanceStatement;
 		sh:nodeKind sh:BlankNodeOrIRI;
@@ -231,22 +241,18 @@
 	], [
 		sh:class dqv:QualityMeasurement;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dqv:hasQualityMeasurement
-	], [
-		sh:datatype xsd:decimal;
-		sh:minCount 0;
-		sh:maxCount 1;
-		sh:path dcat:spatialResolutionInMeters
+		sh:path dqv:hasQualityMeasurement;
+		sh:severity sh:Info
 	], [
 		sh:class dcterms:RightsStatement;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:accessRights
 	], [
-		sh:class dcat:Dataset;
+		sh:class dcat:Distribution;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
 		sh:maxCount 1;
@@ -255,8 +261,8 @@
 		sh:class foaf:Organization;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 1;
-		sh:maxCount 1;
-		sh:path dcterms:publisher
+		sh:path dcterms:publisher;
+		sh:severity sh:Info
     ], [
 		sh:class foaf:Organization;
 		sh:nodeKind sh:BlankNodeOrIRI;
@@ -310,8 +316,9 @@
     ], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
-		sh:path adms:representationTechnique
+		sh:minCount 1;
+		sh:path adms:representationTechnique;
+		sh:severity sh:Info
 	];
 	sh:targetClass dcat:Dataset .
 
@@ -330,39 +337,44 @@
 		sh:path dcterms:description
     ], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:path dcat:endpointURL
     ], [
 		sh:class dcat:Dataset;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
-		sh:path dcat:servesDataset
+		sh:minCount 1;
+		sh:path dcat:servesDataset;
+		sh:severity sh:Info
 	], [
 		sh:class dcterms:RightsStatement;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:accessRights
 	], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
-		sh:minCount 0;
-		sh:path dcat:keyword
+		sh:minCount 1;
+		sh:path dcat:keyword;
+		sh:severity sh:Info
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
-		sh:path dcat:theme
+		sh:path dcat:theme;
+		sh:severity sh:Info
 	], [
         sh:or ( [ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] ) ;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dcterms:created
+		sh:path dcterms:created;
+		sh:severity sh:Info
 	], [
         sh:or ( [ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] ) ;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dcterms:modified
+		sh:path dcterms:modified;
+		sh:severity sh:Info
 	],[
         sh:or ( [ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] ) ;
 		sh:minCount 0;
@@ -377,7 +389,8 @@
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
-		sh:path dcterms:type
+		sh:path dcterms:type;
+		sh:severity sh:Info
 	], [
 		sh:class foaf:Organization;
 		sh:nodeKind sh:BlankNodeOrIRI;
@@ -423,6 +436,11 @@
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 1;
 		sh:path dcterms:license
+	], [
+		sh:class dcterms:Standard;
+		sh:nodeKind sh:BlankNodeOrIRI;
+		sh:minCount 0;
+		sh:path dcterms:conformsTo
 	];
 	sh:targetClass dcat:DataService .
 
@@ -442,9 +460,10 @@
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
-		sh:path dcterms:language
+		sh:path dcterms:language;
+		sh:severity sh:Info
     ], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
@@ -456,16 +475,19 @@
 		sh:maxCount 1;
 		sh:path dcat:downloadURL
     ], [
+		sh:class dcterms:MediatypeOrExtent;
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:format
     ], [
+		sh:class dcterms:Mediatype;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
 		sh:path dcat:mediaType
     ], [
+		sh:class dcterms:Mediatype;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
@@ -482,6 +504,7 @@
 		sh:maxCount 1;
 		sh:path dcat:byteSize
     ], [
+ 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
@@ -495,14 +518,21 @@
 	], [
 		sh:class dcterms:PeriodOfTime;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dcterms:temporal
+		sh:path dcterms:temporal;
+		sh:severity sh:Info
     ], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:path dcterms:type
+	], [
+		sh:class skos:Concept;
+		sh:nodeKind sh:IRI;
+		sh:minCount 1;
+		sh:maxCount 4;
+		sh:path dcterms:language
 	];
 	sh:targetClass dcat:Distribution .
 
@@ -522,7 +552,7 @@
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:type
 	];
@@ -537,7 +567,7 @@
 		sh:path foaf:primaryTopic
 	], [
         sh:or ( [ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] ) ;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:modified
 	], [
@@ -563,13 +593,13 @@
 		sh:maxCount 4;
 		sh:path dcat:landingPage
 	], [
-		sh:class dcat:Dataset;
+		sh:class dct:CatalogRecord;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
 		sh:maxCount 1;
 		sh:path dcterms:source
 	];
-	sh:targetClass dcat:CatalogRecord .
+	sh:targetClass dcat:CatalogRecord.
 
 <http://vocab.belgif.be/shacl/bedcatap2#FoafOrganizationShape> a sh:NodeShape;
     sh:property [
@@ -577,7 +607,9 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
-		sh:path foaf:name
+		sh:path foaf:name;
+		sh:severity sh:Info
+		
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
@@ -586,14 +618,16 @@
 		sh:path dcterms:type
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path foaf:mbox
+		sh:path foaf:mbox;
+
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
-		sh:path foaf:workplaceHomepage
+		sh:path foaf:workplaceHomepage;
+		sh:severity sh:Info
 	], [
 		sh:class locn:Address;
 		sh:nodeKind sh:BlankNodeOrIRI;
@@ -612,14 +646,16 @@
 		sh:path vcard:organization-name
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path vcard:hasEmail
+		sh:path vcard:hasEmail;
+		sh:severity sh:Info
 	], [
 		sh:nodeKind sh:IRI;
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
-		sh:path vcard:hasURL
+		sh:path vcard:hasURL;
+		sh:severity sh:Info
 	], [
 		sh:class vcard:Address;
 		sh:nodeKind sh:BlankNodeOrIRI;
@@ -706,17 +742,19 @@
 	], [
  		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:uniqueLang true;
-		sh:path skos:prefLabel
+		sh:path skos:prefLabel;
+		sh:severity sh:Info
+
 	], [
 		sh:or ( [ sh:datatype geosparql:wktLiteral ] [ sh:datatype geosparql:geoJSONLiteral ] [ sh:datatype geosparql:gmlLiteral ] [ sh:datatype ianageo:json ] );
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
 		sh:path dcat:bbox
 	], [
 		sh:or ( [ sh:datatype geosparql:wktLiteral ] [ sh:datatype geosparql:geoJSONLiteral ] [ sh:datatype geosparql:gmlLiteral ] [ sh:datatype ianageo:json ] );
-		sh:minCount 0;
+		sh:minCount 1;
 		sh:maxCount 4;
 		sh:path locn:geometry
 	];
@@ -731,7 +769,7 @@
 		sh:path dqv:isMeasurementOf
 	], [
 		sh:nodeKind sh:Literal;
-		sh:minCount 1;
+		sh:minCount 0;
 		sh:maxCount 1;
 		sh:path dqv:value
 	], [
@@ -743,7 +781,7 @@
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
-		sh:minCount 1;
+		sh:minCount 0;
 		sh:maxCount 1;
 		sh:path sdmx-attribute:unitMeasure
   	];
