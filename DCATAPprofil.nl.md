@@ -300,7 +300,7 @@ Als de instantie van de klasse dct: PeriodOfTime niet wordt gekoppeld aan een in
 
 ### Klasse dqv: QualityMeasurement
 De klasse dqv: QualityMeasurement komt overeen met de ruimtelijke resolutie van de betrokken resource, d.w.z. met het detailniveau van de resource.
-Conform deze specificaties kan de klasse zich instantiëren in het attribuut dqv:hasQualityMeasurement en dcat:spatialResolutionInMeters. In beide gevallen is de instantie aanbevolen en uniek.
+Conform deze specificaties kan de klasse zich instantiëren in het attribuut dqv:hasQualityMeasurement.De instantie is aanbevolen en uniek.
 #### Profiel van de klasse
 Het huidige profiel voorziet in verschillende specificaties naar gelang van de plaats waar de klasse zich instantieert. Deze vloeien in hoofdzaak voort uit de noodzaak om de ruimtelijke resolutie te beschrijven aan de hand van begrippen die aan het resourcetype aangepast zijn.
 De attributen eigen aan de instanties betreffende de vectoriële resources worden gespecificeerd in tabel 12 in bijlage. De attributen eigen aan alle instanties betreffende de vectoriële resources worden gespecificeerd in tabel 13 in bijlage.
