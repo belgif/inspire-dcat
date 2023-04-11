@@ -21,7 +21,7 @@
   rdfs:comment "Federal INSPIRE / (Geo)DCAT-AP 2 profile"@en, "Profil fédéral INSPIRE / (Geo)DCAT-AP 2"@fr,
     "Federaal INSPIRE / (Geo)DCAT-AP 2 profiel"@nl, "föderales INSPIRE / (Geo)DCAT-AP 2 Profil"@de;
   rdfs:label "Fed DCAT-AP 2"@de, "Fed DCAT-AP 2"@en, "Fed DCAT-AP 2"@fr, "Fed DCAT-AP 2"@nl;
-  owl:versionInfo "2022-12-14-draft" .
+  owl:versionInfo "2023-11-04-draft" .
 
 <http://vocab.belgif.be/shacl/bedcatap2#CatalogShape> a sh:NodeShape;
     sh:property [
@@ -29,12 +29,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:title
 	], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:description
 	], [
 		sh:class foaf:Organization;
@@ -127,12 +129,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:title
 	], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:description
 	], [
 		sh:class vcard:Organization;
@@ -321,12 +325,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:title
     ], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:description
     ], [
 		sh:nodeKind sh:IRI;
@@ -432,12 +438,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 0;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:title
     ], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 0;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:description
 	], [
 		sh:class skos:Concept;
@@ -512,12 +520,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:title
     ], [
 		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 0;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path dcterms:description
 	], [
 		sh:class skos:Concept;
@@ -577,6 +587,7 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path foaf:name
 	], [
 		sh:class skos:Concept;
@@ -609,6 +620,7 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path vcard:organization-name
 	], [
 		sh:nodeKind sh:IRI;
@@ -635,12 +647,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path locn:thoroughfare
 	], [
  		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 2;
 		sh:path locn:postName
 	], [
  		sh:datatype xsd:string;
@@ -652,6 +666,7 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 2;
 		sh:path locn:adminUnitL1
 	];
 	sh:targetClass locn:Address .
@@ -662,12 +677,14 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path vcard:street-address
 	], [
  		sh:datatype rdf:langString;
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 2;
 		sh:path vcard:locality
 	], [
  		sh:datatype xsd:string;
@@ -679,6 +696,7 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 1;
 		sh:uniqueLang true;
+		sh:minLength 3;
 		sh:path vcard:country-name
 	];
 	sh:targetClass vcard:Address .
@@ -708,6 +726,7 @@
 		sh:languageIn ("nl" "fr" "de" "en");
 		sh:minCount 0;
 		sh:uniqueLang true;
+		sh:minLength 2;
 		sh:path skos:prefLabel
 	], [
 		sh:or ( [ sh:datatype geosparql:wktLiteral ] [ sh:datatype geosparql:geoJSONLiteral ] [ sh:datatype geosparql:gmlLiteral ] [ sh:datatype ianageo:json ] );
