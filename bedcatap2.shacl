@@ -56,6 +56,7 @@
 		sh:path dcat:service
 	], [
 		sh:nodeKind sh:IRI;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path foaf:homepage
 	], [
 		sh:class skos:Concept;
@@ -198,11 +199,13 @@
 	], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path foaf:page
 	], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 4;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path dcat:landingPage
 	], [
 		sh:datatype xsd:string;
@@ -337,6 +340,7 @@
     ], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path dcat:endpointURL
     ], [
 		sh:class dcat:Dataset;
@@ -457,11 +461,13 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:maxCount 1;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path dcat:accessURL
     ], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path dcat:downloadURL
     ], [
 		sh:nodeKind sh:IRI;
@@ -571,6 +577,7 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 4;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path dcat:landingPage
 	], [
 		sh:class dcat:Dataset;
@@ -599,11 +606,13 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
+		sh:pattern "^mailto:.+@.+";
 		sh:path foaf:mbox
 	], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 4;
+		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path foaf:workplaceHomepage
 	], [
 		sh:class locn:Address;
@@ -626,6 +635,7 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
+		sh:pattern "^mailto:.+@.+";
 		sh:path vcard:hasEmail
 	], [
 		sh:nodeKind sh:IRI;
