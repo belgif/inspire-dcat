@@ -57,7 +57,7 @@
 	], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;		
-		sh:path foaf:homepage
+		sh:path foaf:homepage;
 		sh:severity sh:Info
 	], [
 		sh:class skos:Concept;
@@ -475,19 +475,19 @@
 		sh:maxCount 1;
 		sh:path dcat:downloadURL
     ], [
-		sh:class dcterms:MediatypeOrExtent;
+		sh:class dcterms:MediaTypeOrExtent;
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:maxCount 1;
 		sh:path dcterms:format
     ], [
-		sh:class dcterms:Mediatype;
+		sh:class dcterms:MediaType;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
 		sh:path dcat:mediaType
     ], [
-		sh:class dcterms:Mediatype;
+		sh:class dcterms:MediaType;
 		sh:nodeKind sh:IRI;
 		sh:minCount 0;
 		sh:maxCount 1;
@@ -554,7 +554,8 @@
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;
 		sh:maxCount 1;
-		sh:path dcterms:type
+		sh:path dcterms:type;
+		sh:severity sh:Info
 	];
 	sh:targetClass dcterms:LicenseDocument .
 
@@ -593,7 +594,7 @@
 		sh:maxCount 4;
 		sh:path dcat:landingPage
 	], [
-		sh:class dct:CatalogRecord;
+		sh:class dcat:CatalogRecord;
 		sh:nodeKind sh:BlankNodeOrIRI;
 		sh:minCount 0;
 		sh:maxCount 1;
