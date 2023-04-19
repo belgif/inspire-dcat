@@ -697,7 +697,7 @@ norm voor de implementatie van de INSPIRE downloaddiensten, gebaseerd op de [WFS
 
 | URI             | Naam                          | Omschrijving                  | Vereiste | Kardinaliteit | Type     | Bron |
 | --------------- | ----------------------------- | ----------------------------- | -------- | ------------- | --------- | ---- |
-| dct:type        | type document                 | Type document                 | M        | 1             | URI       |      |
+| dct:type        | type document                 | Type document                 | R        | 0-1           | URI       |      |
 | dct:title       | titel van het document        | Titel van het document        | M        | 1             | meertalig |      |
 | dct:description | beschrijving van het document | Beschrijving van het document | O        | 0-1           | meertalig |      |
 
