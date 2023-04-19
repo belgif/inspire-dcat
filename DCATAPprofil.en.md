@@ -753,7 +753,7 @@ implementation standard for INSPIRE download services based on the [WFS] and [AT
 
 | URI             | Name                        | Description                 | Requirement | Cardinality | Range        | Source |
 | --------------- | --------------------------- | --------------------------- | ----------- | ----------- | ------------ | ------ |
-| dct:type        | type of document            | Type of document            | M           | 1           | URI          |        |
+| dct:type        | type of document            | Type of document            | R           | 1           | URI          |        |
 | dct:title       | title of the document       | Title of the document       | M           | 1           | multilingual |        |
 | dct:description | description of the document | Description of the document | O           | 0-1         | multilingual |        |
 
