@@ -828,7 +828,7 @@ norme d&#39;implémentation des services de téléchargement INSPIRE basée sur 
 
 | URI             | Nom                     | Description             | Exigence | Cardinalité | Domaine     | Source |
 | --------------- | ----------------------- | ----------------------- | -------- | ----------- | ----------- | ------ |
-| dct:type        | type de document        | Type de document        | M        | 1           | URI         |        |
+| dct:type        | type de document        | Type de document        | R        | 0-1         | URI         |        |
 | dct:title       | titre du document       | Titre du document       | M        | 1           | multilingue |        |
 | dct:description | description du document | Description du document | O        | 0-1         | multilingue |        |
 
