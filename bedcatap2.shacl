@@ -47,21 +47,17 @@
 	], [
 		sh:class dcat:Dataset;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 1;
-		sh:path dcat:dataset;
-		sh:severity sh:Info
+		sh:path dcat:dataset
 	], [
 		sh:class dcat:DataService;
 		sh:nodeKind sh:BlankNodeOrIRI;
-		sh:minCount 1;
-		sh:path dcat:service; 
-		sh:severity sh:Info
+		sh:path dcat:service
 	], [
 		sh:nodeKind sh:IRI;
 		sh:minCount 1;		
 		sh:pattern "^https?://\\w+\\.\\w+";
 		sh:path foaf:homepage;
-    sh:severity sh:Info
+ 		sh:severity sh:Info
 	], [
 		sh:class skos:Concept;
 		sh:nodeKind sh:IRI;
@@ -126,6 +122,12 @@
 		sh:minCount 0;
 		sh:path dcat:theme
 	];
+	sh:or (
+		[ sh:path dcat:service;
+		  sh:minCount 1; ]
+		[ sh:path dcat:dataset;
+		  sh:minCount 1; ]
+	);
 	sh:targetClass dcat:Catalog .
 
 <http://vocab.belgif.be/shacl/bedcatap2#DatasetShape> a sh:NodeShape;
