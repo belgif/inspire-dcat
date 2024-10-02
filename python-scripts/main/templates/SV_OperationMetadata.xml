@@ -1,0 +1,5 @@
+<srv:SV_OperationMetadata xmlns:srv="http://www.isotc211.org/2005/srv">
+<srv:operationName/>
+<srv:DCP/>
+<srv:connectPoint/>
+</srv:SV_OperationMetadata>

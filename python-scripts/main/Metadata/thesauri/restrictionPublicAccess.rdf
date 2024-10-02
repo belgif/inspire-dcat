@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:schema="http://schema.org/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:qb="http://purl.org/linked-data/cube#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#">
+
+<skos:ConceptScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:about="http://vocab.belgif.be/auth/datatheme">
+    <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Brussels Restriction data codelist</dc:title>
+    <dcterms:issued xmlns:dcterms="http://purl.org/dc/terms/">2022-10-13</dcterms:issued>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2022-10-13</dcterms:modified>   
+
+</skos:ConceptScheme>
+
+<!-- les relations broad/narrow pourront être décommentés et donc utilisables quand le viewer et le catalogue de geo.be seront également conçus à deux niveaux (1.5 ou 2) -->
+<skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"> 
+	<skos:prefLabel xml:lang="fr">Pas de restriction concernant l'accès public</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">No limitations on public access</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Öffentliche Zugang nicht beschränkt</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">No limitations to public access</skos:prefLabel>
+</skos:Concept>
+
+<skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e">
+	<skos:prefLabel xml:lang="fr">Accès public restreint à cause de droits intellectuels existants</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">De publieke toegang is beperkt om geen afbreuk te doen aan intellectuele-eigendomsrechten</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">public access limited according because of existing intellectual rights</skos:prefLabel>
+</skos:Concept>
+
+
+<skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1F">
+	<skos:prefLabel xml:lang="fr">Accès public restreint à cause de la présence de données à caractère personnel</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">De publieke toegang is beperkt om geen afbreuk te doen aan de vertrouwelijkheid van persoonsgegevens</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">public access limited according because of private data</skos:prefLabel>
+</skos:Concept>
+
+</rdf:RDF>

@@ -1,0 +1,17 @@
+  <srv:SV_ServiceIdentification  xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:srv="http://www.isotc211.org/2005/srv">
+	 <gmd:citation/>
+	 <gmd:abstract/>
+	 <gmd:status/>
+	 <gmd:pointOfContact/>
+	 <gmd:resourceMaintenance/>
+	 <gmd:graphicOverview/>
+	 <gmd:descriptiveKeywords/>
+	 <gmd:resourceConstraints/>
+	 <srv:serviceType/>
+	 <srv:extent/>
+	 <srv:coupledResource/>
+	 <srv:couplingType/>
+	 <srv:containsOperations/>
+	 <srv:operatesOn/>
+  </srv:SV_ServiceIdentification >
+  

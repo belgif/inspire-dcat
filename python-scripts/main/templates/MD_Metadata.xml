@@ -1,0 +1,17 @@
+<gmd:MD_Metadata                 xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 >
+   <gmd:fileIdentifier/>
+   <gmd:language/>
+   <gmd:characterSet/>
+   <gmd:hierarchyLevel/>
+   <gmd:hierarchyLevelName/>
+   <gmd:contact/>      
+   <gmd:dateStamp/>
+   <gmd:metadataStandardName/>
+   <gmd:metadataStandardVersion/>
+   <gmd:locale/>
+   <gmd:referenceSystemInfo/>
+   <gmd:identificationInfo/>
+   <gmd:distributionInfo/>
+   <gmd:dataQualityInfo/>
+</gmd:MD_Metadata>

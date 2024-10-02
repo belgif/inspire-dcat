@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:schema="http://schema.org/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:org="http://www.w3.org/ns/org#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:qb="http://purl.org/linked-data/cube#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#">
+  <skos:ConceptScheme rdf:about="https://www.geo.be/thesaurus/federalthesaurus.rdf">
+    <dc:title>Belgian Federal Thesaurus</dc:title>
+    <dcterms:issued xmlns:dcterms="http://purl.org/dc/terms/">2020-03-01</dcterms:issued>
+    <dcterms:modified xmlns:dcterms="http://purl.org/dc/terms/">2020-03-01</dcterms:modified>
+    <skos:hasTopConcept rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:hasTopConcept rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:hasTopConcept rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:hasTopConcept rdf:resource="https://www.geo.be/thesaurus/prc.xml"/>
+  </skos:ConceptScheme>
+  <!-- les relations broad/narrow pourront être décommentés et donc utilisables quand le viewer et le catalogue de geo.be seront également conçus à deux niveaux (1.5 ou 2) -->
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/bdc.xml">
+    <skos:prefLabel xml:lang="fr">Données de base et cartographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Basisgegevens en cartografie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Grunddaten und Kartographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Basic data and cartography</skos:prefLabel>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/dpm.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/apo.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/acd.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/grs.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/adt.xml"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/eeo.xml">
+    <skos:prefLabel xml:lang="fr">Environnement et observation de la terre</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Omgeving en aardobservatie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Umwelt und Erdbeobachtung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environment and earth observation</skos:prefLabel>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/agr.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/end.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/lcu.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/mwr.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/gpr.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/gas.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/hdr.xml"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/pae.xml">
+    <skos:prefLabel xml:lang="fr">Population et société</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Bevolking en samenleving</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bevölkerung und Gesellschaft</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population and society</skos:prefLabel>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/pst.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/hlt.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/mbl.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/ecn.xml"/>
+    <skos:narrower rdf:resource="https://www.geo.be/thesaurus/sff.xml"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/prc.xml">
+  <skos:prefLabel xml:lang="fr">Procédures automatiques</skos:prefLabel>
+  <skos:prefLabel xml:lang="nl">Automatische procedures</skos:prefLabel>
+  <skos:prefLabel xml:lang="de">Automatische Verfahren</skos:prefLabel>
+  <skos:prefLabel xml:lang="en">Automatic procedures</skos:prefLabel>
+  <skos:narrower rdf:resource="https://www.geo.be/thesaurus/rpi.xml"/>
+  <skos:narrower rdf:resource="https://www.geo.be/thesaurus/fat.xml"/>
+  <skos:narrower rdf:resource="https://www.geo.be/thesaurus/fvw.xml"/>
+  <skos:narrower rdf:resource="https://www.geo.be/thesaurus/prc.fct"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/dpm.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:prefLabel xml:lang="fr">Cartes numériques et papiers</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Digitale en papieren kaarten</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Digitale und Papierkarten</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Digital and paper maps</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/apo.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:prefLabel xml:lang="fr">Photos aériennes et orthophotos</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Luchtfoto's en orthofoto's</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Luftbilder und Orthophotos</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Aerial photographs and orthophotographs</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/adt.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:prefLabel xml:lang="fr">Adresses et toponymie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Adressen en toponymie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Adressen und Toponymie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Adresses and Toponymy</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/acd.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:prefLabel xml:lang="fr">Unités administratives, statistiques et cadastrales</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Administratieve, statistische en kadastrale eenheden</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verwaltungs-, statistische und Katastereinheiten</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Administrative, statistical and cadastral units</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/grs.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/bdc.xml"/>
+    <skos:prefLabel xml:lang="fr">Systèmes de références géographiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Geografische referentiesystemen</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Geographische Bezugssysteme</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geographical reference systems</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/agr.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Agriculture</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Landbouw</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Landwirtschaft</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/end.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Données environnementales</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Milieugegevens</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Umweltdaten</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Environmental data</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/lcu.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Occupation et utilisation du sol et des espaces naturels</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Bodem- en natuurgebiedenbedekking en -gebruik</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Boden- und Naturgebietsbedeckung und -nutzung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Land and natural area cover and use</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/mwr.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Météorologie, conditions atmosphériques et radiatives</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Meteorologie, weers- en stralingsomstandigheden</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Meteorologie, atmosphärische und Strahlungsbedingungen</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Meteorology, weather and radiation conditions</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/gpr.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Géologie et relief</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Geologie en reliëf</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Geologie und Relief</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geology and physical relief</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/gas.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Gravimétrie et sismographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Gravimetrie en seismografie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gravimetrie und Seismographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Gravimetry and seismography</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/hdr.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/eeo.xml"/>
+    <skos:prefLabel xml:lang="fr">Hydrographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Hydrografie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hydrographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Hydrography</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/pst.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:prefLabel xml:lang="fr">Statistiques démographiques</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Demografische statistieken</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bevölkerungsstatistik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Population statistics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/hlt.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:prefLabel xml:lang="fr">Santé</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Gezondheid</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gesundheit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Health</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/mbl.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:prefLabel xml:lang="fr">Mobilité</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Mobiliteit</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Mobilität</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mobility</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/ecn.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:prefLabel xml:lang="fr">Economie et énergie</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Economie en energie</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ökonomie und Energie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Economy and energy</skos:prefLabel>
+  </skos:Concept>  
+  
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/sff.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/pae.xml"/>
+    <skos:prefLabel xml:lang="fr">Statistiques fiscales et d'enregistrement</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Fiscale- en registratiestatistieken</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Steuer- und Registrierungsgebührensstatistik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Fiscal and registration statistics</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/rpi.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/prc.xml"/>
+    <skos:prefLabel xml:lang="fr">Reporting INSPIRE</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Reporting INSPIRE</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Reporting INSPIRE</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Reporting INSPIRE</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/fat.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/prc.xml"/>
+    <skos:prefLabel xml:lang="fr">Federal Atom</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Federal Atom</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Federal Atom</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Federal Atom</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/fvw.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/prc.xml"/>
+    <skos:prefLabel xml:lang="fr">Federal viewer</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Federal viewer</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Federal viewer</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Federal viewer</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://www.geo.be/thesaurus/fct.xml">
+    <skos:broader rdf:resource="https://www.geo.be/thesaurus/prc.xml"/>
+    <skos:prefLabel xml:lang="fr">Federal catalog</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Federal catalog</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Federal catalog</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Federal catalog</skos:prefLabel>
+  </skos:Concept>
+</rdf:RDF>
+

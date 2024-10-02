@@ -1,0 +1,6 @@
+<gmd:EX_GeographicBoundingBox  xmlns:gmd="http://www.isotc211.org/2005/gmd">
+<gmd:westBoundLongitude/>
+<gmd:eastBoundLongitude/>
+<gmd:southBoundLatitude/>
+<gmd:northBoundLatitude/>
+</gmd:EX_GeographicBoundingBox>
